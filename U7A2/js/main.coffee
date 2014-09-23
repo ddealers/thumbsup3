@@ -1,4 +1,4 @@
-class U7A1 extends Oda
+class U7A2 extends Oda
 	constructor: ->
 		manifest = [
 			{id: 'head', src: 'pleca1.png'}
@@ -195,4 +195,4 @@ class U7A1 extends Oda
 	finish: ->
 		TweenLite.to @library.nube1, 1, {alpha: 0, y: @library.nube1.y - 10, ease: Quart.easeOut}
 		super
-	window.U7A1 = U7A1
+	window.U7A2 = U7A2

@@ -57,7 +57,7 @@ class U8A5 extends Oda
 								{name: 'pcpt2', opts:{pattern:['#tcpt', 'did Honupo\'okea create a nest with her flippers?', '#rtn', 'She created a nest for her egg.'], targets: [{text:'Why'}]}}
 								{name: 'pcpt3', opts:{pattern:['#tcpt', 'waited in the water while Honupo\'okea built her nest?', '#rtn', 'Honu\'ea, the Great Father Turtle.'], targets: [{text:'Who'}]}}
 								{name: 'pcpt4', opts:{pattern:['#tcpt', 'did the egg look like?', '#rtn', 'It was completely round and smooth.'], targets: [{text:'What'}]}}
-								{name: 'pcpt5', opts:{pattern:['#tcpt', 'did Honupo\'okea cover the egg?', '#rtn', 'She brushed soft, Black sand over it.'], targets: [{text:'How'}]}}
+								{name: 'pcpt5', opts:{pattern:['#tcpt', 'did Honupo\'okea cover the egg?', '#rtn', 'She brushed soft, black sand over it.'], targets: [{text:'How'}]}}
 								{name: 'pcpt6', opts:{pattern:['#tcpt', 'did the two turtles create next?', '#rtn', 'They created a pool of fresh water.'], targets: [{text:'What'}]}}
 								{name: 'pcpt7', opts:{pattern:['#tcpt', 'did the two turtles go after that?', '#rtn', 'They returned to the ocean.'], targets: [{text:'Where'}]}}
 								{name: 'pcpt8', opts:{pattern:['#tcpt', 'did Honupo\'okea come back to the beach?', '#rtn', 'When her egg was going to hatch.'], targets: [{text:'When'}]}}

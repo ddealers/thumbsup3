@@ -50,6 +50,9 @@ class U8A4 extends Oda
 			if a.index is d2oda.evaluator.success
 				a.fadeOut()
 				lib.scene.success true, false
+			else
+				createjs.Sound.play 's/wrong'
+
 		@game = 
 			header: 'head'
 			instructions: {x: 40, y: 100, states: [{text:'Listen and drag the words to complete the text.', sound:'s/instructions', played: false}, {text:'Listen again and click on the pictures in order.', sound:'s/instructions2', played: false}]}
