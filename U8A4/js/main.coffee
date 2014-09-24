@@ -50,6 +50,9 @@ class U8A4 extends Oda
 			if a.index is d2oda.evaluator.success
 				a.fadeOut()
 				lib.scene.success true, false
+			else
+				createjs.Sound.play 's/wrong'
+
 		@game = 
 			header: 'head'
 			instructions: {x: 40, y: 100, states: [{text:'Listen and drag the words to complete the text.', sound:'s/instructions', played: false}, {text:'Listen again and click on the pictures in order.', sound:'s/instructions2', played: false}]}
@@ -137,11 +140,12 @@ class U8A4 extends Oda
 					answers: {
 						collection: [
 							[
-								{name: 'instructions', opts:{state: 1}}
+								{name: 'instructions', opts:{state: 0}}
 								{name: 'snd', opts:{id:'s/tara'}}
 								{name: 'pcpt2', opts:{pattern:['Hi! My name\'s Tara and I live in Canada. I had a great summer vacation on the', '#rtn', 'beach.', '#tcpt', ', I collected seashells for my grandmother. She loves them.', '#tcpt', ', I went', '#rtn', 'swimming with my friends. We swam in a pool because the ocean was too cold.', '#rtn', '#tcpt', ', I took some painting lessons. It was really cool.', '#tcpt', ', I visited a water', '#rtn', 'park with my cousins.', '#tcpt', ', we went shopping and had some ice cream. It was', '#rtn', 'such fun! I can\'t wait for next summer vacation!'], targets: [{text:'First', success:'first'}, {text:'Then', success:'then'}, {text:'Next', success:'next'}, {text:'After that', success:'after'}, {text:'Finally', success:'finally'}]}}
 							]
 							[
+								{name: 'instructions', opts:{state: 1}}
 								{name: 'snd', opts:{id:'s/tara'}}
 								{name: 'grp_tara_actions', opts:{type:'fadeIn'}}
 								{name: 'global', opts:{success: 5}}

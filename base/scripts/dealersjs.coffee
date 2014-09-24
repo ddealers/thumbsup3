@@ -907,7 +907,9 @@ class Instructions extends Component
 	set: (state) =>
 		@currentState = state
 		@label.text = @states[@currentState].text
+		TweenLite.set @, {alpha: 1} 
 		TweenLite.from @, 0.5, {alpha: 0, x: @x - 20}
+		console.log(state, @label.text)
 		@playSound()
 	next: =>
 		@currentState++
@@ -1249,6 +1251,7 @@ class ButtonContainer extends Component
 	update: (opts) ->
 		TweenLite.killTweensOf @
 		@setImageText opts.img, opts.txt
+		@mouseEnabled = true
 		TweenLite.from @, 0.5, {alpha: 0}
 	isComplete: ->
 		true
@@ -2441,6 +2444,7 @@ class Scene extends Component
 								snd.addEventListener 'complete', @sndsuccess
 							false
 						when 'instructions'
+							console.log(target.opts.state)
 							lib.instructions.set target.opts.state
 						else
 							lib[target.name].update target.opts

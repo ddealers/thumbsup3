@@ -28,6 +28,7 @@ class U8A3 extends Oda
 			a = lib[dispatcher]
 			b = lib[target]
 			if a.index is b.success
+				a.mouseEnabled = false
 				lib.score.plusOne()
 				createjs.Sound.play 's/good'
 			else
