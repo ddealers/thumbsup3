@@ -45,7 +45,7 @@ class U2A1 extends Oda
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'propPeanutButter'}}
-								{name: 'pcpt1', opts:{pattern:['There', '#tcpt','#tcpt','#tcpt','.'], targets: [{text:'are'}, {text:'some'}, {text:'peanut butter', success:'peanutbutter'}]}}
+								{name: 'pcpt1', opts:{pattern:['There', '#tcpt','#tcpt','#tcpt','.'], targets: [{text:'is'}, {text:'some'}, {text:'peanut butter', success:'peanutbutter'}]}}
 			
 							]
 							[
@@ -177,11 +177,11 @@ class U2A1 extends Oda
 						collection: [
 							[
 								{name: 'grp2', opts:{type: 'blink', target: 'propmilk'}}
-								{name: 'pcpt2', opts:{pattern:['There', '#tcpt', '#tcpt', '#tcpt'], targets: [{text:'are'}, {text:'some'}, {text:'milk'}]}}
+								{name: 'pcpt2', opts:{pattern:['There', '#tcpt', '#tcpt', '#tcpt'], targets: [{text:'is'}, {text:'some'}, {text:'milk'}]}}
 							]
 							[
 								{name: 'grp2', opts:{type: 'blink', target: 'prophoney'}}
-								{name: 'pcpt2', opts:{pattern:['There', '#tcpt','#tcpt','#tcpt'], targets: [{text:'are'}, {text:'some'}, {text:'honey'}]}}
+								{name: 'pcpt2', opts:{pattern:['There', '#tcpt','#tcpt','#tcpt'], targets: [{text:'is'}, {text:'some'}, {text:'honey'}]}}
 			
 							]
 							[
@@ -194,7 +194,7 @@ class U2A1 extends Oda
 							]
 							[
 								{name: 'grp2', opts:{type: 'blink', target: 'propyogurt'}}
-								{name: 'pcpt2', opts:{pattern:['There', '#tcpt','#tcpt','#tcpt'], targets: [{text:'are'}, {text:'some'}, {text:'yogurt'}]}}
+								{name: 'pcpt2', opts:{pattern:['There', '#tcpt','#tcpt','#tcpt'], targets: [{text:'is'}, {text:'some'}, {text:'yogurt'}]}}
 							]
 							[
 								{name: 'grp2', opts:{type: 'blink', target: 'propeggs'}}

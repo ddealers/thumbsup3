@@ -37,63 +37,63 @@ class U4A1 extends Oda
 						collection: [
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagebugbite'}}
-								{name:'wcpt1', opts:{prev:'I have a', word:'bug bite', target: 'imagebugbite'}}
+								{name:'wcpt1', opts:{prev:'I have a', word:'bug bite', last:'.', target: 'imagebugbite'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagechickenpox'}}
-								{name:'wcpt1', opts:{prev:'I have a', word:'chicken pox', target: 'imagechickenpox'}}
+								{name:'wcpt1', opts:{prev:'I have a', word:'chicken pox', last:'.', target: 'imagechickenpox'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagecold'}}
-								{name:'wcpt1', opts:{prev:'I have a', word:'cold', target: 'imagecold'}}
+								{name:'wcpt1', opts:{prev:'I have a', word:'cold', last:'.', target: 'imagecold'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagecough'}}
-								{name:'wcpt1', opts:{prev:'I have a', word:'cough', target: 'imagecough'}}
+								{name:'wcpt1', opts:{prev:'I have a', word:'cough', last:'.', target: 'imagecough'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagecutmyfinger'}}
-								{name:'wcpt1', opts:{prev:'I', word:'cut my finger', target: 'imagecutmyfinger'}}
+								{name:'wcpt1', opts:{prev:'I', word:'cut my finger', last:'.', target: 'imagecutmyfinger'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagecutmyknee'}}
-								{name:'wcpt1', opts:{prev:'I', word:'cut my knee', target: 'imagecutmyknee'}}
+								{name:'wcpt1', opts:{prev:'I', word:'cut my knee', last:'.', target: 'imagecutmyknee'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imageearache'}}
-								{name:'wcpt1', opts:{prev:'I have an', word:'earache', target: 'imageearache'}}
+								{name:'wcpt1', opts:{prev:'I have an', word:'earache', last:'.', target: 'imageearache'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagefever'}}
-								{name:'wcpt1', opts:{prev:'I have a', word:'fever', target: 'imagefever'}}
+								{name:'wcpt1', opts:{prev:'I have a', word:'fever', last:'.', target: 'imagefever'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imageheadache'}}
-								{name:'wcpt1', opts:{prev:'I have a', word:'headache', target: 'imageheadache'}}
+								{name:'wcpt1', opts:{prev:'I have a', word:'headache', last:'.', target: 'imageheadache'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagehiccups'}}
-								{name:'wcpt1', opts:{prev:'I have the', word:'hiccups', target: 'imagehiccups'}}
+								{name:'wcpt1', opts:{prev:'I have the', word:'hiccups', last:'.', target: 'imagehiccups'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagerunnynose'}}
-								{name:'wcpt1', opts:{prev:'I have a', word:'runny nose', target: 'imagerunnynose'}}
+								{name:'wcpt1', opts:{prev:'I have a', word:'runny nose', last:'.', target: 'imagerunnynose'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagesorethroat'}}
-								{name:'wcpt1', opts:{prev:'I have a', word:'sore throat', target: 'imagesorethroat'}}
+								{name:'wcpt1', opts:{prev:'I have a', word:'sore throat', last:'.', target: 'imagesorethroat'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagestomachache'}}
-								{name:'wcpt1', opts:{prev:'I have a', word:'stomachache', target: 'imagestomachache'}}
+								{name:'wcpt1', opts:{prev:'I have a', word:'stomachache', last:'.', target: 'imagestomachache'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagesunburn'}}
-								{name:'wcpt1', opts:{prev:'I have a', word:'sunburn', target: 'imagesunburn'}}
+								{name:'wcpt1', opts:{prev:'I have a', word:'sunburn', last:'.', target: 'imagesunburn'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagetoothache'}}
-								{name:'wcpt1', opts:{prev:'I have a', word:'toothache', target: 'imagetoothache'}}
+								{name:'wcpt1', opts:{prev:'I have a', word:'toothache', last:'.', target: 'imagetoothache'}}
 							]
 						]
 						mixed: true

@@ -1964,7 +1964,7 @@ class WordCompleterContainer extends Component
 		for letter in word
 			#create container
 			if letter is ' '
-				npos+= @margin
+				npos+= @margin*2
 			else
 				opts = {text: letter, width: @uwidth}
 				h = new TextCompleterContainer opts, @font, @fcolor, @bcolor, @scolor, @stroke, npos, 5
