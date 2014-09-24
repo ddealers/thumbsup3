@@ -131,7 +131,7 @@ class U7A5 extends Oda
 					}
 					containers:[
 						{type:'img', id: 'bg', x: 400, y: 0, align: 'tc'}
-                        {type:'img', id: 'scene2', x:400, y: 130, align: 'tc'}
+                        {type:'img', id: 'scene2', x:400, y: 170, align: 'tc'}
 						{
                         	type: 'btn', id: 'btn7', x: 180, y: 445, index: 4, target: 'global'
                         	eval: @baseClick
@@ -180,7 +180,7 @@ class U7A5 extends Oda
 					}
 					containers:[
 						{type:'img', id: 'bg', x: 400, y: 0, align: 'tc'}
-                        {type:'img', id: 'scene3', x:400, y: 130, align: 'tc'}
+                        {type:'img', id: 'scene3', x:400, y: 175, align: 'tc'}
 						{
                         	type: 'btn', id: 'btn13', x: 180, y: 445, index: 7, target: 'global'
                         	eval: @baseClick
@@ -229,7 +229,7 @@ class U7A5 extends Oda
 					}
 					containers:[
 						{type:'img', id: 'bg', x: 400, y: 0, align: 'tc'}
-                        {type:'img', id: 'scene4', x:400, y: 130, align: 'tc'}
+                        {type:'img', id: 'scene4', x:400, y: 190, align: 'tc'}
 						{
                         	type: 'btn', id: 'btn19', x: 180, y: 445, index: 10, target: 'global'
                         	eval: @baseClick
@@ -278,7 +278,7 @@ class U7A5 extends Oda
 					}
 					containers:[
 						{type:'img', id: 'bg', x: 400, y: 0, align: 'tc'}
-                        {type:'img', id: 'scene5', x:400, y: 130, align: 'tc'}
+                        {type:'img', id: 'scene5', x:400, y: 190, align: 'tc'}
 						{
                         	type: 'btn', id: 'btn25', x: 180, y: 445, index: 13, target: 'global'
                         	eval: @baseClick
@@ -327,7 +327,7 @@ class U7A5 extends Oda
 					}
 					containers:[
 						{type:'img', id: 'bg', x: 400, y: 0, align: 'tc'}
-                        {type:'img', id: 'scene6', x:400, y: 130, align: 'tc'}
+                        {type:'img', id: 'scene6', x:400, y: 190, align: 'tc'}
 						{
                         	type: 'btn', id: 'btn31', x: 180, y: 445, index: 16, target: 'global'
                         	eval: @baseClick

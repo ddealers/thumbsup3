@@ -376,7 +376,7 @@ NEW ODA
                 type: 'img',
                 id: 'scene2',
                 x: 400,
-                y: 130,
+                y: 170,
                 align: 'tc'
               }, {
                 type: 'btn',
@@ -535,7 +535,7 @@ NEW ODA
                 type: 'img',
                 id: 'scene3',
                 x: 400,
-                y: 130,
+                y: 175,
                 align: 'tc'
               }, {
                 type: 'btn',
@@ -694,7 +694,7 @@ NEW ODA
                 type: 'img',
                 id: 'scene4',
                 x: 400,
-                y: 130,
+                y: 190,
                 align: 'tc'
               }, {
                 type: 'btn',
@@ -853,7 +853,7 @@ NEW ODA
                 type: 'img',
                 id: 'scene5',
                 x: 400,
-                y: 130,
+                y: 190,
                 align: 'tc'
               }, {
                 type: 'btn',
@@ -1012,7 +1012,7 @@ NEW ODA
                 type: 'img',
                 id: 'scene6',
                 x: 400,
-                y: 130,
+                y: 190,
                 align: 'tc'
               }, {
                 type: 'btn',
