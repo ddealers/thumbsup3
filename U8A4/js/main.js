@@ -428,7 +428,7 @@ NEW ODA
                   {
                     name: 'instructions',
                     opts: {
-                      state: 1
+                      state: 0
                     }
                   }, {
                     name: 'snd',
@@ -461,6 +461,11 @@ NEW ODA
                   }
                 ], [
                   {
+                    name: 'instructions',
+                    opts: {
+                      state: 1
+                    }
+                  }, {
                     name: 'snd',
                     opts: {
                       id: 's/tara'

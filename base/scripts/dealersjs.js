@@ -1806,10 +1806,14 @@ LIBRARY
     Instructions.prototype.set = function(state) {
       this.currentState = state;
       this.label.text = this.states[this.currentState].text;
+      TweenLite.set(this, {
+        alpha: 1
+      });
       TweenLite.from(this, 0.5, {
         alpha: 0,
         x: this.x - 20
       });
+      console.log(state, this.label.text);
       return this.playSound();
     };
 
@@ -4503,6 +4507,7 @@ LIBRARY
                 _results.push(false);
                 break;
               case 'instructions':
+                console.log(target.opts.state);
                 _results.push(lib.instructions.set(target.opts.state));
                 break;
               default:
