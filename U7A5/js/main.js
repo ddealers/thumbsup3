@@ -278,7 +278,7 @@ NEW ODA
                 id: 'btn4',
                 x: 660,
                 y: 445,
-                index: 1,
+                index: 3,
                 target: 'global',
                 "eval": this.btnClick,
                 states: [
@@ -297,7 +297,7 @@ NEW ODA
                 id: 'btn5',
                 x: 660,
                 y: 470,
-                index: 2,
+                index: 1,
                 target: 'global',
                 "eval": this.btnClick,
                 states: [
@@ -316,7 +316,7 @@ NEW ODA
                 id: 'btn6',
                 x: 660,
                 y: 495,
-                index: 3,
+                index: 2,
                 target: 'global',
                 "eval": this.btnClick,
                 states: [

@@ -98,17 +98,17 @@ class U7A5 extends Oda
 							states: [{txt: {text: '3. Who didn\'t like Aniz\'s music?', x: 0, y: 0, font: '12px Quicksand'}}]
 						}
 						{
-							type: 'btn', id: 'btn4', x: 660, y: 445, index: 1, target: 'global'
+							type: 'btn', id: 'btn4', x: 660, y: 445, index: 3, target: 'global'
 							eval: @btnClick
 							states: [{txt: {text: 'The landlord.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
 						}
 						{
-							type: 'btn', id: 'btn5', x: 660, y: 470, index: 2, target: 'global'
+							type: 'btn', id: 'btn5', x: 660, y: 470, index: 1, target: 'global'
 							eval: @btnClick
 							states: [{txt: {text: 'He played the flute.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
 						}
 						{
-							type: 'btn', id: 'btn6', x: 660, y: 495, index: 3, target: 'global'
+							type: 'btn', id: 'btn6', x: 660, y: 495, index: 2, target: 'global'
 							eval: @btnClick
 							states: [{txt: {text: 'Other people and his sheep.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
 						}
