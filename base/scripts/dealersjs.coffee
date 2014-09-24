@@ -1249,6 +1249,7 @@ class ButtonContainer extends Component
 	update: (opts) ->
 		TweenLite.killTweensOf @
 		@setImageText opts.img, opts.txt
+		@mouseEnabled = true
 		TweenLite.from @, 0.5, {alpha: 0}
 	isComplete: ->
 		true
