@@ -2040,6 +2040,7 @@ class ScrambledWordContainer extends Component
 				@add h, false
 				npos += @uwidth + @margin
 			i++
+		s = @insertText "period", '.', @font, @fcolor, h.x + h.width + 3, 10, 'center'
 		@width = npos
 		@setPosition @align
 		i = 0

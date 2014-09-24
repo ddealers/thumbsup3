@@ -116,7 +116,7 @@ NEW ODA
                     name: 'swct1',
                     opts: {
                       prev: 'I have a',
-                      word: 'bug bite',
+                      word: 'bug||bite',
                       target: 'imagebugbite'
                     }
                   }
@@ -131,7 +131,7 @@ NEW ODA
                     name: 'swct1',
                     opts: {
                       prev: 'I have a',
-                      word: 'chicken pox',
+                      word: 'chicken||pox',
                       target: 'imagechickenpox'
                     }
                   }

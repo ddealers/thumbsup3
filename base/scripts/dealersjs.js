@@ -3724,7 +3724,7 @@ LIBRARY
     };
 
     ScrambledWordContainer.prototype.update = function(opts) {
-      var d, h, i, letter, npos, scrambledLetter, scrambledWord, word, _i, _j, _len, _len1, _ref;
+      var d, h, i, letter, npos, s, scrambledLetter, scrambledWord, word, _i, _j, _len, _len1, _ref;
       this.removeAllChildren();
       this.target = opts.target;
       this.fx = (_ref = opts.fx) != null ? _ref : 'fadeOut';
@@ -3753,6 +3753,7 @@ LIBRARY
         }
         i++;
       }
+      s = this.insertText("period", '.', this.font, this.fcolor, h.x + h.width + 3, 10, 'center');
       this.width = npos;
       this.setPosition(this.align);
       i = 0;
