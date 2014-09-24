@@ -27,13 +27,13 @@ class U5A2 extends Oda
 							[
 								{name: 'pcct1', opts: {pattern: ['When I', '#tcpt', 'a boy, I lived in Riverville.'], targets: [{text:'weren\'t', success:'was'}]}}
 								{name: 'pcct2', opts: {pattern: ['There', '#tcpt', 'lots of factories and big steel mills.'], targets: [{text:'weren\'t', success:'were'}]}}
-								{name: 'pcct3', opts: {pattern: ['The city', '#tcpt', 'dirty. There','#tcpt','smoke everywhere!'], targets: [{text:'weren\'t', success:'was'},{text:'weren\'t', success:'were'}]}}
+								{name: 'pcct3', opts: {pattern: ['The city', '#tcpt', 'dirty. There','#tcpt','smoke everywhere!'], targets: [{text:'weren\'t', success:'was'},{text:'weren\'t', success:'was'}]}}
 								{name: 'pcct4', opts: {pattern: ['There', '#tcpt', 'a park... or any fresh air!'], targets: [{text:'weren\'t', success:'wasnt'}]}}
 								{name: 'pcct5', opts: {pattern: ['There', '#tcpt', 'any flowers. There','#tcpt','any trees.'], targets: [{text:'weren\'t', success:'werent'},{text:'weren\'t', success:'werent'}]}}
-								{name: 'pcct6', opts: {pattern: ['There', '#tcpt', 'lots of pollution. We all coughed and sneezed!'], targets: [{text:'weren\'t', success:'were'}]}}
+								{name: 'pcct6', opts: {pattern: ['There', '#tcpt', 'lots of pollution. We all coughed and sneezed!'], targets: [{text:'weren\'t', success:'was'}]}}
 								{name: 'pcct7', opts: {pattern: ['The rivers', '#tcpt', 'full of garbage and junk.'], targets: [{text:'weren\'t', success:'were'}]}}
 								{name: 'pcct8', opts: {pattern: ['The water', '#tcpt', 'black and slimy with muck.'], targets: [{text:'weren\'t', success:'was'}]}}
-								{name: 'pcct9', opts: {pattern: ['There', '#tcpt', 'always noise and traffic in the street.'], targets: [{text:'weren\'t', success:'were'}]}}
+								{name: 'pcct9', opts: {pattern: ['There', '#tcpt', 'always noise and traffic in the street.'], targets: [{text:'weren\'t', success:'was'}]}}
 								{name: 'pcct10', opts: {pattern: ['It', '#tcpt', 'so loud, you couldn\'t hear yourself speak!'], targets: [{text:'weren\'t', success:'was'}]}}
 							]
 							[
