@@ -148,14 +148,14 @@ class U7A5 extends Oda
 							states: [{txt: {text: '6. Where did they find bamboo?', x: 0, y: 0, font: '12px Quicksand'}}]
 						}
 						{
-							type: 'btn', id: 'btn10', x: 660, y: 445, index: 4, target: 'global'
-							eval: @btnClick
-							states: [{txt: {text: 'He was very sad.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
-						}
-						{
 							type: 'btn', id: 'btn11', x: 660, y: 470, index: 5, target: 'global'
 							eval: @btnClick
 							states: [{txt: {text: 'A kind old man.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
+						}
+						{
+							type: 'btn', id: 'btn10', x: 660, y: 445, index: 4, target: 'global'
+							eval: @btnClick
+							states: [{txt: {text: 'He was very sad.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
 						}
 						{
 							type: 'btn', id: 'btn12', x: 660, y: 495, index: 6, target: 'global'
@@ -197,11 +197,6 @@ class U7A5 extends Oda
 							states: [{txt: {text: '9. What did the landlord want his sons to do?', x: 0, y: 0, font: '12px Quicksand'}}]
 						}
 						{
-							type: 'btn', id: 'btn16', x: 660, y: 445, index: 7, target: 'global'
-							eval: @btnClick
-							states: [{txt: {text: 'A rabbit.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
-						}
-						{
 							type: 'btn', id: 'btn17', x: 660, y: 470, index: 8, target: 'global'
 							eval: @btnClick
 							states: [{txt: {text: 'It had a black spot on its head.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
@@ -210,6 +205,11 @@ class U7A5 extends Oda
 							type: 'btn', id: 'btn18', x: 660, y: 495, index: 9, target: 'global'
 							eval: @btnClick
 							states: [{txt: {text: 'To catch the rabbit.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
+						}
+						{
+							type: 'btn', id: 'btn16', x: 660, y: 445, index: 7, target: 'global'
+							eval: @btnClick
+							states: [{txt: {text: 'A rabbit.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
 						}
                         {type:'img', id: 'lquestion', x:230, y: 395, align: 'tc'}
                         {type:'img', id: 'lanswer', x:600, y: 395, align: 'tc'}
@@ -295,6 +295,11 @@ class U7A5 extends Oda
 							states: [{txt: {text: '15. Who did the landlor see in the forest?', x: 0, y: 0, font: '12px Quicksand'}}]
 						}
 						{
+							type: 'btn', id: 'btn30', x: 660, y: 495, index: 15, target: 'global'
+							eval: @btnClick
+							states: [{txt: {text: 'Aniz.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
+						}
+						{
 							type: 'btn', id: 'btn28', x: 660, y: 445, index: 13, target: 'global'
 							eval: @btnClick
 							states: [{txt: {text: 'They looked in the bag.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
@@ -303,11 +308,6 @@ class U7A5 extends Oda
 							type: 'btn', id: 'btn29', x: 660, y: 470, index: 14, target: 'global'
 							eval: @btnClick
 							states: [{txt: {text: 'Four.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
-						}
-						{
-							type: 'btn', id: 'btn30', x: 660, y: 495, index: 15, target: 'global'
-							eval: @btnClick
-							states: [{txt: {text: 'Aniz.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
 						}
                         {type:'img', id: 'lquestion', x:230, y: 395, align: 'tc'}
                         {type:'img', id: 'lanswer', x:600, y: 395, align: 'tc'}
