@@ -113,7 +113,7 @@ NEW ODA
                       target: 'imagebugbite'
                     }
                   }, {
-                    name: 'wcpt1',
+                    name: 'swct1',
                     opts: {
                       prev: 'I have a',
                       word: 'bug bite',
@@ -128,7 +128,7 @@ NEW ODA
                       target: 'imagechickenpox'
                     }
                   }, {
-                    name: 'wcpt1',
+                    name: 'swct1',
                     opts: {
                       prev: 'I have a',
                       word: 'chicken pox',
@@ -143,7 +143,7 @@ NEW ODA
                       target: 'imagecold'
                     }
                   }, {
-                    name: 'wcpt1',
+                    name: 'swct1',
                     opts: {
                       prev: 'I have a',
                       word: 'cold',
@@ -158,7 +158,7 @@ NEW ODA
                       target: 'imagecough'
                     }
                   }, {
-                    name: 'wcpt1',
+                    name: 'swct1',
                     opts: {
                       prev: 'I have a',
                       word: 'cough',
@@ -173,7 +173,7 @@ NEW ODA
                       target: 'imagecutmyfinger'
                     }
                   }, {
-                    name: 'wcpt1',
+                    name: 'swct1',
                     opts: {
                       prev: 'I',
                       word: 'cut my finger',
@@ -188,7 +188,7 @@ NEW ODA
                       target: 'imagecutmyknee'
                     }
                   }, {
-                    name: 'wcpt1',
+                    name: 'swct1',
                     opts: {
                       prev: 'I',
                       word: 'cut my knee',
@@ -203,7 +203,7 @@ NEW ODA
                       target: 'imageearache'
                     }
                   }, {
-                    name: 'wcpt1',
+                    name: 'swct1',
                     opts: {
                       prev: 'I have an',
                       word: 'earache',
@@ -218,7 +218,7 @@ NEW ODA
                       target: 'imagefever'
                     }
                   }, {
-                    name: 'wcpt1',
+                    name: 'swct1',
                     opts: {
                       prev: 'I have a',
                       word: 'fever',
@@ -233,7 +233,7 @@ NEW ODA
                       target: 'imageheadache'
                     }
                   }, {
-                    name: 'wcpt1',
+                    name: 'swct1',
                     opts: {
                       prev: 'I have a',
                       word: 'headache',
@@ -248,7 +248,7 @@ NEW ODA
                       target: 'imagehiccups'
                     }
                   }, {
-                    name: 'wcpt1',
+                    name: 'swct1',
                     opts: {
                       prev: 'I have the',
                       word: 'hiccups',
@@ -263,7 +263,7 @@ NEW ODA
                       target: 'imagerunnynose'
                     }
                   }, {
-                    name: 'wcpt1',
+                    name: 'swct1',
                     opts: {
                       prev: 'I have a',
                       word: 'runny nose',
@@ -278,7 +278,7 @@ NEW ODA
                       target: 'imagesorethroat'
                     }
                   }, {
-                    name: 'wcpt1',
+                    name: 'swct1',
                     opts: {
                       prev: 'I have a',
                       word: 'sore throat',
@@ -293,7 +293,7 @@ NEW ODA
                       target: 'imagestomachache'
                     }
                   }, {
-                    name: 'wcpt1',
+                    name: 'swct1',
                     opts: {
                       prev: 'I have a',
                       word: 'stomachache',
@@ -308,7 +308,7 @@ NEW ODA
                       target: 'imagesunburn'
                     }
                   }, {
-                    name: 'wcpt1',
+                    name: 'swct1',
                     opts: {
                       prev: 'I have a',
                       word: 'sunburn',
@@ -323,7 +323,7 @@ NEW ODA
                       target: 'imagetoothache'
                     }
                   }, {
-                    name: 'wcpt1',
+                    name: 'swct1',
                     opts: {
                       prev: 'I have a',
                       word: 'toothache',
@@ -428,7 +428,7 @@ NEW ODA
                 align: 'tl'
               }, {
                 type: 'swct',
-                id: 'wcpt1',
+                id: 'swct1',
                 x: 435,
                 y: 350,
                 margin: 10,

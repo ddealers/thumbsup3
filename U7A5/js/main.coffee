@@ -52,9 +52,9 @@ class U7A5 extends Oda
 		@btnClick = (dispatcher, target) =>
 			a = lib[dispatcher]
 			if a.index is d2oda.evaluator.success
-				console.log true
+				createjs.Sound.play 's/good'
 			else
-				console.log false
+				createjs.Sound.play 's/wrong'
 		@game = 
 			header: 'head'
 			instructions: {x: 40, y: 100, states: [{text:'Read the text and match the questions with the answers.', sound:'s/instructions', played: false}]}

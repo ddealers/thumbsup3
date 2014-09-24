@@ -37,63 +37,63 @@ class U4A1 extends Oda
 						collection: [
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagebugbite'}}
-								{name:'wcpt1', opts:{prev:'I have a', word:'bug bite', target: 'imagebugbite'}}
+								{name:'swct1', opts:{prev:'I have a', word:'bug bite', target: 'imagebugbite'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagechickenpox'}}
-								{name:'wcpt1', opts:{prev:'I have a', word:'chicken pox', target: 'imagechickenpox'}}
+								{name:'swct1', opts:{prev:'I have a', word:'chicken pox', target: 'imagechickenpox'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagecold'}}
-								{name:'wcpt1', opts:{prev:'I have a', word:'cold', target: 'imagecold'}}
+								{name:'swct1', opts:{prev:'I have a', word:'cold', target: 'imagecold'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagecough'}}
-								{name:'wcpt1', opts:{prev:'I have a', word:'cough', target: 'imagecough'}}
+								{name:'swct1', opts:{prev:'I have a', word:'cough', target: 'imagecough'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagecutmyfinger'}}
-								{name:'wcpt1', opts:{prev:'I', word:'cut my finger', target: 'imagecutmyfinger'}}
+								{name:'swct1', opts:{prev:'I', word:'cut my finger', target: 'imagecutmyfinger'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagecutmyknee'}}
-								{name:'wcpt1', opts:{prev:'I', word:'cut my knee', target: 'imagecutmyknee'}}
+								{name:'swct1', opts:{prev:'I', word:'cut my knee', target: 'imagecutmyknee'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imageearache'}}
-								{name:'wcpt1', opts:{prev:'I have an', word:'earache', target: 'imageearache'}}
+								{name:'swct1', opts:{prev:'I have an', word:'earache', target: 'imageearache'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagefever'}}
-								{name:'wcpt1', opts:{prev:'I have a', word:'fever', target: 'imagefever'}}
+								{name:'swct1', opts:{prev:'I have a', word:'fever', target: 'imagefever'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imageheadache'}}
-								{name:'wcpt1', opts:{prev:'I have a', word:'headache', target: 'imageheadache'}}
+								{name:'swct1', opts:{prev:'I have a', word:'headache', target: 'imageheadache'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagehiccups'}}
-								{name:'wcpt1', opts:{prev:'I have the', word:'hiccups', target: 'imagehiccups'}}
+								{name:'swct1', opts:{prev:'I have the', word:'hiccups', target: 'imagehiccups'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagerunnynose'}}
-								{name:'wcpt1', opts:{prev:'I have a', word:'runny nose', target: 'imagerunnynose'}}
+								{name:'swct1', opts:{prev:'I have a', word:'runny nose', target: 'imagerunnynose'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagesorethroat'}}
-								{name:'wcpt1', opts:{prev:'I have a', word:'sore throat', target: 'imagesorethroat'}}
+								{name:'swct1', opts:{prev:'I have a', word:'sore throat', target: 'imagesorethroat'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagestomachache'}}
-								{name:'wcpt1', opts:{prev:'I have a', word:'stomachache', target: 'imagestomachache'}}
+								{name:'swct1', opts:{prev:'I have a', word:'stomachache', target: 'imagestomachache'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagesunburn'}}
-								{name:'wcpt1', opts:{prev:'I have a', word:'sunburn', target: 'imagesunburn'}}
+								{name:'swct1', opts:{prev:'I have a', word:'sunburn', target: 'imagesunburn'}}
 							]
 							[
 								{name: 'grp1', opts:{type: 'blink', target: 'imagetoothache'}}
-								{name:'wcpt1', opts:{prev:'I have a', word:'toothache', target: 'imagetoothache'}}
+								{name:'swct1', opts:{prev:'I have a', word:'toothache', target: 'imagetoothache'}}
 							]
 						]
 						mixed: true
@@ -115,7 +115,7 @@ class U4A1 extends Oda
 						{type: 'img', id: 'imagestomachache', x: 186, y: 131, align: 'tl'}
 						{type: 'img', id: 'imagesunburn', x: 422, y: 466, align: 'tl'}
 						{type: 'img', id: 'imagetoothache', x: 585, y: 132, align: 'tl'}
-						{type: 'swct', id: 'wcpt1', x: 435, y: 350, margin: 10, uwidth: 30, font: '30px Quicksand', scolor: '#F00', align: 'tc', eval:'drop_03'}
+						{type: 'swct', id: 'swct1', x: 435, y: 350, margin: 10, uwidth: 30, font: '30px Quicksand', scolor: '#F00', align: 'tc', eval:'drop_03'}
 					]
 					groups: [
 						{
