@@ -46,15 +46,23 @@ class U7A5 extends Oda
             {src:'TU3_U7_A5_song_5.mp3', id:'s/song5'}
             {src:'TU3_U7_A5_song_6.mp3', id:'s/song6'}
 		]
+		totality = lib.total_index = 0
 		@baseClick = (dispatcher, target) =>
 			a = lib[dispatcher]
 			d2oda.evaluator.success = a.index
+			a.complete = true
 		@btnClick = (dispatcher, target) =>
 			a = lib[dispatcher]
 			if a.index is d2oda.evaluator.success
+				lib.score.plusOne()
 				createjs.Sound.play 's/good'
 			else
-				createjs.Sound.play 's/wrong'
+				lib.scene.fail()
+
+			totality = totality + 1
+			if totality == 3
+				lib.game.nextScene()
+				totality = lib.total_index = 0
 		@game = 
 			header: 'head'
 			instructions: {x: 40, y: 100, states: [{text:'Read the text and match the questions with the answers.', sound:'s/instructions', played: false}]}
@@ -65,8 +73,10 @@ class U7A5 extends Oda
 						collection: [
 							[
                                 {name:'snd', opts:{id:'s/song1'}}
+                                {name:'total', opts:{total: 3}}
                             ]
 						]
+						mixed: true
 						type: 'steps'
 					}
 					containers:[
@@ -104,11 +114,257 @@ class U7A5 extends Oda
 						}
                         {type:'img', id: 'lquestion', x:230, y: 395, align: 'tc'}
                         {type:'img', id: 'lanswer', x:600, y: 395, align: 'tc'}
+
+					]	
+					groups: []
+				}
+				{
+					answers: {
+						collection:[
+							[
+								{name:'snd', opts:{id:'s/song2'}}
+								{name:'total', opts:{total: 3}}
+							]
+						]
+						mixed: true
+						type: 'steps'
+					}
+					containers:[
+						{type:'img', id: 'bg', x: 400, y: 0, align: 'tc'}
+                        {type:'img', id: 'scene2', x:400, y: 130, align: 'tc'}
+						{
+                        	type: 'btn', id: 'btn7', x: 180, y: 445, index: 4, target: 'global'
+                        	eval: @baseClick
+                        	states: [{txt: {text: '4. How did Aniz fell?', x: 0, y: 0, font: '12px Quicksand'}}]
+                        }
+						{
+							type: 'btn', id: 'btn8', x: 180, y: 470, index: 5, target: 'global'
+							eval: @baseClick
+							states: [{txt: {text: '5. Who made Aniz a new flute?', x: 0, y: 0, font: '12px Quicksand'}}]
+						}
+						{
+							type: 'btn', id: 'btn9', x: 180, y: 495, index: 6, target: 'global'
+							eval: @baseClick
+							states: [{txt: {text: '6. Where did they find bamboo?', x: 0, y: 0, font: '12px Quicksand'}}]
+						}
+						{
+							type: 'btn', id: 'btn10', x: 660, y: 445, index: 4, target: 'global'
+							eval: @btnClick
+							states: [{txt: {text: 'He was very sad.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
+						}
+						{
+							type: 'btn', id: 'btn11', x: 660, y: 470, index: 5, target: 'global'
+							eval: @btnClick
+							states: [{txt: {text: 'A kind old man.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
+						}
+						{
+							type: 'btn', id: 'btn12', x: 660, y: 495, index: 6, target: 'global'
+							eval: @btnClick
+							states: [{txt: {text: 'In a market.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
+						}
+                        {type:'img', id: 'lquestion', x:230, y: 395, align: 'tc'}
+                        {type:'img', id: 'lanswer', x:600, y: 395, align: 'tc'}
+					]
+					groups: []
+				}
+				{
+					answers: {
+						collection:[
+							[
+								{name:'snd', opts:{id:'s/song3'}}
+								{name:'total', opts:{total: 3}}
+							]
+						]
+						mixed: true
+						type: 'steps'
+					}
+					containers:[
+						{type:'img', id: 'bg', x: 400, y: 0, align: 'tc'}
+                        {type:'img', id: 'scene3', x:400, y: 130, align: 'tc'}
+						{
+                        	type: 'btn', id: 'btn13', x: 180, y: 445, index: 7, target: 'global'
+                        	eval: @baseClick
+                        	states: [{txt: {text: '7. What did the landlord dream about?', x: 0, y: 0, font: '12px Quicksand'}}]
+                        }
+						{
+							type: 'btn', id: 'btn14', x: 180, y: 470, index: 8, target: 'global'
+							eval: @baseClick
+							states: [{txt: {text: '8. What was different about the rabbit?', x: 0, y: 0, font: '12px Quicksand'}}]
+						}
+						{
+							type: 'btn', id: 'btn15', x: 180, y: 495, index: 9, target: 'global'
+							eval: @baseClick
+							states: [{txt: {text: '9. What did the landlord want his sons to do?', x: 0, y: 0, font: '12px Quicksand'}}]
+						}
+						{
+							type: 'btn', id: 'btn16', x: 660, y: 445, index: 7, target: 'global'
+							eval: @btnClick
+							states: [{txt: {text: 'A rabbit.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
+						}
+						{
+							type: 'btn', id: 'btn17', x: 660, y: 470, index: 8, target: 'global'
+							eval: @btnClick
+							states: [{txt: {text: 'It had a black spot on its head.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
+						}
+						{
+							type: 'btn', id: 'btn18', x: 660, y: 495, index: 9, target: 'global'
+							eval: @btnClick
+							states: [{txt: {text: 'To catch the rabbit.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
+						}
+                        {type:'img', id: 'lquestion', x:230, y: 395, align: 'tc'}
+                        {type:'img', id: 'lanswer', x:600, y: 395, align: 'tc'}
+					]
+					groups: []
+				}
+				{
+					answers: {
+						collection:[
+							[
+								{name:'snd', opts:{id:'s/song4'}}
+								{name:'total', opts:{total: 3}}
+							]
+						]
+						mixed: true
+						type: 'steps'
+					}
+					containers:[
+						{type:'img', id: 'bg', x: 400, y: 0, align: 'tc'}
+                        {type:'img', id: 'scene4', x:400, y: 130, align: 'tc'}
+						{
+                        	type: 'btn', id: 'btn19', x: 180, y: 445, index: 10, target: 'global'
+                        	eval: @baseClick
+                        	states: [{txt: {text: '10. Who did the oldest son talk to first?', x: 0, y: 0, font: '12px Quicksand'}}]
+                        }
+						{
+							type: 'btn', id: 'btn20', x: 180, y: 470, index: 11, target: 'global'
+							eval: @baseClick
+							states: [{txt: {text: '11. Why did the rabbit come out of the forest?', x: 0, y: 0, font: '12px Quicksand'}}]
+						}
+						{
+							type: 'btn', id: 'btn21', x: 180, y: 495, index: 12, target: 'global'
+							eval: @baseClick
+							states: [{txt: {text: '12. How did the rabbit escape?', x: 0, y: 0, font: '12px Quicksand'}}]
+						}
+						{
+							type: 'btn', id: 'btn22', x: 660, y: 445, index: 10, target: 'global'
+							eval: @btnClick
+							states: [{txt: {text: 'To the kind old man.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
+						}
+						{
+							type: 'btn', id: 'btn23', x: 660, y: 470, index: 11, target: 'global'
+							eval: @btnClick
+							states: [{txt: {text: 'Aniz played a beautiful song.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
+						}
+						{
+							type: 'btn', id: 'btn24', x: 660, y: 495, index: 12, target: 'global'
+							eval: @btnClick
+							states: [{txt: {text: 'It jumped out of the bag.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
+						}
+                        {type:'img', id: 'lquestion', x:230, y: 395, align: 'tc'}
+                        {type:'img', id: 'lanswer', x:600, y: 395, align: 'tc'}
+					]
+					groups: []
+				}
+				{
+					answers: {
+						collection:[
+							[
+								{name:'snd', opts:{id:'s/song5'}}
+								{name:'total', opts:{total: 3}}
+							]
+						]
+						mixed: true
+						type: 'steps'
+					}
+					containers:[
+						{type:'img', id: 'bg', x: 400, y: 0, align: 'tc'}
+                        {type:'img', id: 'scene5', x:400, y: 130, align: 'tc'}
+						{
+                        	type: 'btn', id: 'btn25', x: 180, y: 445, index: 13, target: 'global'
+                        	eval: @baseClick
+                        	states: [{txt: {text: '13. What mistake did the sons make?', x: 0, y: 0, font: '12px Quicksand'}}]
+                        }
+						{
+							type: 'btn', id: 'btn26', x: 180, y: 470, index: 14, target: 'global'
+							eval: @baseClick
+							states: [{txt: {text: '14. How many people went looking for the rabbit?', x: 0, y: 0, font: '12px Quicksand'}}]
+						}
+						{
+							type: 'btn', id: 'btn27', x: 180, y: 495, index: 15, target: 'global'
+							eval: @baseClick
+							states: [{txt: {text: '15. Who did the landlor see in the forest?', x: 0, y: 0, font: '12px Quicksand'}}]
+						}
+						{
+							type: 'btn', id: 'btn28', x: 660, y: 445, index: 13, target: 'global'
+							eval: @btnClick
+							states: [{txt: {text: 'They looked in the bag.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
+						}
+						{
+							type: 'btn', id: 'btn29', x: 660, y: 470, index: 14, target: 'global'
+							eval: @btnClick
+							states: [{txt: {text: 'Four.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
+						}
+						{
+							type: 'btn', id: 'btn30', x: 660, y: 495, index: 15, target: 'global'
+							eval: @btnClick
+							states: [{txt: {text: 'Aniz.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
+						}
+                        {type:'img', id: 'lquestion', x:230, y: 395, align: 'tc'}
+                        {type:'img', id: 'lanswer', x:600, y: 395, align: 'tc'}
+					]
+					groups: []
+				}
+				{
+					answers: {
+						collection:[
+							[
+								{name:'snd', opts:{id:'s/song6'}}
+								{name:'total', opts:{total: 3}}
+							]
+						]
+						mixed: true
+						type: 'steps'
+					}
+					containers:[
+						{type:'img', id: 'bg', x: 400, y: 0, align: 'tc'}
+                        {type:'img', id: 'scene6', x:400, y: 130, align: 'tc'}
+						{
+                        	type: 'btn', id: 'btn31', x: 180, y: 445, index: 16, target: 'global'
+                        	eval: @baseClick
+                        	states: [{txt: {text: '16. What was the shadows?', x: 0, y: 0, font: '12px Quicksand'}}]
+                        }
+						{
+							type: 'btn', id: 'btn32', x: 180, y: 470, index: 17, target: 'global'
+							eval: @baseClick
+							states: [{txt: {text: '17. What were they doing?', x: 0, y: 0, font: '12px Quicksand'}}]
+						}
+						{
+							type: 'btn', id: 'btn33', x: 180, y: 495, index: 18, target: 'global'
+							eval: @baseClick
+							states: [{txt: {text: '18. Why did the landlord promise to be kind?', x: 0, y: 0, font: '12px Quicksand'}}]
+						}
+						{
+							type: 'btn', id: 'btn34', x: 660, y: 445, index: 16, target: 'global'
+							eval: @btnClick
+							states: [{txt: {text: 'Bears, tigers and wolves.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
+						}
+						{
+							type: 'btn', id: 'btn35', x: 660, y: 470, index: 17, target: 'global'
+							eval: @btnClick
+							states: [{txt: {text: 'They were listening to Aniz.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
+						}
+						{
+							type: 'btn', id: 'btn36', x: 660, y: 495, index: 18, target: 'global'
+							eval: @btnClick
+							states: [{txt: {text: 'He was afraid of the animals.', x: 0, y: 0, font: '12px Quicksand', align:'right'}}]
+						}
+                        {type:'img', id: 'lquestion', x:230, y: 395, align: 'tc'}
+                        {type:'img', id: 'lanswer', x:600, y: 395, align: 'tc'}
 						{
 							type: 'btn', id: 'repeat', x: 400, y: 570, isRepeat: true
 							states: [{img: {name: 'btnrepeat', x: 0, y: 0, align: 'mc'}}]
 						}
-					]	
+					]
 					groups: []
 				}
 			]

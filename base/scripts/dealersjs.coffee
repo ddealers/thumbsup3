@@ -199,6 +199,8 @@ window.d2oda.stage ?=
 
 window.d2oda.evaluator ?= class Evaluator
 	@success = null
+	@total = 0
+	@total_index = 0
 	@evaluate = (type, dispatcher, target) ->
 		console.log type, dispatcher, target
 		if type instanceof Function
@@ -2428,11 +2430,14 @@ class Scene extends Component
 		if lib.instructions.playing
 			lib.instructions.addEventListener 'complete', @setStep
 		else
-			console.log 'setStep'
+			#console.log 'setStep'
 			step = @answers[@currentStep]
 			if step && step.length > 0
 				for target in step
 					switch target.name
+						when 'total'
+							d2oda.evaluator.total = target.opts.total
+							d2oda.evaluator.total_index = 0
 						when 'global'
 							d2oda.evaluator.success = target.opts.success
 							false
