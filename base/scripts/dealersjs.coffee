@@ -696,6 +696,7 @@ class Game
 		@setHeader(game.header).setScenes(game.scenes).setInstructions(game.instructions).setScore(game.score)
 	setHeader: (header) ->
 		lib.mainContainer.insertBitmap 'header', header, d2oda.stage.w / 2, 0, 'tc'
+		lib.header.set({ scaleX: 0.5, scaleY: 0.5})
 		TweenLite.from lib.header, 0.5, {alpha: 0, y: lib.header.y - 20}
 		@
 	setInstructions: (instructions) ->

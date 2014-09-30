@@ -184,6 +184,7 @@ class Oda
 		bmp
 	insertBitmap: (name, id, x, y, position = 'tl') ->
 		bmp = @createBitmap name, id, x, y, position
+		bmp.set (scaleX: 0.5, scaleY:0.5)
 		@addToMain bmp
 		bmp
 	createSprite: (name, imgs, anim=null, x, y, position = 'tl') ->
