@@ -1606,10 +1606,12 @@
         position = 'tl';
       }
       bmp = this.createBitmap(name, id, x, y, position);
-      bmp.set({
-        scaleX: 0.5,
-        scaleY: 0.5
-      });
+      if (name === 'header') {
+        bmp.set({
+          scaleX: 0.5,
+          scaleY: 0.5
+        });
+      }
       this.addToMain(bmp);
       return bmp;
     };

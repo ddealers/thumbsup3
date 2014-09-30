@@ -108,7 +108,7 @@
       U4A5.__super__.setStage.apply(this, arguments);
       this.answers = this.shuffle(this.game.answers);
       this.intento = false;
-      this.insertBitmap('propback', 'propback', 0, 100);
+      this.insertBitmap('propback', 'propback', 0, 5);
       this.insertBitmap('header', 'head', stageSize.w / 2, 0, 'tc');
       this.insertInstructions('instructions', 'Read the speech bubbles and click on the corresponding character.', 40, 100);
       this.addToMain(new Score('score', this.preload.getResult('c1'), this.preload.getResult('c2'), 20, 500, 10, 0));

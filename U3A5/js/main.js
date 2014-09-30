@@ -206,7 +206,7 @@
     U3A5.prototype.setStage = function() {
       U3A5.__super__.setStage.apply(this, arguments);
       this.intento = 0;
-      this.insertBitmap('bg', 'bg', 0, 100);
+      this.insertBitmap('bg', 'bg', 0, 45);
       this.insertBitmap('header', 'head', stageSize.w / 2, 0, 'tc');
       this.insertInstructions('instructions', 'Listen, read and drag the words to complete the text.', 40, 100);
       this.addToMain(new Score('score', this.preload.getResult('c1'), this.preload.getResult('c2'), 20, 500, 10, 0));
