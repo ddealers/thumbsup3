@@ -896,7 +896,7 @@ class Instructions extends Component
 		triangle = new createjs.Shape()
 		triangle.graphics.beginFill('#bcd748').moveTo(0,0).lineTo(8,5).lineTo(0,10)
 		triangle.y = 5
-		@label = new createjs.Text @states[@currentState].text, '16px Roboto', '#000'
+		@label = new createjs.Text @states[@currentState].text, '22px Browallia New', '#000'
 		@label.x = 14
 		@addChild triangle, @label
 		TweenLite.from @, 0.5, {alpha: 0, x: @x - 20}

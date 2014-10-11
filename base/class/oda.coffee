@@ -160,7 +160,7 @@ class Oda
 		triangle = new createjs.Shape()
 		triangle.graphics.beginFill('#bcd748').moveTo(0,0).lineTo(8,5).lineTo(0,10)
 		triangle.y = 5
-		text = @createText 'insttext', text, '16px Roboto', '#000', 14, 0
+		text = @createText 'insttext', text, '22px Browallia New', '#000', 14, 0
 		inst.addChild triangle, text
 		@addToMain inst
 	createBitmap: (name, id, x, y, position = 'tl') ->

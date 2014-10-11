@@ -123,7 +123,7 @@
       faces.x = 446;
       faces.y = 443;
       b = this.createBitmap('bubblebmp', 'bubbletext', 0, 0);
-      t = this.createText('qtext', this.answers[this.index].q, '12px Roboto', '#000', 140, 9);
+      t = this.createText('qtext', this.answers[this.index].q, '17px Browallia New', '#000', 140, 9);
       t.textAlign = 'center';
       faces.addChild(b, t);
       this.addToLibrary(b, t);

@@ -56,7 +56,7 @@ class U4A5 extends Oda
 		faces.x = 446
 		faces.y = 443
 		b = @createBitmap 'bubblebmp','bubbletext', 0,0
-		t = @createText 'qtext', @answers[@index].q, '12px Roboto', '#000', 140, 9
+		t = @createText 'qtext', @answers[@index].q, '17px Browallia New', '#000', 140, 9
 		t.textAlign = 'center'
 		faces.addChild b, t
 		@addToLibrary b, t
