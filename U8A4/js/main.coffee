@@ -87,7 +87,7 @@ class U8A4 extends Oda
 					}
 					containers:[
 						{type: 'img', id:'tyler', x: 50, y:160}
-						{type: 'pcpt', id: 'pcpt1', x: 230, y: 200, font: '13px Roboto', margin: 5, bcolor:'#f0f5d5', stroke: 1, scolor: '#eb188e'}
+						{type: 'pcpt', id: 'pcpt1', x: 230, y: 200, font: '18px Browallia New', margin: 5, bcolor:'#f0f5d5', stroke: 1, scolor: '#eb188e'}
 						{type: 'ldrg', id: 'ldrg1', x: 230, y: 140, index: 'first', text:'first', font:'20px Quicksand', color:'#333', target: ['pcpt1'], eval: @onDrop, afterSuccess: 'hide', afterFail: 'return'}
 						{type: 'ldrg', id: 'ldrg2', x: 130, y: 140, index: 'then', text:'then', font:'20px Quicksand', color:'#333', target: ['pcpt1'], eval: @onDrop, afterSuccess: 'hide', afterFail: 'return'}
 						{type: 'ldrg', id: 'ldrg3', x: 430, y: 140, index: 'next', text:'next', font:'20px Quicksand', color:'#333', target: ['pcpt1'], eval: @onDrop, afterSuccess: 'hide', afterFail: 'return'}
@@ -167,7 +167,7 @@ class U8A4 extends Oda
 					}
 					containers:[
 						{type: 'img', id:'tara', x: 50, y:160}
-						{type: 'pcpt', id: 'pcpt2', x: 90, y: 200, font: '13px Roboto', margin: 5, bcolor:'#f4e8f2', stroke: 1, scolor: '#eb188e'}
+						{type: 'pcpt', id: 'pcpt2', x: 90, y: 200, font: '18px Browallia New', margin: 5, bcolor:'#f4e8f2', stroke: 1, scolor: '#eb188e'}
 						{type: 'ldrg', id: 'ldrgt1', x: 230, y: 140, index: 'first', text:'first', font:'20px Quicksand', color:'#333', target: ['pcpt2'], eval: @onDrop, afterSuccess: 'hide', afterFail: 'return'}
 						{type: 'ldrg', id: 'ldrgt2', x: 130, y: 140, index: 'then', text:'then', font:'20px Quicksand', color:'#333', target: ['pcpt2'], eval: @onDrop, afterSuccess: 'hide', afterFail: 'return'}
 						{type: 'ldrg', id: 'ldrgt3', x: 430, y: 140, index: 'next', text:'next', font:'20px Quicksand', color:'#333', target: ['pcpt2'], eval: @onDrop, afterSuccess: 'hide', afterFail: 'return'}

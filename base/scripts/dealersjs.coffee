@@ -696,6 +696,7 @@ class Game
 		@setHeader(game.header).setScenes(game.scenes).setInstructions(game.instructions).setScore(game.score)
 	setHeader: (header) ->
 		lib.mainContainer.insertBitmap 'header', header, d2oda.stage.w / 2, 0, 'tc'
+		lib.header.set({ scaleX: 0.5, scaleY: 0.5})
 		TweenLite.from lib.header, 0.5, {alpha: 0, y: lib.header.y - 20}
 		@
 	setInstructions: (instructions) ->
@@ -895,7 +896,7 @@ class Instructions extends Component
 		triangle = new createjs.Shape()
 		triangle.graphics.beginFill('#bcd748').moveTo(0,0).lineTo(8,5).lineTo(0,10)
 		triangle.y = 5
-		@label = new createjs.Text @states[@currentState].text, '16px Roboto', '#000'
+		@label = new createjs.Text @states[@currentState].text, '22px Browallia New', '#000'
 		@label.x = 14
 		@addChild triangle, @label
 		TweenLite.from @, 0.5, {alpha: 0, x: @x - 20}
