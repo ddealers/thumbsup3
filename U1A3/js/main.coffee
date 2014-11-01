@@ -59,7 +59,7 @@ class U1A3 extends Oda
 		super
 		@escena = 1
 		@insertBitmap 'header', 'head', stageSize.w / 2, 0, 'tc'
-		@insertInstructions 'instructions', 'Read, look and click on True or False.', 40, 100
+		@insertInstructions 'instructions', ['Read, look and click on ', '#ital', ' or ','#ital','.'], 40, 100, ['true','false']
 		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 20, 500, 14, 0
 		@library.score.txtCount.color = "#bfd951"
 		@library.score.txtTotal.color = "#ff9933"

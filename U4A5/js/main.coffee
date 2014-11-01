@@ -46,7 +46,7 @@ class U4A5 extends Oda
 		@intento = false
 		@insertBitmap 'propback', 'propback', 0, 5
 		@insertBitmap 'header', 'head', stageSize.w / 2, 0, 'tc'
-		@insertInstructions 'instructions', 'Read the speech bubbles and click on the corresponding character.', 40, 100
+		@insertInstructions 'instructions', ['Read the speech bubbles and click on the corresponding character.'], 40, 100
 		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 20, 500, 10, 0
 		@library.score.txtCount.color = "#0A9BDD"
 		@library.score.txtTotal.color = "#FE008F"

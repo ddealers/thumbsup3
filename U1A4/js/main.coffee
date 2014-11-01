@@ -118,7 +118,7 @@ class U1A4 extends Oda
 	setStage: ->
 		super
 		@insertBitmap 'header', 'head', stageSize.w / 2, 0, 'tc'
-		@insertInstructions 'instructions', 'Read and place the pictures and verses in order, then click on Finished.', 40, 100
+		@insertInstructions 'instructions', ['Read and place the pictures and verses in order, then click on Finished.'], 40, 100
 		
 		@insertBitmap 'label', 'mariposalabel', @positions.titulo.x, @positions.titulo.y
 		@insertText 'h2', 'Caterpillar, catterpillar, up in the tree. Where do you come from? Please tell me.', '12px Quicksand', '#333', 154, 150

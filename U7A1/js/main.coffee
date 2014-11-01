@@ -58,7 +58,7 @@ class U7A1 extends Oda
 	setStage: ->
 		super
 		@insertBitmap 'header', 'head', stageSize.w / 2, 0, 'tc'
-		@insertInstructions 'instructions', 'Click on the cards and match the pictures and match the pictures with the adjectives.', 40, 100
+		@insertInstructions 'instructions', ['Click on the cards and match the pictures and match the pictures with the adjectives.'], 40, 100
 		#b1 = new Button 'game1btn', (@preload.getResult 'game1btn'), 1, 753, 460
 		#b2 = new Button 'game2btn', (@preload.getResult 'game2btn'), 2, 753, 505
 		#b3 = new Button 'game3btn', (@preload.getResult 'game3btn'), 3, 753, 550	

@@ -93,7 +93,7 @@ class U7A2 extends Oda
 		super
 		@intento = 0
 		@insertBitmap 'header', 'head', stageSize.w / 2, 0, 'tc'
-		@insertInstructions 'instructions', 'Look at the images and drag the missing words.', 40, 100
+		@insertInstructions 'instructions', ['Look at the images and drag the missing words.'], 40, 100
 		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 20, 500, 24, 0
 		@library.score.txtCount.color = "#BFD951"
 		@library.score.txtTotal.color = "#0096DB"

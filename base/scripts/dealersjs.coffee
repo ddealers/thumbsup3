@@ -893,12 +893,30 @@ class Instructions extends Component
 		@states = opts.states
 		@playing = false
 		@currentState = 0
+		@custom = @states[@currentState].custom ? false
+		
 		triangle = new createjs.Shape()
 		triangle.graphics.beginFill('#bcd748').moveTo(0,0).lineTo(8,5).lineTo(0,10)
 		triangle.y = 5
-		@label = new createjs.Text @states[@currentState].text, '22px Browallia New', '#000'
-		@label.x = 14
-		@addChild triangle, @label
+
+		if @custom is true
+			it = 0
+			npos = 14
+			for texto in @states[@currentState].text
+				if texto is '#ital'
+					@label = new createjs.Text @states[@currentState].italics[it], 'Bold italic 25px Browallia New', '#000'
+					it++
+				else 
+					@label = new createjs.Text texto, '25px Browallia New', '#000'
+				@label.x = npos
+				@addChild @label
+				console.log @label
+				npos = npos + @label.getMeasuredWidth() + 5
+		else
+			@label = new createjs.Text @states[@currentState].text, '25px Browallia New', '#000'
+			@label.x = 14
+			@addChild @label
+		@addChild triangle
 		TweenLite.from @, 0.5, {alpha: 0, x: @x - 20}
 	playSound: ->
 		if not @states[@currentState].played
@@ -907,13 +925,6 @@ class Instructions extends Component
 			snd = createjs.Sound.play @states[@currentState].sound
 			snd.addEventListener 'complete', @instructionsComplete
 			snd
-	set: (state) =>
-		@currentState = state
-		@label.text = @states[@currentState].text
-		TweenLite.set @, {alpha: 1} 
-		TweenLite.from @, 0.5, {alpha: 0, x: @x - 20}
-		console.log(state, @label.text)
-		@playSound()
 	next: =>
 		@currentState++
 		if @states.length > 1 and @currentState < @states.length

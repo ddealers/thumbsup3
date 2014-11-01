@@ -110,7 +110,7 @@ class U1A2 extends Oda
 		super
 		@current = @shuffle @game.tickets
 		@insertBitmap 'header', 'head', stageSize.w / 2, 0, 'tc'
-		@insertInstructions 'instructions', 'Listen and click on the correct ticket.', 40, 100
+		@insertInstructions 'instructions', ['Listen and click on the correct ticket.'], 40, 100
 		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 20, 500, 16, 0
 		@library.score.txtCount.color = "#bfd951"
 		@library.score.txtTotal.color = "#ff9933"
