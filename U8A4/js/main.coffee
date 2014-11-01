@@ -63,7 +63,7 @@ class U8A4 extends Oda
 						collection: [
 							[
 								{name: 'snd', opts:{id:'s/tyler'}}
-								{name: 'pcpt1', opts:{pattern:['Hi! My name\'s Tyler and I live on an island in the gulf of Mexico. I did a lot of fun', '#rtn', 'things last summer.', '#tcpt', ', I went fishing with my dad.', '#tcpt', ', I built sandcastles on', '#rtn', 'the beach with my friends.', '#tcpt', ', my uncle taught me to ride a bike. It was so much', '#rtn', 'fun!', '#tcpt', ', I went swimming with the dolphins that live near the island.', '#tcpt', ',', '#rtn', 'I read some books and watched some cartoons to relax. What a vacation! I\'m really', '#rtn', 'looking forward to the next one!'], targets: [{text:'First', success:'first'}, {text:'Then', success:'then'}, {text:'Next', success:'next'}, {text:'After that', success:'after'}, {text:'Finally', success:'finally'}]}}
+								{name: 'pcpt1', opts:{pattern:['Hi! My name\'s Tyler and I live on an island in the golf of Mexico. I did a lot of fun', '#rtn', 'things last summer.', '#tcpt', ', I went fishing with my dad.', '#tcpt', ', I built sandcastles on', '#rtn', 'the beach with my friends.', '#tcpt', ', my uncle taught me to ride a bike. It was so much', '#rtn', 'fun!', '#tcpt', ', I went swimming with the dolphins that live near the island.', '#tcpt', ',', '#rtn', 'I read some books and watched some cartoons to relax. What a vacation! I\'m really', '#rtn', 'looking forward to the next one!'], targets: [{text:'First', success:'first'}, {text:'Then', success:'then'}, {text:'Next', success:'next'}, {text:'After that', success:'after'}, {text:'Finally', success:'finally'}]}}
 							]
 							[
 								{name: 'snd', opts:{id:'s/tyler'}}

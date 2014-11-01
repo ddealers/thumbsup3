@@ -101,7 +101,7 @@ class U1A2 extends Oda
 					y:414
 					questions:[
 						{q:'Where\'s the event?', a1:'It\'s at the theater.', a2:'It\'s at the science museum.', s:'a2'}
-						{q:'What time does it cost?', a1:'It costs fourteen dollars.', a2:'It costs forty dollars.', s:'a1'}
+						{q:'How much does it cost?', a1:'It costs fourteen dollars.', a2:'It costs forty dollars.', s:'a1'}
 					]
 				}
 			]
