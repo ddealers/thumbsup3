@@ -66,18 +66,18 @@ class U6A1 extends Oda
 						type: 'steps'
 					}
 					containers:[
-						{type: 'img', id: 'proptusk', x: 204, y: 258, align: 'mc'}
-						{type: 'img', id: 'propfin', x: 598, y: 258, align: 'mc'}
-						{type: 'img', id: 'propclaw', x: 405, y: 437, align: 'mc'}
-						{type: 'img', id: 'prophorn', x: 204, y: 258, align: 'mc'}
-						{type: 'img', id: 'propleg', x: 598, y: 258, align: 'mc'}
-						{type: 'img', id: 'propfeather', x: 405, y: 437, align: 'mc'}
-						{type: 'img', id: 'propwing', x: 204, y: 258, align: 'mc'}
-						{type: 'img', id: 'propneck', x: 598, y: 258, align: 'mc'}
-						{type: 'img', id: 'prophair', x: 405, y: 437, align: 'mc'}
-						{type: 'img', id: 'prophead', x: 204, y: 258, align: 'mc'}
-						{type: 'img', id: 'propteeth', x: 598, y: 258, align: 'mc'}
-						{type: 'img', id: 'proptail', x: 405, y: 437, align: 'mc'}
+						{type: 'img', id: 'proptusk', x: 204, y: 258,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propfin', x: 598, y: 258,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propclaw', x: 405, y: 437,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'prophorn', x: 204, y: 258,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propleg', x: 598, y: 258,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propfeather', x: 405, y: 437,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propwing', x: 204, y: 258,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propneck', x: 598, y: 258,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'prophair', x: 405, y: 437,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'prophead', x: 204, y: 258,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propteeth', x: 598, y: 258,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'proptail', x: 405, y: 437,scale:0.5, align: 'mc'}
 						{type: 'swct', id: 'wcpt1', x: 214, y: 368, margin: 10, uwidth: 20, font: '24px Quicksand', scolor: '#eb2d3d', align: 'tc', eval:'drop_03'}
 						{type: 'swct', id: 'wcpt2', x: 608, y: 368, margin: 10, uwidth: 20, font: '24px Quicksand', scolor: '#eb2d3d', align: 'tc', eval:'drop_03'}
 						{type: 'swct', id: 'wcpt3', x: 415, y: 547, margin: 10, uwidth: 20, font: '24px Quicksand', scolor: '#eb2d3d', align: 'tc', eval:'drop_03'}

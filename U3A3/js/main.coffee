@@ -83,7 +83,7 @@ class U3A3 extends Oda
 							type: 'btn', id: 'btn4', x: 240, y: 310, index: 4, eval: 'global_01'
 							states: [
 								{
-									img: {name: 'pag1club4', x: 0, y: 0, align: 'tc'}
+									img: {name: 'pag1club4', x: 0, y: 0,scale:0.5, align: 'tc'}
 								}
 							]
 						}
@@ -91,7 +91,7 @@ class U3A3 extends Oda
 							type: 'btn', id: 'btn5', x: 400, y: 310, index: 5, eval: 'global_01'
 							states: [
 								{
-									img: {name: 'pag1club5', x: 0, y: 0, align: 'tc'}
+									img: {name: 'pag1club5', x: 0, y: 0,scale:0.5, align: 'tc'}
 								}
 							]
 						}
@@ -99,7 +99,7 @@ class U3A3 extends Oda
 							type: 'btn', id: 'btn6', x: 560, y: 310, index: 6, eval: 'global_01'
 							states: [
 								{
-									img: {name: 'pag1club6', x: 0, y: 0, align: 'tc'}
+									img: {name: 'pag1club6', x: 0, y: 0,scale:0.5, align: 'tc'}
 								}
 							]
 						}
@@ -107,7 +107,7 @@ class U3A3 extends Oda
 							type: 'btn', id: 'btn1', x: 240, y: 140, index: 1, eval: 'global_01'
 							states: [
 								{
-									img: {name: 'pag1club1', x: 0, y: 0, align: 'tc'}
+									img: {name: 'pag1club1', x: 0, y: 0,scale:0.5, align: 'tc'}
 								}
 							]
 						}
@@ -115,7 +115,7 @@ class U3A3 extends Oda
 							type: 'btn', id: 'btn2', x: 400, y: 140, index: 2, eval: 'global_01'
 							states: [
 								{
-									img: {name: 'pag1club2', x: 0, y: 0, align: 'tc'}
+									img: {name: 'pag1club2', x: 0, y: 0,scale:0.5, align: 'tc'}
 								}
 							]
 						}
@@ -123,7 +123,7 @@ class U3A3 extends Oda
 							type: 'btn', id: 'btn3', x: 560, y: 140, index: 3, eval: 'global_01'
 							states: [
 								{
-									img: {name: 'pag1club3', x: 0, y: 0, align: 'tc'}
+									img: {name: 'pag1club3', x: 0, y: 0,scale:0.5, align: 'tc'}
 								}
 							]
 						}
@@ -184,7 +184,7 @@ class U3A3 extends Oda
 							type: 'btn', id: 'btn4', x: 240, y: 310, index: 4, eval: 'global_01'
 							states: [
 								{
-									img: {name: 'pag2club4', x: 0, y: 0, align: 'tc'}
+									img: {name: 'pag2club4', x: 0, y: 0,scale:0.5, align: 'tc'}
 								}
 							]
 						}
@@ -192,7 +192,7 @@ class U3A3 extends Oda
 							type: 'btn', id: 'btn5', x: 400, y: 310, index: 5, eval: 'global_01'
 							states: [
 								{
-									img: {name: 'pag2club5', x: 0, y: 0, align: 'tc'}
+									img: {name: 'pag2club5', x: 0, y: 0,scale:0.5, align: 'tc'}
 								}
 							]
 						}
@@ -200,7 +200,7 @@ class U3A3 extends Oda
 							type: 'btn', id: 'btn6', x: 560, y: 310, index: 6, eval: 'global_01'
 							states: [
 								{
-									img: {name: 'pag2club6', x: 0, y: 0, align: 'tc'}
+									img: {name: 'pag2club6', x: 0, y: 0,scale:0.5, align: 'tc'}
 								}
 							]
 						}
@@ -208,7 +208,7 @@ class U3A3 extends Oda
 							type: 'btn', id: 'btn1', x: 240, y: 140, index: 1, eval: 'global_01'
 							states: [
 								{
-									img: {name: 'pag2club1', x: 0, y: 0, align: 'tc'}
+									img: {name: 'pag2club1', x: 0, y: 0,scale:0.5, align: 'tc'}
 								}
 							]
 						}
@@ -216,7 +216,7 @@ class U3A3 extends Oda
 							type: 'btn', id: 'btn2', x: 400, y: 140, index: 2, eval: 'global_01'
 							states: [
 								{
-									img: {name: 'pag2club2', x: 0, y: 0, align: 'tc'}
+									img: {name: 'pag2club2', x: 0, y: 0,scale:0.5, align: 'tc'}
 								}
 							]
 						}
@@ -224,7 +224,7 @@ class U3A3 extends Oda
 							type: 'btn', id: 'btn3', x: 560, y: 140, index: 3, eval: 'global_01'
 							states: [
 								{
-									img: {name: 'pag2club3', x: 0, y: 0, align: 'tc'}
+									img: {name: 'pag2club3', x: 0, y: 0,scale:0.5, align: 'tc'}
 								}
 							]
 						}

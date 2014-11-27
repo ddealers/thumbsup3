@@ -129,11 +129,11 @@ class U4A4 extends Oda
 					containers:[
 						{
 							type: 'btn', id: 'btn1', x: 509, y: 286, index: 1, target: 'global', eval: 'global_01', overScale: 0.85
-							states: [{img: {name: 'btnH', align: 'mc', x: 0, y: 0}}]
+							states: [{img: {name: 'btnH', align: 'mc', x: 0, y: 0,scale:0.5}}]
 						}
 						{
 							type: 'btn', id: 'btn2', x: 330, y: 473, index: 2, target: 'global', eval: 'global_01', overScale: 0.85
-							states: [{img: {name: 'btnU', align: 'mc', x: 0, y: 0}}]
+							states: [{img: {name: 'btnU', align: 'mc', x: 0, y: 0,scale:0.5}}]
 						}
 						{
 							type: 'btn', id: 'repeat', x: 600, y: 541, align: 'tc', isRepeat: true

@@ -100,21 +100,21 @@ class U4A1 extends Oda
 						type: 'steps'
 					}
 					containers:[
-						{type: 'img', id: 'imagebugbite', x: 686, y: 161, align: 'tl'}
-						{type: 'img', id: 'imagechickenpox', x: 395, y: 136, align: 'tl'}
-						{type: 'img', id: 'imagecold', x: 474, y: 171, align: 'tl'}
-						{type: 'img', id: 'imagecough', x: 290, y: 161, align: 'tl'}
-						{type: 'img', id: 'imagecutmyfinger', x: 96, y: 400, align: 'tl'}
-						{type: 'img', id: 'imagecutmyknee', x: 29, y: 282, align: 'tl'}
-						{type: 'img', id: 'imageearache', x: 180, y: 458, align: 'tl'}
-						{type: 'img', id: 'imagefever', x: 60, y: 168, align: 'tl'}
-						{type: 'img', id: 'imageheadache', x: 650, y: 282, align: 'tl'}
-						{type: 'img', id: 'imagehiccups', x: 284, y: 472, align: 'tl'}
-						{type: 'img', id: 'imagerunnynose', x: 525, y: 428, align: 'tl'}
-						{type: 'img', id: 'imagesorethroat', x: 658, y: 427, align: 'tl'}
-						{type: 'img', id: 'imagestomachache', x: 186, y: 131, align: 'tl'}
-						{type: 'img', id: 'imagesunburn', x: 422, y: 466, align: 'tl'}
-						{type: 'img', id: 'imagetoothache', x: 585, y: 132, align: 'tl'}
+						{type: 'img', id: 'imagebugbite', x: 686, y: 161,scale:0.5, align: 'tl'}
+						{type: 'img', id: 'imagechickenpox', x: 395, y: 136,scale:0.5, align: 'tl'}
+						{type: 'img', id: 'imagecold', x: 474, y: 171,scale:0.5, align: 'tl'}
+						{type: 'img', id: 'imagecough', x: 290, y: 161,scale:0.5, align: 'tl'}
+						{type: 'img', id: 'imagecutmyfinger', x: 96, y: 400,scale:0.5, align: 'tl'}
+						{type: 'img', id: 'imagecutmyknee', x: 29, y: 282,scale:0.5, align: 'tl'}
+						{type: 'img', id: 'imageearache', x: 180, y: 458,scale:0.5, align: 'tl'}
+						{type: 'img', id: 'imagefever', x: 60, y: 168,scale:0.5, align: 'tl'}
+						{type: 'img', id: 'imageheadache', x: 650, y: 282,scale:0.5, align: 'tl'}
+						{type: 'img', id: 'imagehiccups', x: 284, y: 472,scale:0.5, align: 'tl'}
+						{type: 'img', id: 'imagerunnynose', x: 525, y: 428,scale:0.5, align: 'tl'}
+						{type: 'img', id: 'imagesorethroat', x: 658, y: 427,scale:0.5, align: 'tl'}
+						{type: 'img', id: 'imagestomachache', x: 186, y: 131,scale:0.5, align: 'tl'}
+						{type: 'img', id: 'imagesunburn', x: 422, y: 466,scale:0.5, align: 'tl'}
+						{type: 'img', id: 'imagetoothache', x: 585, y: 132,scale:0.5, align: 'tl'}
 						{type: 'swct', id: 'swct1', x: 435, y: 350, margin: 10, uwidth: 30, font: '30px Quicksand', scolor: '#F00', align: 'tc', eval:'drop_03'}
 					]
 					groups: [

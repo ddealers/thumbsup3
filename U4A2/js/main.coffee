@@ -175,7 +175,7 @@ class U4A2 extends Oda
 						type: 'steps'
 					}
 					containers:[
-						{type: 'img', id: 'docquestion', x: 341, y: 144}
+						{type: 'img', id: 'docquestion', x: 341, y: 144,scale:0.5}
 						{
 							type: 'btn', id: 'btn1', x: 224, y: 289, index: 1, target: 'global', eval: 'global_01'
 							states: [{txt: {text: '', name: 'b1', x: 0, y: 0, font: '20px Quicksand'}}]

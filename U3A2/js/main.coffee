@@ -61,7 +61,7 @@ class U3A2 extends Oda
 							type: 'btn', id: 'btn1', x: 250, y: 330, index: 'nate', eval: 'global_01'
 							states: [
 								{
-									img: {name: 'kid0', x: 0, y: 0, align: 'bc'}
+									img: {name: 'kid0', x: 0, y: 0,scale:0.5, align: 'bc'}
 								}
 							]
 						}
@@ -69,7 +69,7 @@ class U3A2 extends Oda
 							type: 'btn', id: 'btn2', x: 570, y: 330, index: 'ricky', eval: 'global_01'
 							states: [
 								{
-									img: {name: 'kid1', x: 0, y: 0, align: 'bc'}
+									img: {name: 'kid1', x: 0, y: 0,scale:0.5, align: 'bc'}
 								}
 							]
 						}
@@ -77,7 +77,7 @@ class U3A2 extends Oda
 							type: 'btn', id: 'btn3', x: 250, y: 530, index: 'daniel', eval: 'global_01'
 							states: [
 								{
-									img: {name: 'kid2', x: 0, y: 0, align: 'bc'}
+									img: {name: 'kid2', x: 0, y: 0,scale:0.5, align: 'bc'}
 								}
 							]
 						}
@@ -85,14 +85,14 @@ class U3A2 extends Oda
 							type: 'btn', id: 'btn4', x: 570, y: 530, index: 'hudson', eval: 'global_01'
 							states: [
 								{
-									img: {name: 'kid3', x: 0, y: 0, align: 'bc'}
+									img: {name: 'kid3', x: 0, y: 0,scale:0.5, align: 'bc'}
 								}
 							]
 						}
 						{
 							type: 'btn', id: 'repeat', x: 400, y: 550, align: 'tc', isRepeat: true
 							states:[
-								img: {name:'repeat', x: 0, y: 0}
+								img: {name:'repeat', x: 0, y: 0,}
 							]
 						}
 					]
@@ -126,7 +126,7 @@ class U3A2 extends Oda
 							type: 'btn', id: '2btn1', x: 250, y: 330, index: 'magda', eval: 'global_01'
 							states: [
 								{
-									img: {name: 'girl0', x: 0, y: 0, align: 'bc'}
+									img: {name: 'girl0', x: 0, y: 0,scale:0.5, align: 'bc'}
 								}
 							]
 						}
@@ -134,7 +134,7 @@ class U3A2 extends Oda
 							type: 'btn', id: '2btn2', x: 570, y: 330, index: 'keira', eval: 'global_01'
 							states: [
 								{
-									img: {name: 'girl1', x: 0, y: 0, align: 'bc'}
+									img: {name: 'girl1', x: 0, y: 0,scale:0.5, align: 'bc'}
 								}
 							]
 						}
@@ -142,7 +142,7 @@ class U3A2 extends Oda
 							type: 'btn', id: '2btn3', x: 250, y: 530, index: 'mia', eval: 'global_01'
 							states: [
 								{
-									img: {name: 'girl2', x: 0, y: 0, align: 'bc'}
+									img: {name: 'girl2', x: 0, y: 0,scale:0.5, align: 'bc'}
 								}
 							]
 						}
@@ -150,14 +150,14 @@ class U3A2 extends Oda
 							type: 'btn', id: '2btn4', x: 570, y: 530, index: 'gemma', eval: 'global_01'
 							states: [
 								{
-									img: {name: 'girl3', x: 0, y: 0, align: 'bc'}
+									img: {name: 'girl3', x: 0, y: 0,scale:0.5, align: 'bc'}
 								}
 							]
 						}
 						{
 							type: 'btn', id: 'repeat', x: 400, y: 550, align: 'tc', isRepeat: true
 							states:[
-								img: {name:'repeat', x: 0, y: 0}
+								img: {name:'repeat', x: 0, y: 0,}
 							]
 						}
 					]

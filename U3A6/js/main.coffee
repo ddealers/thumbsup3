@@ -88,17 +88,17 @@ class U3A6 extends Oda
 						type: 'steps'
 					}
 					containers:[
-						{type: 'img', id: 'cooking', x: 564, y: 422, align: 'mc'}
+						{type: 'img', id: 'cooking', x: 564, y: 422,scale:0.5, align: 'mc'}
 						{type: 'img', id: 'numbercooking', x: 547, y: 354}
-						{type: 'img', id: 'dancing', x: 109, y: 258, align: 'mc'}
+						{type: 'img', id: 'dancing', x: 109, y: 258,scale:0.5, align: 'mc'}
 						{type: 'img', id: 'numberdancing', x: 63, y: 185}
-						{type: 'img', id: 'making', x: 193, y: 403, align: 'mc'}
+						{type: 'img', id: 'making', x: 193, y: 403,scale:0.5, align: 'mc'}
 						{type: 'img', id: 'numbermaking', x: 136, y: 370}
-						{type: 'img', id: 'painting', x: 688, y: 297, align: 'mc'}
+						{type: 'img', id: 'painting', x: 688, y: 297,scale:0.5, align: 'mc'}
 						{type: 'img', id: 'numberpainting', x: 587, y: 244}
-						{type: 'img', id: 'playing', x: 263, y: 200, align: 'mc'}
+						{type: 'img', id: 'playing', x: 263, y: 200,scale:0.5, align: 'mc'}
 						{type: 'img', id: 'numberplaying', x: 237, y: 137}
-						{type: 'img', id: 'singing', x: 708, y: 159, align: 'mc'}
+						{type: 'img', id: 'singing', x: 708, y: 159,scale:0.5, align: 'mc'}
 						{type: 'img', id: 'numbersinging', x: 681, y: 80}
 						{type:'cwd', id: 'cwd1', x: 285, y: 156, font: '20px Quicksand', fcolor:'#333', uwidth: 20, uheight: 20, stroke: 1, scolor: '#000'}
 						{type: 'abc', id: 'abc1', x: 400, y: 560, font:'20px Quicksand', fcolor:'#333', uwidth: 22, uheight: 34, margin: 10, target:'cwd1', eval:'drop_04'}

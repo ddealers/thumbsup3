@@ -100,7 +100,7 @@ class U3A1 extends Oda
 						type: 'steps'
 					}
 					containers:[
-						{type: 'img', id: 'fondo', x: 400, y: 130, align: 'tc'}
+						{type: 'img', id: 'fondo', x: 400, y: 130,scale:0.5, align: 'tc'}
 						{type: 'ccpt', id: 'ccpt1', x: 236, y: 226, uwidth: 85, uheight: 40}
 						{type: 'drg', id: 'dragblelove', name: 'drg1', x: 150, y: 540, index: 'love', target: 'ccpt1', eval: 'clon_01', afterSuccess: 'origin', afterFail: 'origin'}
 						{type: 'drg', id: 'dragblelike', name: 'drg2', x: 220, y: 540, index: 'like', target: 'ccpt1', eval: 'clon_01', afterSuccess: 'origin', afterFail: 'origin'}
