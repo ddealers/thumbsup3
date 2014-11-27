@@ -68,6 +68,7 @@ class U1A3 extends Oda
 		@scene = @game.scenes[scene - 1]
 		@answers = @shuffleNoRepeat @scene.answers, 7
 		@insertBitmap 'boy', "lugar#{scene}",  stageSize.w / 2, 450, 'bc'
+		@library.boy.scaleX = @library.boy.scaleY = 0.5 
 		if scene is 2 then @library.boy.y = 500
 		@
 	setClick:  ->

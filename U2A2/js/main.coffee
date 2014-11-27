@@ -72,12 +72,12 @@ class U2A2 extends Oda
 						type: 'steps'
 					}
 					containers:[
-						{type: 'img', id: 'j1', x: 132, y: 137}
-						{type: 'img', id: 'j2', x: 340, y: 137}
-						{type: 'img', id: 'j3', x: 132, y: 285}
-						{type: 'img', id: 'j4', x: 340, y: 285}
-						{type: 'img', id: 'j5', x: 132, y: 437}
-						{type: 'img', id: 'j6', x: 340, y: 437}
+						{type: 'img', id: 'j1', x: 132, y: 137,scale:0.5}
+						{type: 'img', id: 'j2', x: 340, y: 137,scale:0.5}
+						{type: 'img', id: 'j3', x: 132, y: 285,scale:0.5}
+						{type: 'img', id: 'j4', x: 340, y: 285,scale:0.5}
+						{type: 'img', id: 'j5', x: 132, y: 437,scale:0.5}
+						{type: 'img', id: 'j6', x: 340, y: 437,scale:0.5}
 						{type: 'stps', id:'stps1'}
 						{type: 'drg', id: 'jc1', name: 'clk1', x: 602, y: 137, index: 1, target: 'stps1', eval: 'drop_01', afterSuccess: 'inplace', afterFail: 'return'}
 						{type: 'drg', id: 'jc2', name: 'clk2', x: 644, y: 203, index: 2, target: 'stps1', eval: 'drop_01', afterSuccess: 'inplace', afterFail: 'return'}
@@ -88,13 +88,13 @@ class U2A2 extends Oda
 						{
 							type: 'btn', id: 'finish', x: 663, y: 539, target:'stps1', isFinish: true
 							states:[
-								img: {name:'finish', x: 0, y: 0}
+								img: {name:'finish', x: 0, y: 0,scale:0.2}
 							]
 						}
 						{
 							type: 'btn', id: 'repeat', x: 545, y: 539, isRepeat: true
 							states:[
-								img: {name:'repeat', x: 0, y: 0}
+								img: {name:'repeat', x: 0, y: 0,scale:0.2}
 							]
 						}
 					]
@@ -124,12 +124,12 @@ class U2A2 extends Oda
 						type: 'steps'
 					}
 					containers:[
-						{type: 'img', id: 'm1', x: 132, y: 137}
-						{type: 'img', id: 'm2', x: 340, y: 137}
-						{type: 'img', id: 'm3', x: 132, y: 285}
-						{type: 'img', id: 'm4', x: 340, y: 285}
-						{type: 'img', id: 'm5', x: 132, y: 437}
-						{type: 'img', id: 'm6', x: 340, y: 437}
+						{type: 'img', id: 'm1', x: 132, y: 137,scale:0.5}
+						{type: 'img', id: 'm2', x: 340, y: 137,scale:0.5}
+						{type: 'img', id: 'm3', x: 132, y: 285,scale:0.5}
+						{type: 'img', id: 'm4', x: 340, y: 285,scale:0.5}
+						{type: 'img', id: 'm5', x: 132, y: 437,scale:0.5}
+						{type: 'img', id: 'm6', x: 340, y: 437,scale:0.5}
 						{type: 'stps', id:'stps2'}
 						{type: 'drg', id: 'mc1', name: 'clk21', x: 602, y: 137, index: 1, target: 'stps2', eval: 'drop_01', afterSuccess: 'inplace', afterFail: 'origin'}
 						{type: 'drg', id: 'mc2', name: 'clk22', x: 644, y: 203, index: 2, target: 'stps2', eval: 'drop_01', afterSuccess: 'inplace', afterFail: 'return'}
@@ -140,13 +140,13 @@ class U2A2 extends Oda
 						{
 							type: 'btn', id: 'finish', x: 663, y: 539, target:'stps2', isFinish: true
 							states:[
-								img: {name:'finish', x: 0, y: 0}
+								img: {name:'finish', x: 0, y: 0,scale:0.2}
 							]
 						}
 						{
 							type: 'btn', id: 'repeat', x: 545, y: 539, isRepeat: true
 							states:[
-								img: {name:'repeat', x: 0, y: 0}
+								img: {name:'repeat', x: 0, y: 0,scale:0.2}
 							]
 						}
 					]

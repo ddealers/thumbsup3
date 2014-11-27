@@ -1559,6 +1559,7 @@ class GridContainer extends Component
 					else
 						x = ((@columns - 1) - currentCol) * @uwidth
 					b = @insertBitmap cell.img, cell.img, x, currentRow * @uheight, 'mc'
+					b.scaleX = b.scaleY = 0.5 
 					@targets.push b
 					currentCol++
 					if currentCol is @columns

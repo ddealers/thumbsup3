@@ -77,15 +77,15 @@ class U2A1 extends Oda
 						type: 'steps'
 					}
 					containers:[
-						{type: 'img', id: 'propmarket', x: 400, y: 245, align: 'mc'}
-						{type: 'img', id: 'propstrawberryJelly', x: 398, y: 172, align: 'mc'}
-						{type: 'img', id: 'propPeanutButter', x: 555, y: 186, align: 'mc'}
-						{type: 'img', id: 'propcorn', x: 311, y: 233, align: 'mc'}
-						{type: 'img', id: 'propgreenPeppers', x: 382, y: 252, align: 'mc'}
-						{type: 'img', id: 'propmushrooms', x: 458, y: 251, align: 'mc'}
-						{type: 'img', id: 'propblueberries', x: 528, y: 238, align: 'mc'}
-						{type: 'img', id: 'proppeaches', x: 618, y: 238, align: 'mc'}
-						{type: 'img', id: 'propsugar', x: 410, y: 339, align: 'mc'}
+						{type: 'img', id: 'propmarket', x: 400, y: 237,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propstrawberryJelly', x: 398, y: 172,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propPeanutButter', x: 555, y: 186,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propcorn', x: 311, y: 233,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propgreenPeppers', x: 382, y: 252,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propmushrooms', x: 458, y: 251,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propblueberries', x: 528, y: 238,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'proppeaches', x: 618, y: 238,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propsugar', x: 410, y: 339,scale:0.5, align: 'mc'}
 						{type: 'pcpt', id: 'pcpt1', x: 400, y: 540, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00'}
 						{type: 'img', id: 'n1', x: 124, y: 412}
 						{
