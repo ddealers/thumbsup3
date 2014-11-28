@@ -167,8 +167,13 @@ class U1A4 extends Oda
 		@
 	introEvaluation: ->
 		super
-		TweenLite.from @library.btnready, 0.5, {alpha: 0, y: @library.btnready.y - 20, ease: Back.easeOut}
-		TweenLite.from @library[@current], 0.5, {alpha: 0, y: 20, ease: Back.easeOut, onComplete: @playInstructions, onCompleteParams:[@]}
+		tl = new TimelineLite()
+		tl.from @library.header, 1, {y:-@library.header.height}
+		tl.from @library.instructions, 1, {alpha :0, x: 0}
+		tl.from @library.label, 0.5, {alpha: 0}
+		tl.from @library.h2, 0.5, {alpha: 0}
+		tl.from @library.btnready, 0.5, {alpha: 0, y: @library.btnready.y - 20, ease: Back.easeOut}
+		tl.from @library[@current], 0.5, {alpha: 0, y: 20, ease: Back.easeOut, onComplete: @playInstructions, onCompleteParams:[@]}
 	initEvaluation: (e) =>
 		super
 		@startGame()

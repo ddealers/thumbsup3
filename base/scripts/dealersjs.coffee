@@ -305,6 +305,7 @@ window.d2oda.evaluator ?= class Evaluator
 			droptargets[currentTarget].complete = true
 			droptargets[currentTarget].update()
 			lib[target].currentTarget++
+			createjs.Sound.play 's/good'
 			if lib[target].currentTarget is droptargets.length
 				lib.scene.success()
 		else
@@ -1099,6 +1100,7 @@ class DragContainer extends Component
 		@name = opts.name ? opts.id
 		@x = opts.x
 		@y = opts.y
+		@scaleX = @scaleY = opts.scale ? 1
 		@pos = {x: @x, y: @y}
 		@index = opts.index
 		@eval = opts.eval
