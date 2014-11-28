@@ -68,6 +68,7 @@ class U3A5 extends Oda
 		super
 		@intento = 0
 		@insertBitmap 'bg', 'bg', 0, 45
+		@library.bg.scaleX = @library.bg.scaleY = 0.5
 		@insertBitmap 'header', 'head', stageSize.w / 2, 0, 'tc'
 		@insertInstructions 'instructions', ['Listen, read and drag the words to complete the text.'], 40, 100
 		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 20, 500, 10, 0

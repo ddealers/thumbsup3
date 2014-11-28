@@ -171,7 +171,7 @@ class Oda
 				label = new createjs.Text ital[it], 'bold italic 21px Browallia New', '#000'
 				it++
 			else 
-				label = new createjs.Text frase, 'bold 21x Browallia New', '#000'
+				label = new createjs.Text frase, 'bold 21px Browallia New', '#000'
 			label.x = npos
 			inst.addChild label
 			npos += label.getMeasuredWidth() + 3
