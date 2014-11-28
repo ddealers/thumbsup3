@@ -95,12 +95,12 @@ class U6A2 extends Oda
 						{type: 'img', id: 'tag815', x: 554, y: 152, align: 'tc'}
 						{type: 'img', id: 'tag590', x: 257, y: 162, align: 'tc'}
 						{type: 'img', id: 'tag900', x: 339, y: 150, align: 'tc'}
-						{type: 'img', id: 'propimg0', x: 400, y: 320, align: 'mc'}
-						{type: 'img', id: 'propimg1', x: 400, y: 320, align: 'mc'}
-						{type: 'img', id: 'propimg2', x: 400, y: 320, align: 'mc'}
-						{type: 'img', id: 'propimg3', x: 400, y: 320, align: 'mc'}
-						{type: 'img', id: 'propimg4', x: 400, y: 320, align: 'mc'}
-						{type: 'img', id: 'propimg5', x: 400, y: 320, align: 'mc'}
+						{type: 'img', id: 'propimg0', x: 400, y: 320,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propimg1', x: 400, y: 320,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propimg2', x: 400, y: 320,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propimg3', x: 400, y: 320,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propimg4', x: 400, y: 320,scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propimg5', x: 400, y: 320,scale:0.5, align: 'mc'}
 						{type: 'pcpt', id: 'pcpt1', x: 400, y: 450, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 1}
 						{type: 'ldrg', id: 'ldrg1', x: 731, y: 325, index: '1', text:'1', font:'24px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
 						{type: 'ldrg', id: 'ldrg2', x: 672, y: 173, index: '1,580', text:'1,580', font:'24px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
