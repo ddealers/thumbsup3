@@ -48,7 +48,7 @@ class U8A1 extends Oda
 					}
 					containers:[
 						
-						{type: 'img', id: 'bg', x: 132, y: 187}
+						{type: 'img', id: 'bg', x: 132, y: 187,scale:0.5}
 						{type: 'img', id: 'imgshopping', x: 557, y: 422, scale: 0.5, align: 'mr'}
 						{type: 'img', id: 'imgvolleyball', x: 445, y: 351, scale: 0.5, align: 'mr'}
 						{

@@ -86,7 +86,7 @@ class U8A4 extends Oda
 						type: 'steps'
 					}
 					containers:[
-						{type: 'img', id:'tyler', x: 50, y:160}
+						{type: 'img', id:'tyler', x: 50, y:160,scale:0.5}
 						{type: 'pcpt', id: 'pcpt1', x: 230, y: 200, font: '18px Browallia New', margin: 5, bcolor:'#f0f5d5', stroke: 1, scolor: '#eb188e'}
 						{type: 'ldrg', id: 'ldrg1', x: 230, y: 140, index: 'first', text:'first', font:'20px Quicksand', color:'#333', target: ['pcpt1'], eval: @onDrop, afterSuccess: 'hide', afterFail: 'return'}
 						{type: 'ldrg', id: 'ldrg2', x: 130, y: 140, index: 'then', text:'then', font:'20px Quicksand', color:'#333', target: ['pcpt1'], eval: @onDrop, afterSuccess: 'hide', afterFail: 'return'}
@@ -166,7 +166,7 @@ class U8A4 extends Oda
 						type: 'steps'
 					}
 					containers:[
-						{type: 'img', id:'tara', x: 50, y:160}
+						{type: 'img', id:'tara', x: 50, y:160,scale:0.5}
 						{type: 'pcpt', id: 'pcpt2', x: 90, y: 200, font: '18px Browallia New', margin: 5, bcolor:'#f4e8f2', stroke: 1, scolor: '#eb188e'}
 						{type: 'ldrg', id: 'ldrgt1', x: 230, y: 140, index: 'first', text:'first', font:'20px Quicksand', color:'#333', target: ['pcpt2'], eval: @onDrop, afterSuccess: 'hide', afterFail: 'return'}
 						{type: 'ldrg', id: 'ldrgt2', x: 130, y: 140, index: 'then', text:'then', font:'20px Quicksand', color:'#333', target: ['pcpt2'], eval: @onDrop, afterSuccess: 'hide', afterFail: 'return'}
@@ -180,27 +180,27 @@ class U8A4 extends Oda
 						{
 							type: 'btn', id: 'btnt1', x: 170, y: 470, index: 1, target: null
 							eval: @btnClick
-							states: [{img: {name: 'dragblepainting', x: 0, y: 0, align: 'mc'}}]
+							states: [{img: {name: 'dragblepainting', x: 0, y: 0,scale:0.5, align: 'mc'}}]
 						}
 						{
 							type: 'btn', id: 'btnt2', x: 290, y: 420, index: 2, target: null
 							eval: @btnClick
-							states: [{img: {name: 'dragblewaterpark', x: 0, y: 0, align: 'mc'}}]
+							states: [{img: {name: 'dragblewaterpark', x: 0, y: 0,scale:0.5, align: 'mc'}}]
 						}
 						{
 							type: 'btn', id: 'btnt3', x: 410, y: 470, index: 3, target: null
 							eval: @btnClick
-							states: [{img: {name: 'dragbleicecream', x: 0, y: 0, align: 'mc'}}]
+							states: [{img: {name: 'dragbleicecream', x: 0, y: 0,scale:0.5, align: 'mc'}}]
 						}
 						{
 							type: 'btn', id: 'btnt4', x: 530, y: 420, index: 4, target: null
 							eval: @btnClick
-							states: [{img: {name: 'dragblepool', x: 0, y: 0, align: 'mc'}}]
+							states: [{img: {name: 'dragblepool', x: 0, y: 0,scale:0.5, align: 'mc'}}]
 						}
 						{
 							type: 'btn', id: 'btnt5', x: 650, y: 470, index: 5, target: null
 							eval: @btnClick
-							states: [{img: {name: 'dragbleseashells', x: 0, y: 0, align: 'mc'}}]
+							states: [{img: {name: 'dragbleseashells', x: 0, y: 0,scale:0.5, align: 'mc'}}]
 						}
 					]	
 					groups: [

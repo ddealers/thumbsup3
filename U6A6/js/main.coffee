@@ -87,13 +87,13 @@ class U6A6 extends Oda
 						type: 'steps'
 					}
 					containers:[
-						{type: 'img', id: 'fondo', x: 456, y: 250, align:'mc'}
-						{type: 'img', id: 'ch01', x: 511, y: 203}
-						{type: 'img', id: 'ch02', x: 511, y: 203}
-						{type: 'img', id: 'ch03', x: 511, y: 203}
-						{type: 'img', id: 'ch04', x: 511, y: 203}
-						{type: 'img', id: 'ch05', x: 511, y: 203}
-						{type: 'img', id: 'ch06', x: 511, y: 203}
+						{type: 'img', id: 'fondo', x: 456, y: 250,scale:0.5, align:'mc'}
+						{type: 'img', id: 'ch01', x: 511, y: 203,scale:0.5}
+						{type: 'img', id: 'ch02', x: 511, y: 203,scale:0.5}
+						{type: 'img', id: 'ch03', x: 511, y: 203,scale:0.5}
+						{type: 'img', id: 'ch04', x: 511, y: 203,scale:0.5}
+						{type: 'img', id: 'ch05', x: 511, y: 203,scale:0.5}
+						{type: 'img', id: 'ch06', x: 511, y: 203,scale:0.5}
 						{type: 'img', id: 'peoplecookedwithfire', x: 300, y: 330, align:'mc'}
 						{type: 'img', id: 'peoplehadpetwolves', x: 300, y: 330, align:'mc'}
 						{type: 'img', id: 'theyatemeat', x: 300, y: 330, align:'mc'}

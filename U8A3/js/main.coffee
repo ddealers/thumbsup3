@@ -172,9 +172,9 @@ class U8A3 extends Oda
 						type: 'steps'
 					}
 					containers:[
-						{type: 'spr', id: 'mapa', imgs: ['mapa1','mapa2','mapa3','mapa4','mapa5','mapa6','mapa7','mapa8','mapa9'], frames: null, x: 60, y:150}
+						{type: 'spr', id: 'mapa', imgs: ['mapa1','mapa2','mapa3','mapa4','mapa5','mapa6','mapa7','mapa8','mapa9'], frames: null, x: 60, y:150,scale:0.5}
 						{type: 'lbl', id: 'lbl1', x: 360, y: 510, font: '20px Quicksand', color: '#333', align: 'center'}
-						{type: 'img', id:'country', x: 656, y:145}
+						{type: 'img', id:'country', x: 656, y:145,scale:0.5}
 						{
 							type: 'btn', id: 'btn_11', x: 700, y: 175, index: 1, target: 'mapa', eval: @clickCountry
 							states: [{txt: {text: '', x: 0, y: 0, font: '18px Quicksand', align:'center'}}]
@@ -187,7 +187,7 @@ class U8A3 extends Oda
 							type: 'btn', id: 'btn_13', x: 700, y: 245, index: 3, target: 'mapa', eval: @clickCountry
 							states: [{txt: {text: '', x: 0, y: 0, font: '18px Quicksand', align:'center'}}]
 						}
-						{type: 'img', id:'nationality', x: 656, y:285}
+						{type: 'img', id:'nationality', x: 656, y:285,scale:0.5}
 						{
 							type: 'btn', id: 'btn_21', x: 700, y: 315, index: 1, target: 'lbl1', eval: @clickNation
 							states: [{txt: {text: '', x: 0, y: 0, font: '18px Quicksand', align:'center'}}]
@@ -200,7 +200,7 @@ class U8A3 extends Oda
 							type: 'btn', id: 'btn_23', x: 700, y: 385, index: 3, target: 'lbl1', eval: @clickNation
 							states: [{txt: {text: '', x: 0, y: 0, font: '18px Quicksand', align:'center'}}]
 						}
-						{type: 'img', id:'languages', x: 656, y:425}
+						{type: 'img', id:'languages', x: 656, y:425,scale:0.5}
 						{
 							type: 'btn', id: 'btn_31', x: 700, y: 455, index: 1, target: 'global', eval: @clickLang
 							states: [{txt: {text: '', x: 0, y: 0, font: '18px Quicksand', align:'center'}}]
