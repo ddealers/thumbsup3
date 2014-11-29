@@ -103,17 +103,17 @@ class U6A3 extends Oda
 						type: 'steps'
 					}
 					containers:[
-						{type: 'img', id: 'volcan', x: 495, y: 777, align: 'mc'}
-						{type: 'img', id: 'q1', x: 5, y: 18}
-						{type: 'img', id: 'q2', x: 10, y: 0}
-						{type: 'img', id: 'q3', x: 10, y: 12}
-						{type: 'img', id: 'q4', x: 10, y: 11}
-						{type: 'img', id: 'q5', x: 10, y: 0}
-						{type: 'img', id: 'q6', x: 15, y: 0}
-						{type: 'img', id: 'q7', x: 20, y: 0}
-						{type: 'img', id: 'q8', x: 15, y: -8}
-						{type: 'img', id: 'q9', x: 18, y: -10}
-						{type: 'img', id: 'q10', x: 20, y: -18}
+						{type: 'img', id: 'volcan', x: 695, y: 337, scale:0.3, align: 'mc'}
+						{type: 'img', id: 'q1', x: 210, y: 88, scale:0.5}
+						{type: 'img', id: 'q2', x: 250, y: 70, scale:0.5}
+						{type: 'img', id: 'q3', x: 215, y: 90, scale:0.5}
+						{type: 'img', id: 'q4', x: 215, y: 96, scale:0.5}
+						{type: 'img', id: 'q5', x: 215, y: 106, scale:0.5}
+						{type: 'img', id: 'q6', x: 220, y: 106, scale:0.5}
+						{type: 'img', id: 'q7', x: 225, y: 106, scale:0.5}
+						{type: 'img', id: 'q8', x: 220, y: 62, scale:0.5}
+						{type: 'img', id: 'q9', x: 18, y: 60, scale:0.5}
+						{type: 'img', id: 'q10', x: 20, y: 52, scale:0.5}
 						{type:'cwd', id: 'cwd1', x: 285, y: 156, font: '20px Quicksand', fcolor:'#333', uwidth: 20, uheight: 20, stroke: 1, scolor: '#000'}
 						{type: 'abc', id: 'abc1', x: 400, y: 560, font:'20px Quicksand', fcolor:'#333', uwidth: 22, uheight: 34, margin: 10, target:'cwd1', eval:'drop_04'}
 					]
