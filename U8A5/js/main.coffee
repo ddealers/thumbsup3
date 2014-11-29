@@ -82,7 +82,7 @@ class U8A5 extends Oda
 						{
 							type: 'btn', id: 'img3', x: 594, y: 399, index: 3, target: null
 							eval: @btnClick
-							states: [{img: {name: 'img3', x: 0, y: 0}}]
+							states: [{img: {name: 'img3', x: 0, y: 0,scale:0.5}}]
 						}
 						{
 							type: 'btn', id: 'img4', x: 487, y: 445, index: 4, target: null
@@ -92,7 +92,7 @@ class U8A5 extends Oda
 						{
 							type: 'btn', id: 'img5', x: 275, y: 366, index: 5, target: null
 							eval: @btnClick
-							states: [{img: {name: 'img5', x: 0, y: 0}}]
+							states: [{img: {name: 'img5', x: 0, y: 0,scale:0.5}}]
 						}
 						{
 							type: 'btn', id: 'img6', x: 407, y: 223, index: 6, target: null
@@ -112,7 +112,7 @@ class U8A5 extends Oda
 						{
 							type: 'btn', id: 'img9', x: 490, y: 300, index: 9, target: null
 							eval: @btnClick
-							states: [{img: {name: 'img9', x: 0, y: 0}}]
+							states: [{img: {name: 'img9', x: 0, y: 0,scale:0.5}}]
 						}
 						{
 							type: 'btn', id: 'img10', x: 658, y: 414, index: 10, target: null
