@@ -141,6 +141,7 @@ class U5A3 extends Oda
 						}
 						{
 							type: 'btn', id: 'btn2', x: 240, y: 432,scale:0.5,overScale:0.7, index: 2, target: 'global', eval: 'global_01'
+
 							states: [{img: null}]
 						}
 						{

@@ -44,7 +44,8 @@ class U4A5 extends Oda
 		super
 		@answers = @shuffle @game.answers
 		@intento = false
-		@insertBitmap 'propback', 'propback', 0, 5,scale:0.5
+		@insertBitmap 'propback', 'propback', 0, 30
+		@library.propback.scaleX = @library.propback.scaleY = 0.5
 		@insertBitmap 'header', 'head', stageSize.w / 2, 0, 'tc'
 		@insertInstructions 'instructions', ['Read the speech bubbles and click on the corresponding character.'], 40, 100
 		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 20, 500, 10, 0
@@ -56,6 +57,7 @@ class U4A5 extends Oda
 		faces.x = 446
 		faces.y = 443
 		b = @createBitmap 'bubblebmp','bubbletext', 0,0
+		b.scaleX = b.scaleY = 0.5
 		t = @createText 'qtext', @answers[@index].q, '17px Browallia New', '#000', 140, 9
 		t.textAlign = 'center'
 		faces.addChild b, t
@@ -63,6 +65,7 @@ class U4A5 extends Oda
 		for i in [1..4] by 1
 			c = @createBitmap "btn#{i}", "btn#{i}", (i-1) * 80, 50
 			c.index = @game.faces[i-1]
+			c.scaleX = c.scaleY = 0.5
 			@addToLibrary c
 			faces.addChild c
 		@addToMain faces
