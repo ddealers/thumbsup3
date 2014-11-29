@@ -40,36 +40,36 @@ class U2A1 extends Oda
 					answers: {
 						collection: [
 							[
-								{name: 'grp1', opts:{type: 'blink', target: 'propstrawberryJelly'}}
+								{name: 'grp1', opts:{type: 'blink', target: 'propstrawberryJelly', end: {alpha: 0}}}
 								{name: 'pcpt1', opts:{pattern:['There', '#tcpt', '#tcpt', '#tcpt','.'], targets: [{text:'isn\'t', success:'isnt'}, {text:'any'}, {text:'strawberry jelly', success:'strawberryjelly'}]}}
 							]
 							[
-								{name: 'grp1', opts:{type: 'blink', target: 'propPeanutButter'}}
+								{name: 'grp1', opts:{type: 'blink', target: 'propPeanutButter', end: {alpha: 0}}}
 								{name: 'pcpt1', opts:{pattern:['There', '#tcpt','#tcpt','#tcpt','.'], targets: [{text:'is'}, {text:'some'}, {text:'peanut butter', success:'peanutbutter'}]}}
 			
 							]
 							[
-								{name: 'grp1', opts:{type: 'blink', target: 'propcorn'}}
+								{name: 'grp1', opts:{type: 'blink', target: 'propcorn', end: {alpha: 0}}}
 								{name: 'pcpt1', opts:{pattern:['There', '#tcpt','#tcpt','#tcpt','.'], targets: [{text:'isn\'t', success:'isnt'}, {text:'any'}, {text:'corn'}]}}
 							]
 							[
-								{name: 'grp1', opts:{type: 'blink', target: 'propgreenPeppers'}}
+								{name: 'grp1', opts:{type: 'blink', target: 'propgreenPeppers', end: {alpha: 0}}}
 								{name: 'pcpt1', opts:{pattern:['There', '#tcpt','#tcpt','#tcpt','.'], targets: [{text:'are'}, {text:'some'}, {text:'green peppers', success:'greenpeppers'}]}}
 							]
 							[
-								{name: 'grp1', opts:{type: 'blink', target: 'propmushrooms'}}
+								{name: 'grp1', opts:{type: 'blink', target: 'propmushrooms', end: {alpha: 0}}}
 								{name: 'pcpt1', opts:{pattern:['There', '#tcpt','#tcpt','#tcpt','.'], targets: [{text:'are'}, {text:'some'}, {text:'mushrooms', success:'mushrooms'}]}}
 							]
 							[
-								{name: 'grp1', opts:{type: 'blink', target: 'propblueberries'}}
+								{name: 'grp1', opts:{type: 'blink', target: 'propblueberries', end: {alpha: 0}}}
 								{name: 'pcpt1', opts:{pattern:['There', '#tcpt','#tcpt','#tcpt','.'], targets: [{text:'aren\'t', success:'arent'}, {text:'any'}, {text:'blueberries'}]}}
 							]
 							[
-								{name: 'grp1', opts:{type: 'blink', target: 'proppeaches'}}
+								{name: 'grp1', opts:{type: 'blink', target: 'proppeaches', end: {alpha: 0}}}
 								{name: 'pcpt1', opts:{pattern:['There', '#tcpt','#tcpt','#tcpt','.'], targets: [{text:'aren\'t', success:'arent'}, {text:'any'}, {text:'peaches'}]}}
 							]
 							[
-								{name: 'grp1', opts:{type: 'blink', target: 'propsugar'}}
+								{name: 'grp1', opts:{type: 'blink', target: 'propsugar', end: {alpha: 0}}}
 								{name: 'pcpt1', opts:{pattern:['There', '#tcpt','#tcpt','#tcpt','.'], targets: [{text:'is'}, {text:'some'}, {text:'sugar'}]}}
 							]
 						]
@@ -176,36 +176,36 @@ class U2A1 extends Oda
 					answers: {
 						collection: [
 							[
-								{name: 'grp2', opts:{type: 'blink', target: 'propmilk'}}
+								{name: 'grp2', opts:{type: 'blink', target: 'propmilk', end: {alpha: 0}}}
 								{name: 'pcpt2', opts:{pattern:['There', '#tcpt', '#tcpt', '#tcpt'], targets: [{text:'is'}, {text:'some'}, {text:'milk'}]}}
 							]
 							[
-								{name: 'grp2', opts:{type: 'blink', target: 'prophoney'}}
+								{name: 'grp2', opts:{type: 'blink', target: 'prophoney', end: {alpha: 0}}}
 								{name: 'pcpt2', opts:{pattern:['There', '#tcpt','#tcpt','#tcpt'], targets: [{text:'is'}, {text:'some'}, {text:'honey'}]}}
 			
 							]
 							[
-								{name: 'grp2', opts:{type: 'blink', target: 'propcheese'}}
+								{name: 'grp2', opts:{type: 'blink', target: 'propcheese', end: {alpha: 0}}}
 								{name: 'pcpt2', opts:{pattern:['There', '#tcpt','#tcpt','#tcpt'], targets: [{text:'isn\'t', success:'isnt'}, {text:'any'}, {text:'cheese'}]}}
 							]
 							[
-								{name: 'grp2', opts:{type: 'blink', target: 'propmeat'}}
+								{name: 'grp2', opts:{type: 'blink', target: 'propmeat', end: {alpha: 0}}}
 								{name: 'pcpt2', opts:{pattern:['There', '#tcpt','#tcpt','#tcpt'], targets: [{text:'isn\'t', success:'isnt'}, {text:'any'}, {text:'meat'}]}}
 							]
 							[
-								{name: 'grp2', opts:{type: 'blink', target: 'propyogurt'}}
+								{name: 'grp2', opts:{type: 'blink', target: 'propyogurt', end: {alpha: 0}}}
 								{name: 'pcpt2', opts:{pattern:['There', '#tcpt','#tcpt','#tcpt'], targets: [{text:'is'}, {text:'some'}, {text:'yogurt'}]}}
 							]
 							[
-								{name: 'grp2', opts:{type: 'blink', target: 'propeggs'}}
+								{name: 'grp2', opts:{type: 'blink', target: 'propeggs', end: {alpha: 0}}}
 								{name: 'pcpt2', opts:{pattern:['There', '#tcpt','#tcpt','#tcpt'], targets: [{text:'are'}, {text:'some'}, {text:'eggs'}]}}
 							]
 							[
-								{name: 'grp2', opts:{type: 'blink', target: 'propraspberries'}}
+								{name: 'grp2', opts:{type: 'blink', target: 'propraspberries', end: {alpha: 0}}}
 								{name: 'pcpt2', opts:{pattern:['There', '#tcpt','#tcpt','#tcpt'], targets: [{text:'are'}, {text:'some'}, {text:'raspberries'}]}}
 							]
 							[
-								{name: 'grp2', opts:{type: 'blink', target: 'proppumpkins'}}
+								{name: 'grp2', opts:{type: 'blink', target: 'proppumpkins', end: {alpha: 0}}}
 								{name: 'pcpt2', opts:{pattern:['There', '#tcpt','#tcpt','#tcpt'], targets: [{text:'are'}, {text:'some'}, {text:'pumpkins'}]}}
 							]
 						]

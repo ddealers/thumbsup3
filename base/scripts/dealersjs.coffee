@@ -758,7 +758,10 @@ class ComponentGroup
 				for item in @group
 					TweenMax.killTweensOf lib[item]
 					TweenLite.killTweensOf lib[item]
-				if opts.target then lib[opts.target].blink()
+					if opts.end && lib[item].ended then TweenLite.set lib[item], opts.end
+				if opts.target
+					if opts.end then lib[opts.target].ended = true
+					lib[opts.target].blink()
 			when 'fadeIn'
 				for item in @group
 					TweenMax.killTweensOf lib[item]
