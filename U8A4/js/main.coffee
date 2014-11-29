@@ -98,27 +98,27 @@ class U8A4 extends Oda
 							states: [{img: {name: 'repeat', x: 0, y: 0, align: 'mc'}}]
 						}
 						{
-							type: 'btn', id: 'btn1', x: 170, y: 470, index: 1, target: null
+							type: 'btn', id: 'btn1', x: 170, y: 470,scale:0.5,overScale:0.7, index: 1, target: null
 							eval: @btnClick
 							states: [{img: {name: 'dragbledolphins', x: 0, y: 0, align: 'mc'}}]
 						}
 						{
-							type: 'btn', id: 'btn2', x: 290, y: 420, index: 2, target: null
+							type: 'btn', id: 'btn2', x: 290, y: 420,scale:0.5,overScale:0.7, index: 2, target: null
 							eval: @btnClick
 							states: [{img: {name: 'dragbleboooks', x: 0, y: 0, align: 'mc'}}]
 						}
 						{
-							type: 'btn', id: 'btn3', x: 410, y: 470, index: 3, target: null
+							type: 'btn', id: 'btn3', x: 410, y: 470,scale:0.5,overScale:0.7, index: 3, target: null
 							eval: @btnClick
 							states: [{img: {name: 'dragblesandcastles', x: 0, y: 0, align: 'mc'}}]
 						}
 						{
-							type: 'btn', id: 'btn4', x: 530, y: 420, index: 4, target: null
+							type: 'btn', id: 'btn4', x: 530, y: 420,scale:0.5,overScale:0.7, index: 4, target: null
 							eval: @btnClick
 							states: [{img: {name: 'dragblebike', x: 0, y: 0, align: 'mc'}}]
 						}
 						{
-							type: 'btn', id: 'btn5', x: 650, y: 470, index: 5, target: null
+							type: 'btn', id: 'btn5', x: 650, y: 470,scale:0.5,overScale:0.7, index: 5, target: null
 							eval: @btnClick
 							states: [{img: {name: 'dragblefishing', x: 0, y: 0, align: 'mc'}}]
 						}
