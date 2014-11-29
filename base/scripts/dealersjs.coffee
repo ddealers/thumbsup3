@@ -1849,6 +1849,9 @@ class CrossWordsContainer extends Component
 		@words = opts.words
 		for k in [1..@words.length]
 			txt = @insertText "txt#{k}", "#{k}", @font, @fcolor, @words[k-1].x, @words[k-1].y
+			hit = new createjs.Shape()
+			hit.graphics.beginFill('#000').drawRect(-5, -3, txt.getMeasuredWidth() + 10, txt.getMeasuredHeight() + 6)
+			txt.hitArea = hit
 			if @words[k-1].eval
 				txt.eval = @words[k-1].eval
 				txt.target = @words[k-1].target
