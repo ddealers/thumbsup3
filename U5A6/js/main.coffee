@@ -96,16 +96,16 @@ class U5A6 extends Oda
 						type: 'steps'
 					}
 					containers:[
-						{type: 'img', id: 'q1', x: 295, y: 205, scale: 0.5, align: 'mc'}
-						{type: 'img', id: 'q2', x: 100, y: 229, scale: 0.5, align: 'mc'}
-						{type: 'img', id: 'q3', x: 113, y: 388, scale: 0.5, align: 'mc'}
-						{type: 'img', name: 'q3_1', id: 'q3', x: 113, y: 388, scale: 0.5, align: 'mc'}
-						{type: 'img', id: 'q4', x: 255, y: 482, scale: 0.5, align: 'mc'}
-						{type: 'img', id: 'q5', x: 656, y: 485, scale: 0.5, align: 'mc'}
-						{type: 'img', id: 'q6', x: 783, y: 388, scale: 0.5, align: 'mc'}
-						{type: 'img', id: 'q7', x: 615, y: 345, scale: 0.5, align: 'mc'}
-						{type: 'img', id: 'q8', x: 649, y: 229, scale: 0.5, align: 'mc'}
-						{type: 'img', id: 'q9', x: 506, y: 175, scale: 0.5, align: 'mc'}
+						{type: 'img', id: 'q1', x: 295, y: 200, scale: 0.25, align: 'mc'}
+						{type: 'img', id: 'q2', x: 100, y: 229, scale: 0.25, align: 'mc'}
+						{type: 'img', id: 'q3', x: 113, y: 358, scale: 0.25, align: 'mc'}
+						{type: 'img', name: 'q3_1', id: 'q3', x: 113, y: 358, scale: 0.25, align: 'mc'}
+						{type: 'img', id: 'q4', x: 190, y: 482, scale: 0.25, align: 'mc'}
+						{type: 'img', id: 'q5', x: 656, y: 485, scale: 0.25, align: 'mc'}
+						{type: 'img', id: 'q6', x: 683, y: 395, scale: 0.25, align: 'mc'}
+						{type: 'img', id: 'q7', x: 615, y: 265, scale: 0.25, align: 'mc'}
+						{type: 'img', id: 'q8', x: 700, y: 150, scale: 0.25, align: 'mc'}
+						{type: 'img', id: 'q9', x: 466, y: 175, scale: 0.25, align: 'mc'}
 						{type:'cwd', id: 'cwd1', x: 230, y: 251, font: '20px Quicksand', fcolor:'#333', uwidth: 20, uheight: 20, stroke: 1, scolor: '#000'}
 						{type: 'abc', id: 'abc1', x: 400, y: 560, font:'20px Quicksand', fcolor:'#333', uwidth: 22, uheight: 34, margin: 10, target:'cwd1', eval:'drop_04'}
 					]
