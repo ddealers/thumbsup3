@@ -45,7 +45,7 @@ class U5A2 extends Oda
 					}
 					containers:[
 						{type: 'img', id: 'cancion', x: 57, y: 130, scale: 0.5}
-						{type: 'img', id: 'final', x: 650, y: 280, scale: 0.5, align: 'tc', scale: 0.7}
+						{type: 'img', id: 'final', x: 650, y: 130, scale: 0.5, align: 'tc'}
 						{type:'pcct', id: 'pcct1', x: 65, y: 202, font: '15px Quicksand', margin: 10, scolor: '#f59743'}
 						{type:'pcct', id: 'pcct2', x: 65, y: 232, font: '15px Quicksand', margin: 10, scolor: '#f59743'}
 						{type:'pcct', id: 'pcct3', x: 65, y: 262, font: '15px Quicksand', margin: 10, scolor: '#f59743'}

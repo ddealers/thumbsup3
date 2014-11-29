@@ -134,13 +134,13 @@ class U5A3 extends Oda
 						mixed: true
 					}
 					containers:[
-						{type: 'img', id: 'prof', x: 550, y: 300, align: 'mc'}
+						{type: 'img', id: 'prof', x: 550, y: 300,scale:0.6, align: 'mc'}
 						{
-							type: 'btn', id: 'btn1', x: 240, y: 222, index: 1, target: 'global', eval: 'global_01'
+							type: 'btn', id: 'btn1', x: 240, y: 222,scale:0.5,overScale:0.7, index: 1, target: 'global', eval: 'global_01'
 							states: [{img: null}]
 						}
 						{
-							type: 'btn', id: 'btn2', x: 240, y: 432, index: 2, target: 'global', eval: 'global_01'
+							type: 'btn', id: 'btn2', x: 240, y: 432,scale:0.5,overScale:0.7, index: 2, target: 'global', eval: 'global_01'
 							states: [{img: null}]
 						}
 						{

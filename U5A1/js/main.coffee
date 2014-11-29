@@ -111,7 +111,9 @@ class U5A1 extends Oda
 	setAnim: =>
 		TweenLite.to @library.btn, 1, {alpha :0}
 		@insertBitmap 'city1610', 'city1610', stageSize.w / 2, stageSize.h / 2, 'mc'
+		@library.city1610.scaleX = @library.city1610.scaleY = 0.5 
 		@insertBitmap 'city1940', 'city1940', stageSize.w / 2, stageSize.h / 2, 'mc'
+		@library.city1940.scaleX = @library.city1940.scaleY = 0.5 
 		TweenLite.from @library.city1610, 1, {alpha :0, x: 0, delay: 1}
 		TweenLite.to @library.city1610, 1, {alpha :0, x: 1000, delay: 15}
 		TweenLite.from @library.city1940, 1, {alpha :0, x: 0, delay: 16}

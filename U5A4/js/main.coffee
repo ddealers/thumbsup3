@@ -47,12 +47,12 @@ class U5A4 extends Oda
 					}
 					containers:[
 						{
-							type: 'btn', id: 'btn1', x: 400, y: 230, index: 1, eval: 'choose_01'
-							states: [{img: {name: 'sc1', align: 'mc', x: 0, y: 0}}]
+							type: 'btn', id: 'btn1', x: 400, y: 230,scale:0.5, index: 1, eval: 'choose_01'
+							states: [{img: {name: 'sc1', align: 'mc', x: 0, y: 0,scale:0.5}}]
 						}
 						{
-							type: 'btn', id: 'btn2', x: 400, y: 450, index: 2, eval: 'choose_01'
-							states: [{img: {name: 'sc2', align: 'mc', x: 0, y: 0}}]
+							type: 'btn', id: 'btn2', x: 400, y: 450,scale:0.5, index: 2, eval: 'choose_01'
+							states: [{img: {name: 'sc2', align: 'mc', x: 0, y: 0,scale:0.5}}]
 						}
 						
 					]
