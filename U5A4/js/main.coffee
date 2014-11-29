@@ -47,11 +47,11 @@ class U5A4 extends Oda
 					}
 					containers:[
 						{
-							type: 'btn', id: 'btn1', x: 400, y: 230, index: 1, eval: 'choose_01'
+							type: 'btn', id: 'btn1', x: 400, y: 230, scale: 0.3, overScale:0.4, index: 1, eval: 'choose_01'
 							states: [{img: {name: 'sc1', align: 'mc', x: 0, y: 0}}]
 						}
 						{
-							type: 'btn', id: 'btn2', x: 400, y: 450, index: 2, eval: 'choose_01'
+							type: 'btn', id: 'btn2', x: 400, y: 450, scale: 0.3, overScale:0.4, index: 2, eval: 'choose_01'
 							states: [{img: {name: 'sc2', align: 'mc', x: 0, y: 0}}]
 						}
 						
@@ -108,7 +108,7 @@ class U5A4 extends Oda
 						chooseEnabled: true
 					}
 					containers:[
-						{type: 'img', id: 'sc1', x: 120, y: 150}
+						{type: 'img', id: 'sc1', x: 120, y: 150, scale: 0.35}
 						{type: 'pcpt', id: 'pcpt1', x: 370, y: 380, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#f59743'}
 						{type: 'img', id: 'n1', x: 600, y: 180}
 						{type: 'ldrg', id: 'ldrg1', x: 625,  y: 205, index: 'was', text:'was', font:'20px Quicksand', color:'#333', target: 'pcpt1', eval: @evaluateDrop03, afterSuccess: 'origin', afterFail: 'return'}
@@ -195,7 +195,7 @@ class U5A4 extends Oda
 						chooseEnabled: true
 					}
 					containers:[
-						{type: 'img', id: 'sc2', x: 120, y: 150}
+						{type: 'img', id: 'sc2', x: 120, y: 150, scale: 0.35}
 						{type: 'pcpt', id: 'pcpt2', x: 370, y: 380, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#f59743'}
 						{type: 'img', id: 'n1', x: 600, y: 180}
 						{type: 'ldrg', id: 'ldrg_12', x: 625,  y: 205, index: 'was', text:'was', font:'20px Quicksand', color:'#333', target: 'pcpt2', eval: @evaluateDrop03, afterSuccess: 'origin', afterFail: 'return'}

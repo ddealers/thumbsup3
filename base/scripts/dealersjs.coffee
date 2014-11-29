@@ -1198,7 +1198,7 @@ class ButtonContainer extends Component
 		@txtAlign = 'left'
 		@index = opts.index
 		@name = opts.name ? opts.id
-		@scale = opts.scale ? 1
+		@scale = @scaleX = @scaleY = opts.scale ? 1
 		@states = opts.states
 		@currentState = 0
 		@overTween = opts.overTween ? true
