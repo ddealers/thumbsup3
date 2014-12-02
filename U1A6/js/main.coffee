@@ -141,10 +141,12 @@ class U1A6 extends Oda
 		@library.score.txtTotal.color = "#ff9933"
 		@introEvaluation()
 	setCards: (e) =>
+		console.log 'set cards'
 		@time = 100
 		@timer = setInterval @updateCounter, 1000
 		j = 0
 		game = e.currentTarget.index
+		console.log game
 		juego = new createjs.Container()
 		juego.x = 200
 		juego.y = 180
@@ -177,12 +179,12 @@ class U1A6 extends Oda
 		TweenLite.from [@library.game1btn, @library.game2btn, @library.game3btn], 1, {alpha: 0, delay: 1, onComplete: @playInstructions, onCompleteParams: [@]}
 	initEvaluation: (e) =>
 		super
-		@library.game1btn.blink()
-		@library.game2btn.blink()
-		@library.game3btn.blink()
 		@library.game1btn.addEventListener 'click', @setCards
 		@library.game2btn.addEventListener 'click', @setCards
 		@library.game3btn.addEventListener 'click', @setCards
+		@library.game1btn.blink()
+		@library.game2btn.blink()
+		@library.game3btn.blink()
 	clearButtons: ->
 		@library.game1btn.blink off
 		@library.game2btn.blink off

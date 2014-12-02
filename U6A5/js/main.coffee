@@ -180,14 +180,14 @@ class U6A5 extends Oda
 			if @library["hsc#{i}"].hitTest pt.x, pt.y
 				if @answer.index is @library["hsc#{i}"].index
 					if @answer.p
-						if @library["sc#{i}"].currentFrame in [1,2]
-							@library["sc#{i}"].gotoAndStop 3
+						if @library["sc#{i}"].animation.currentFrame in [1,2]
+							@library["sc#{i}"].animation.gotoAndStop 3
 						else if @answer.p is 'p1'
-							@library["sc#{i}"].gotoAndStop 1
+							@library["sc#{i}"].animation.gotoAndStop 1
 						else
-							@library["sc#{i}"].gotoAndStop 2
+							@library["sc#{i}"].animation.gotoAndStop 2
 					else
-						@library["sc#{i}"].gotoAndStop 1
+						@library["sc#{i}"].animation.gotoAndStop 1
 					@answer.visible = off
 					createjs.Sound.play 'good'
 					if @intento is 0
@@ -202,7 +202,7 @@ class U6A5 extends Oda
 				@answer.returnToPlace()
 	finishEvaluation: =>
 		for i in [1..@game[@scene - 1].positions.length] by 1
-			if @library["sc#{i}"].currentFrame is 0
+			if @library["sc#{i}"].animation.currentFrame is 0
 				return
 		@nextEvaluation()
 

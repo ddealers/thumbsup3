@@ -180,6 +180,32 @@ class Oda
 		@addToMain inst
 	createBitmap: (name, id, x, y, position = 'tl') ->
 		img = @preload.getResult(id)
+		cont = new createjs.Container()
+		bmp = new createjs.Bitmap img
+		bmp.mouseEnabled = false
+		cont.hitTester = new createjs.Shape()
+		cont.hitTester.graphics.beginFill('rgba(255,255,255,0.01)').drawRect(0, 0, img.width, img.height)
+		cont.hitTester.name = "h#{name}"
+		cont.x = x
+		cont.y = y
+		cont.width = img.width
+		cont.height = img.height
+		cont.name = name
+		cont.mouseChildren = false
+		cont.addChild bmp, cont.hitTester
+		switch position
+			when 'tc' then @setReg cont, img.width / 2, 0
+			when 'tr' then @setReg cont, img.width, 0
+			when 'ml' then @setReg cont, 0, img.height / 2
+			when 'mc' then @setReg cont, img.width / 2, img.height / 2
+			when 'mr' then @setReg cont, img.width, img.height / 2
+			when 'bl' then @setReg cont, 0, img.height
+			when 'bc' then @setReg cont, img.width / 2, img.height
+			when 'br' then @setReg cont, img.width, img.height
+			else @setReg cont, 0, 0
+		cont
+		###
+		img = @preload.getResult(id)
 		bmp = new createjs.Bitmap img
 		bmp.x = x
 		bmp.y = y
@@ -197,12 +223,44 @@ class Oda
 			when 'br' then @setReg bmp, img.width, img.height
 			else @setReg bmp, 0, 0
 		bmp
+		###
 	insertBitmap: (name, id, x, y, position = 'tl') ->
 		bmp = @createBitmap name, id, x, y, position
 		if  name is 'header' then bmp.set (scaleX: 0.5, scaleY:0.5)
 		@addToMain bmp
 		bmp
 	createSprite: (name, imgs, anim=null, x, y, position = 'tl') ->
+		spriteImgs = for img in imgs
+			@preload.getResult img
+		cont = new createjs.Container()
+		w = spriteImgs[0].width
+		h = spriteImgs[0].height
+		sprite = new createjs.SpriteSheet (images: spriteImgs, animations: anim, frames: {width: w, height: h})
+		cont.animation = new createjs.Sprite sprite
+		cont.animation.mouseEnabled = false
+		cont.animation.currentFrame = 0
+		hitTester = new createjs.Shape()
+		hitTester.graphics.beginFill('rgba(255,255,255,0.01)').drawRect(0, 0, w, h)
+		hitTester.name = "h#{name}"
+		cont.x = x
+		cont.y = y
+		cont.width = w
+		cont.height = h
+		cont.name = name
+		cont.mouseChildren = false
+		cont.addChild cont.animation, hitTester
+		switch position
+			when 'tc' then @setReg cont, w / 2, 0
+			when 'tr' then @setReg cont, w, 0
+			when 'ml' then @setReg cont, 0, h / 2
+			when 'mc' then @setReg cont, w / 2, h / 2
+			when 'mr' then @setReg cont, w, h / 2
+			when 'bl' then @setReg cont, 0, h
+			when 'bc' then @setReg cont, w / 2, h
+			when 'br' then @setReg cont, w, h
+			else @setReg cont, 0, 0
+		cont
+		###
 		spriteImgs = for img in imgs
 			@preload.getResult img
 		w = spriteImgs[0].width
@@ -226,6 +284,7 @@ class Oda
 			when 'br' then @setReg animation, animation.width, animation.height
 			else @setReg animation, 0, 0
 		animation
+		###
 	insertSprite: (name, imgs, anim=null, x, y, position = 'tl') ->
 		animation = @createSprite name, imgs, anim, x, y, position
 		@addToMain animation

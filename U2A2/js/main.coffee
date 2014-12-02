@@ -108,7 +108,7 @@ class U2A2 extends Oda
 								{
 									name:'stps2'
 									opts:{
-										bcolor:'#e5eeb8', scolor:'#bfd951', stroke:2, width: 66, height: 42, radius: 10
+										bcolor:'#e5eeb8', scolor:'#bfd951', stroke:2, width: 66, height: 55, radius: 10
 										containers:[
 											{type: 'rshp', name:'stp1', success: 5, x:129, y:129}
 											{type: 'rshp', name:'stp2', success: 4, x:337, y:129}

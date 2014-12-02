@@ -33,7 +33,7 @@ class U2A1 extends Oda
 		]
 		@game = 
 			header: 'head'
-			instructions: {x: 40, y: 100, states: [{text:'Look and click on the words to make a sentence.', sound:'s/instructions', played: false}]}
+			instructions: {x: 40, y: 90, states: [{text:'Look and click on the words to make a sentence.', sound:'s/instructions', played: false}]}
 			score:{type: 'points', x:20, y:500, init: 0, total: 16, aimg: 'c1', acolor: '#EB2D3C', bimg: 'c2', bcolor: '#C3DB5B'}
 			scenes:[
 				{
@@ -86,7 +86,7 @@ class U2A1 extends Oda
 						{type: 'img', id: 'propblueberries', x: 528, y: 238,scale:0.5, align: 'mc'}
 						{type: 'img', id: 'proppeaches', x: 618, y: 238,scale:0.5, align: 'mc'}
 						{type: 'img', id: 'propsugar', x: 410, y: 339,scale:0.5, align: 'mc'}
-						{type: 'pcpt', id: 'pcpt1', x: 400, y: 540, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00'}
+						{type: 'pcpt', id: 'pcpt1', x: 400, y: 540, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', underline:{y:2}}
 						{type: 'img', id: 'n1', x: 124, y: 412}
 						{
 							type: 'btn', id: 'btn_n11', x: 149, y: 432, index: 'are', target: 'pcpt1', eval: 'click_O1'

@@ -7,14 +7,18 @@ class Button
 		@Container_initialize()
 		@name = name
 		@bitmap = new createjs.Bitmap image
+		@bitmap.mouseEnabled = false
 		@index = index
 		@x = x
 		@y = y
 		@pos = x:x, y:y
-		@addChild @bitmap
+		hit = new createjs.Shape()
+		hit.graphics.beginFill('rgba(255,255,255,0.01)').drawRect(0, 0, image.width, image.height)
+		@mouseChildren = false
+		@addChild @bitmap, hit
 		false
 	blink: (state=on) ->
-		TweenMax.killTweensOf @
-		@.alpha = 1
-		TweenMax.to @, 0.5, {alpha:.2, repeat:-1, yoyo:true}  if state
+		TweenMax.killTweensOf @bitmap
+		@bitmap.alpha = 1
+		TweenMax.to @bitmap, 0.5, {alpha:.5, repeat:-1, yoyo:true}  if state
 	window.Button = Button

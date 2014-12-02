@@ -127,6 +127,26 @@ window.d2oda.actions ?= class Actions
 window.d2oda.methods ?= class Methods
 	@createBitmap = (name, id, x, y, position = 'tl') ->
 		img = lib.preloader.preload.getResult id
+		cont = new createjs.Container()
+		bmp = new createjs.Bitmap img
+		bmp.mouseEnabled = false
+		cont.hitTester = new createjs.Shape()
+		cont.hitTester.graphics.beginFill('rgba(255,255,255,0.01)').drawRect(0, 0, img.width, img.height)
+		cont.hitTester.name = "h#{name}"
+		#hit = new createjs.Shape()
+		#hit.graphics.beginFill('rgba(255,255,255,0.01)').drawRect(0, 0, img.width, img.height)
+		#hit.name = "h#{name}"
+		cont.x = x
+		cont.y = y
+		cont.width = img.width
+		cont.height = img.height
+		cont.name = name
+		cont.mouseChildren = false
+		cont.addChild bmp, cont.hitTester
+		@setPosition position, cont
+		cont
+		###
+		img = lib.preloader.preload.getResult id
 		bmp = new createjs.Bitmap img
 		bmp.x = x
 		bmp.y = y
@@ -135,6 +155,7 @@ window.d2oda.methods ?= class Methods
 		bmp.name = name
 		@setPosition position, bmp
 		bmp
+		###
 	@insertBitmap = (name, id, x, y, position = 'tl') ->
 		bmp = @createBitmap name, id, x, y, position
 		@add bmp
@@ -243,8 +264,8 @@ window.d2oda.evaluator ?= class Evaluator
 					lib.score.plusOne()
 		else if lib[target].group
 			for tgt in lib[target].group
-				if lib[tgt].complete
-					lib.score.plusOne()
+				if lib[tgt].showEvaluation then lib[tgt].showEvaluation()
+				if lib[tgt].complete then lib.score.plusOne()
 		lib.scene.success false
 	@evaluateGlobal01 = (dispatcher) ->
 		if lib[dispatcher].index is @success
@@ -694,7 +715,7 @@ class Game
 	Game::EventDispatcher_initialize = Game::initialize
 	Game::initialize = (game) ->
 		@observer = new GameObserver()
-		@setHeader(game.header).setScenes(game.scenes).setInstructions(game.instructions).setScore(game.score)
+		@setHeader(game.header).setInstructions(game.instructions).setScenes(game.scenes).setScore(game.score)
 	setHeader: (header) ->
 		lib.mainContainer.insertBitmap 'header', header, d2oda.stage.w / 2, 0, 'tc'
 		lib.header.set({ scaleX: 0.5, scaleY: 0.5})
@@ -926,6 +947,7 @@ class Instructions extends Component
 		if not @states[@currentState].played
 			@playing = true
 			@states[@currentState].played = true
+			createjs.Sound.stop()
 			snd = createjs.Sound.play @states[@currentState].sound
 			snd.addEventListener 'complete', @instructionsComplete
 			snd
@@ -944,6 +966,7 @@ class Instructions extends Component
 			@currentState++
 	instructionsComplete: =>
 		@playing = false
+		console.log 'instructions complete'
 		@dispatchEvent {type:'complete'}
 	window.Instructions = Instructions
 
@@ -980,6 +1003,7 @@ class WriteContainer extends Component
 		if verb is @success
 			@complete = true
 	update: (opts) ->
+		if @children[3] then @removeChildAt 3
 		@pastText.text = opts.success
 		@mainText.text = opts.text
 		@success = opts.success
@@ -987,7 +1011,14 @@ class WriteContainer extends Component
 		@back.graphics.c().f(@bcolor).dr(0, 0, @pastText.getMeasuredWidth(), @pastText.getMeasuredHeight()).ss(@stroke).s(@scolor).mt(0, @pastText.getMeasuredHeight()).lt(@pastText.getMeasuredWidth(), @pastText.getMeasuredHeight())
 		@back.x = -@pastText.getMeasuredWidth() / 2
 		@pastText.text = ''
+		console.log @
 		TweenLite.from @, 0.3, {alpha: 0, y: @y - 10}
+	showEvaluation: () ->
+		console.log 
+		if @complete
+			@insertBitmap 'correct', 'correct', @getBounds().width, @getBounds().height / 2, 'ml'
+		else
+			@insertBitmap 'wrong', 'wrong', @getBounds().width, @getBounds().height / 2, 'ml'
 	isComplete: ->
 		true
 
@@ -1170,8 +1201,9 @@ class DragContainer extends Component
 		dropped = false
 		for drop in @droptargets
 			pt = drop.globalToLocal oda.stage.mouseX, oda.stage.mouseY
-			if drop.hitTest pt.x, pt.y
-				if drop instanceof createjs.Sprite
+			dropTester = drop.hitTester ? drop
+			if dropTester.hitTest pt.x, pt.y
+				if dropTester instanceof createjs.Sprite
 					if drop.parent.alpha > 0
 						target = drop
 						dropped = true
@@ -1470,6 +1502,7 @@ class CloneContainer extends Component
 		@img = @createBitmap 'img', img, @width / 2, @height / 2, 'mc'
 		@img.scaleX = @img.scaleY = (@height - 5) / @img.height
 		@add @img, false
+		@hitTester = @img.hitTester
 		@complete = complete
 
 class StepsContainer extends Component
@@ -1610,6 +1643,10 @@ class PhraseCompleterContainer extends Component
 		@stroke = opts.stroke ? 3
 		@name = opts.name ? opts.id
 		@align = opts.align ? ''
+		@uwidth = opts.uwidth
+		@underline = opts.underline ? {y:5}
+		@clickable = opts.clickable ? true
+		@lineHeight= opts.lineHeight
 		@currentTarget = 0
 		@observer = new ComponentObserver()
 		@droptargets = new Array()
@@ -1628,12 +1665,21 @@ class PhraseCompleterContainer extends Component
 			@nextGroup = opts.nextGroup
 		i = 0
 		npos = 0
-		ypos = -5
+		ypos = opts.ypos ? -5
 		maxWidth = 0
 		for t in opts.pattern
 			if t is '#tcpt'
 				txt = opts.targets[i]
-				h = new TextCompleterContainer txt, @font, @fcolor, @bcolor, @scolor, @stroke, npos, ypos
+				if @uwidth 
+					hopts = {text: txt.text, width: @uwidth}
+				else
+					hopts = txt
+					if hopts.maxlength
+						h = @createText 'max', hopts.maxlength, @font, @fcolor, 0, 0
+						hopts = {text: txt.text, width: h.getMeasuredWidth() + @margin}
+				hopts.underline = @underline
+				hopts.clickable = @clickable
+				h = new TextCompleterContainer hopts, @font, @fcolor, @bcolor, @scolor, @stroke, npos, ypos
 				@droptargets.push h
 				@textlist.push h
 				@add h, false
@@ -1641,11 +1687,23 @@ class PhraseCompleterContainer extends Component
 				maxWidth = npos if npos > maxWidth
 				i++
 			else if t is '#rtn'
-				h = @createText 'txt', 'BLANK', @font, @fcolor, npos, 0
-				maxWidth = npos if npos > maxWidth
-				npos = 0
-				ypos += h.getMeasuredHeight() + h.getMeasuredHeight() * 0.2
+				if @lineHeight
+					npos = 0
+					ypos += @lineHeight
+				else
+					npos = 0
+					maxWidth = npos if npos > maxWidth
+					if @lineHeight
+						ypos += @lineHeight
+					else
+						h = @createText 'txt', 'BLANK', @font, @fcolor, npos, 0
+						#maxWidth = npos if npos > maxWidth
+						#npos = 0
+						ypos += h.getMeasuredHeight() + h.getMeasuredHeight() * 0.2
 			else
+				first = t.charAt(0)
+				if first is '.' or first is '!' or first is '?' or first is ','
+					npos -= @margin
 				h = @createText 'txt', t, @font, @fcolor, npos, ypos
 				@textlist.push h
 				@add h, false
@@ -1655,6 +1713,15 @@ class PhraseCompleterContainer extends Component
 		@setPosition @align
 		@observer.notify ComponentObserver.UPDATED
 		TweenLite.from @, 0.3, {alpha: 0, y: @y - 10}
+	clearChildren: ->
+		for target in @droptargets
+			target.clearBackground()
+	getEnabledTarget: ->
+		enabled = {success:false}
+		for target in @droptargets
+			if target.writeEnabled
+				enabled = target
+		enabled
 	isComplete: ->
 		for target in @droptargets
 			if target.complete is false
@@ -2100,10 +2167,66 @@ class TextCompleterContainer extends Component
 		@height = opts.height ? @text.getMeasuredHeight()
 		@complete = false
 		@back = new createjs.Shape()
-		@back.graphics.f(bcolor).dr(0, 0, @width, @height).ss(stroke).s(scolor).mt(0, @height).lt(@width, @height)
+		@bcolor = bcolor ? '#FFF'
+		@stroke = stroke ? 1
+		@scolor = scolor ? '#333'
+		@clickable = opts.clickable ? true
+		@underline = opts.underline ? false
+		@word = ''
+		console.log @underline
+		if @underline
+			@back.graphics.f(@bcolor).dr(0, @underline.y, @width, @height + @underline.y).ss(@stroke).s(@scolor).mt(0, @height+@underline.y).lt(@width, @height+@underline.y)
+		else
+			@back.graphics.f(bcolor).dr(0, 5, @width, @height + 5).ss(stroke).s(scolor).mt(0, @height + 5).lt(@width, @height + 5)
 		@add @back, false
+		if @clickable
+			@addEventListener 'click', =>
+				if dealersjs.mobile.isAndroid() or dealersjs.mobile.isIOS()
+					modal.show()
+				if @parent
+					@parent.clearChildren()
+				@writeEnabled = on
+				if opts.underline
+					@back.graphics.c().f(@hexToRGB(@bcolor, 0.2)).dr(0, opts.underline.y, @width, @height + opts.underline.y).ss(@stroke).s(@scolor).mt(0, @height + opts.underline.y).lt(@width, @height + opts.underline.y)
+				else
+					@back.graphics.c().f(@hexToRGB(@bcolor, 0.2)).dr(0, 0, @width, @height).ss(@stroke).s(@scolor).mt(0, @height + 5).lt(@width, @height + 5)
+	hexToRGB: (hex,alpha) ->
+		hex = if hex is '#FFF' or hex is '#FFFFFF' then '#F00' else hex
+		h = "0123456789ABCDEF";
+		r = h.indexOf(hex[1])*16+h.indexOf(hex[2])
+		g = h.indexOf(hex[3])*16+h.indexOf(hex[4])
+		b = h.indexOf(hex[5])*16+h.indexOf(hex[6])
+		if alpha then "rgba(#{r}, #{g}, #{b}, #{alpha})"
+		else "rgb(#{r}, #{g}, #{b})"
+	clearBackground: () ->
+		@writeEnabled = off
+		if(@underline)
+			@back.graphics.c().f(@bcolor).dr(0, @underline.y, @width, @height + @underline.y).ss(@stroke).s(@scolor).mt(0, @height + @underline.y).lt(@width, @height + @underline.y)
+		else
+			@back.graphics.c().f(@bcolor).dr(0, 5, @width, @height).ss(@stroke).s(@scolor).mt(0, @height + 5).lt(@width, @height + 5)
+	write: (char) ->
+		if not char
+			return @word
+		if not @text.parent
+			@text.textAlign = 'center'
+			@text.x = @width / 2
+			@add @text, false
+		if char is '<-'
+			@word = @word.slice 0, @word.length-1
+		else if char is '-'
+			@word += ' '
+		else
+			@word += char
+		@text.text = @word
+	writeText: (txt) ->
+		if not @text.parent
+			@text.textAlign = 'center'
+			@text.x = @width / 2
+			@add @text, false
+		@word = txt
+		@text.text = txt
 	setRectOutline: (bcolor, stroke, scolor) ->
-		@back.graphics.f(bcolor).ss(stroke).s(scolor).dr(0, 0, @width, @height)
+		@back.graphics.f(bcolor).ss(stroke).s(scolor).dr(0, 0, @width, @height + 5)
 	update: (opts) ->
 		if opts and opts.complete then @complete = opts.complete
 		@text.textAlign = 'center'
@@ -2302,6 +2425,7 @@ class ImageCompleterContainer extends Component
 		else
 			b.scaleX = b.scaleY = @height/b.height
 		@add b, false
+		@hitTester = b.hitTester
 		TweenLite.from @, 0.3, {alpha: 0}
 
 class SceneStack extends Component
@@ -2450,6 +2574,7 @@ class Scene extends Component
 			@delay 1000, @setStep
 	setStep: =>
 		if lib.instructions.playing
+			console.log 'instructions playing'
 			lib.instructions.addEventListener 'complete', @setStep
 		else
 			#console.log 'setStep'
@@ -2470,9 +2595,15 @@ class Scene extends Component
 							if target.opts.successoncomplete
 								snd.addEventListener 'complete', @sndsuccess
 							false
-						when 'instructions'
-							console.log(target.opts.state)
-							lib.instructions.set target.opts.state
+						when 'window'
+							@window = window
+							if target.opts.keydown
+								@window.target = target.opts.target
+								@window.onkeyup = target.opts.keydown
+								@window.onkeydown = (e) ->
+									if not dealersjs.mobile.isAndroid() and not dealersjs.mobile.isIOS()
+										e.preventDefault()
+										e.stopPropagation()
 						else
 							lib[target.name].update target.opts
 	nextStep: ->

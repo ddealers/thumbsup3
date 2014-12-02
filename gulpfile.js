@@ -3,6 +3,7 @@ var gulp = require('gulp');
 var args = require('yargs').argv;
 var uglify = require('gulp-uglifyjs');
 var coffee = require('gulp-coffee');
+var replace = require('gulp-replace');
 
 var activity = args.activity;
 
@@ -47,14 +48,21 @@ gulp.task('production', function(){
 	main(activity);
 	gulp.src([
 		'base/lib/*.*',
-		'base/scripts/*.min.js',
+		'base/scripts/*.min.js'
+		], {base: './'})
+	.pipe(gulp.dest('build/'+activity));
+	gulp.src([
+		activity+'/assets/**/*.*',
 		activity+'/imgs/**/*.*',
 		activity+'/js/main.min.js',
 		activity+'/sounds/**/*.*',
 		activity+'/imgs/**/*.*',
-		activity+'/assets/**/*.*',
-		activity+'/index.html',
+		activity+'/fonts/**/*.*',
+		activity+'/css/**/*.*'
 		], {base: './'})
-	.pipe(gulp.dest('Bin'));
+	.pipe(gulp.dest('build'));
+	gulp.src([activity+'/index.html'], {base: './'})
+	.pipe(replace('../','./'))
+	.pipe(gulp.dest('build'));
 	console.log('Activity '+activity+' Complete!');
 });

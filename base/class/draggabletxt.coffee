@@ -13,6 +13,8 @@ class DraggableText
 		@text = new createjs.Text text, '16px Quicksand', '#333333'
 		@hit = new createjs.Shape()
 		@hit.graphics.beginFill('#000').drawRect(-5, -5, @text.getMeasuredWidth() + 10, @text.getMeasuredHeight() + 10)
+		@hitTester = new createjs.Shape()
+		@hitTester.graphics.beginFill('rgba(255,255,255,0.01)').drawRect(-5, -5, @text.getMeasuredWidth() + 10, @text.getMeasuredHeight() + 10)
 		@text.hitArea = @hit
 		@inPlace = off
 		@addChild @text

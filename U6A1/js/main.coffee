@@ -165,9 +165,9 @@ class U6A1 extends Oda
 					}
 					containers:[
 						{type: 'img', id: 'propwords', x: 115, y: 490}
-						{type: 'img', id: 'scene2bison', x: 400, y: 300, align: 'mc'}
-						{type: 'img', id: 'scene2mamut', x: 400, y: 300, align: 'mc'}
-						{type: 'img', id: 'scene2velociraptor', x: 400, y: 300, align: 'mc'}
+						{type: 'img', id: 'scene2bison', x: 400, y: 300, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'scene2mamut', x: 400, y: 300, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'scene2velociraptor', x: 400, y: 300, scale:0.5, align: 'mc'}
 						{type: 'img', id: 'scene2mauisaurus', x: 400, y: 300, align: 'mc'}
 						{type: 'pcpt', id: 'pcpt1', x: 120, y: 297, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 1}
 						{type: 'pcpt', id: 'pcpt2', x: 700, y: 163, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 1}

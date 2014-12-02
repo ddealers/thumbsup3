@@ -32,6 +32,8 @@ class U7A4 extends Oda
 			{id: '8b', src:'8b.png'}	
 			{id: '9b', src:'9b.png'}	
 			{id: '10b', src:'10b.png'}
+			{id: 'wrong', src: 'wrong.png'}
+			{id: 'correct', src: 'correct.png'}
 			{src:'TU3_U7_A4_instructions.mp3', id:'s/instructions'}
 			{src:'TU3_U7_A4_Instructions2.mp3', id:'s/instructions2'}
 		]

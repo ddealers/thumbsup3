@@ -87,7 +87,7 @@ class U1A1 extends Oda
 		@answer = e.target
 		selection = @answers.where id:@phrase.id
 		selection[0].a = on
-		if @phrase.id is @answer.currentAnimation
+		if @phrase.id is @answer.animation.currentAnimation
 			createjs.Sound.play 'good'
 			@library['score'].plusOne()
 			@library['choose1'].removeEventListener 'click', @evaluateAnswer
@@ -111,8 +111,8 @@ class U1A1 extends Oda
 			answer.id isnt @phrase.id
 		fake = Math.floor Math.random() * others.length
 		console.log @phrase.id, others[fake].id
-		@library["choose#{rand}"].gotoAndStop @phrase.id
-		@library["choose#{other}"].gotoAndStop others[fake].id
+		@library["choose#{rand}"].animation.gotoAndStop @phrase.id
+		@library["choose#{other}"].animation.gotoAndStop others[fake].id
 		console.log "s#{@phrase.id}"
 		createjs.Sound.play "s#{@phrase.id}"
 		@library['choose1'].addEventListener 'click', @evaluateAnswer

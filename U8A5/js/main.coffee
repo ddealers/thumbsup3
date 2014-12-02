@@ -120,16 +120,16 @@ class U8A5 extends Oda
 							states: [{img: {name: 'img10', x: 0, y: 0}}]
 						}
 						{type: 'img', id:'propwords', x: 163, y: 480}
-						{type: 'pcpt', id: 'pcpt1', x: 240, y: 550, font: '17px Quicksand', margin: 5, stroke: 2, scolor: '#eb188e'}
-						{type: 'pcpt', id: 'pcpt2', x: 240, y: 550, font: '17px Quicksand', margin: 5, stroke: 2, scolor: '#eb188e'}
-						{type: 'pcpt', id: 'pcpt3', x: 240, y: 550, font: '17px Quicksand', margin: 5, stroke: 2, scolor: '#eb188e'}
-						{type: 'pcpt', id: 'pcpt4', x: 240, y: 550, font: '17px Quicksand', margin: 5, stroke: 2, scolor: '#eb188e'}
-						{type: 'pcpt', id: 'pcpt5', x: 240, y: 550, font: '17px Quicksand', margin: 5, stroke: 2, scolor: '#eb188e'}
-						{type: 'pcpt', id: 'pcpt6', x: 240, y: 550, font: '17px Quicksand', margin: 5, stroke: 2, scolor: '#eb188e'}
-						{type: 'pcpt', id: 'pcpt7', x: 240, y: 550, font: '17px Quicksand', margin: 5, stroke: 2, scolor: '#eb188e'}
-						{type: 'pcpt', id: 'pcpt8', x: 240, y: 550, font: '17px Quicksand', margin: 5, stroke: 2, scolor: '#eb188e'}
-						{type: 'pcpt', id: 'pcpt9', x: 240, y: 550, font: '17px Quicksand', margin: 5, stroke: 2, scolor: '#eb188e'}
-						{type: 'pcpt', id: 'pcpt10', x: 240, y: 550, font: '17px Quicksand', margin: 5, stroke: 2, scolor: '#eb188e'}
+						{type: 'pcpt', id: 'pcpt1', x: 240, y: 550, font: '17px Quicksand', margin: 5, stroke: 2, scolor: '#eb188e', underline: {y: 1}}
+						{type: 'pcpt', id: 'pcpt2', x: 240, y: 550, font: '17px Quicksand', margin: 5, stroke: 2, scolor: '#eb188e', underline: {y: 1}}
+						{type: 'pcpt', id: 'pcpt3', x: 240, y: 550, font: '17px Quicksand', margin: 5, stroke: 2, scolor: '#eb188e', underline: {y: 1}}
+						{type: 'pcpt', id: 'pcpt4', x: 240, y: 550, font: '17px Quicksand', margin: 5, stroke: 2, scolor: '#eb188e', underline: {y: 1}}
+						{type: 'pcpt', id: 'pcpt5', x: 240, y: 550, font: '17px Quicksand', margin: 5, stroke: 2, scolor: '#eb188e', underline: {y: 1}}
+						{type: 'pcpt', id: 'pcpt6', x: 240, y: 550, font: '17px Quicksand', margin: 5, stroke: 2, scolor: '#eb188e', underline: {y: 1}}
+						{type: 'pcpt', id: 'pcpt7', x: 240, y: 550, font: '17px Quicksand', margin: 5, stroke: 2, scolor: '#eb188e', underline: {y: 1}}
+						{type: 'pcpt', id: 'pcpt8', x: 240, y: 550, font: '17px Quicksand', margin: 5, stroke: 2, scolor: '#eb188e', underline: {y: 1}}
+						{type: 'pcpt', id: 'pcpt9', x: 240, y: 550, font: '17px Quicksand', margin: 5, stroke: 2, scolor: '#eb188e', underline: {y: 1}}
+						{type: 'pcpt', id: 'pcpt10', x: 240, y: 550, font: '17px Quicksand', margin: 5, stroke: 2, scolor: '#eb188e', underline: {y: 1}}
 						{type: 'ldrg', id: 'ldrg1', x: 193, y: 497, index: 'When', text:'When', font:'17px Quicksand', color:'#333', target: ['pcpt1','pcpt2','pcpt3','pcpt4','pcpt5','pcpt6','pcpt7','pcpt8','pcpt9','pcpt10'], eval: @onDrop, afterSuccess: 'origin', afterFail: 'return'}
 						{type: 'ldrg', id: 'ldrg2', x: 273, y: 497, index: 'Who', text:'Who', font:'17px Quicksand', color:'#333', target: ['pcpt1','pcpt2','pcpt3','pcpt4','pcpt5','pcpt6','pcpt7','pcpt8','pcpt9','pcpt10'], eval: @onDrop, afterSuccess: 'origin', afterFail: 'return'}
 						{type: 'ldrg', id: 'ldrg3', x: 343, y: 497, index: 'What', text:'What', font:'17px Quicksand', color:'#333', target: ['pcpt1','pcpt2','pcpt3','pcpt4','pcpt5','pcpt6','pcpt7','pcpt8','pcpt9','pcpt10'], eval: @onDrop, afterSuccess: 'origin', afterFail: 'return'}

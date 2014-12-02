@@ -140,7 +140,7 @@ class U1A4 extends Oda
 			l = @createBitmap "mariposaline#{i}", "mariposaline#{i}", @positions.steps[i-1].x , @positions.steps[i-1].y - 25
 			@addToLibrary s, l
 			mariposa.addChild s, f, l
-
+			
 		for i in [1..@mariposa.drags.length] by 1
 			value = @mariposa.drags[i - 1]
 			v = new Draggable "d#{i}", (@preload.getResult value.id), i, @positions.dragsImg[i-1].x, @positions.dragsImg[i-1].y
@@ -149,7 +149,7 @@ class U1A4 extends Oda
 			v.addEventListener 'drop', @evaluateImageDrop
 			mariposa.addChild v
 			@addToLibrary v
-
+			
 		for i in [1..@mariposa.texts.length] by 1
 			value = @mariposa.texts[i - 1]
 			v = new DraggableText "dt#{i}", value.t, i, value.x, value.y
@@ -161,7 +161,6 @@ class U1A4 extends Oda
 			v.addEventListener 'drop', @evaluateTextDrop
 			mariposa.addChild v
 			@addToLibrary v
-
 		@addToMain mariposa
 		@introEvaluation()
 		@
@@ -187,7 +186,7 @@ class U1A4 extends Oda
 		until dropped is on or i > 5
 			hit = @library["#{@current}step#{i}"]
 			pt = hit.globalToLocal @stage.mouseX, @stage.mouseY
-			if hit.hitTest pt.x, pt.y
+			if hit.hitTester.hitTest pt.x, pt.y
 				@answer.putInPlace {x: hit.x, y: hit.y}, 1, 1, 1
 				dropped = on
 			else
@@ -201,7 +200,7 @@ class U1A4 extends Oda
 		until dropped is on or i > 5
 			hit = @library["#{@current}line#{i}"]
 			pt = hit.globalToLocal @stage.mouseX, @stage.mouseY
-			if hit.hitTest pt.x, pt.y
+			if hit.hitTester.hitTest pt.x, pt.y
                 if @current is 'mariposa'
                     @answer.putInPlace {x: hit.x + 40, y: hit.y + 7}, 1, @answer.scaleX, @answer.scaled
                     dropped = on
@@ -218,7 +217,8 @@ class U1A4 extends Oda
 			else
 				pt = @library[value.t].localToLocal 20, 20, @library[value.d]
 			npt = @library[value.d].localToLocal 0, 0, @mainContainer
-			if @library[value.t].hitTest pt.x, pt.y
+			console.log value.t
+			if @library[value.t].hitTester.hitTest pt.x, pt.y
 				@library.score.plusOne()
 				r = @createBitmap 'success', 'success', npt.x, npt.y
 			else
