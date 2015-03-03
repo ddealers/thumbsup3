@@ -168,19 +168,19 @@ class U6A1 extends Oda
 						{type: 'img', id: 'scene2bison', x: 400, y: 300, scale:0.5, align: 'mc'}
 						{type: 'img', id: 'scene2mamut', x: 400, y: 300, scale:0.5, align: 'mc'}
 						{type: 'img', id: 'scene2velociraptor', x: 400, y: 300, scale:0.5, align: 'mc'}
-						{type: 'img', id: 'scene2mauisaurus', x: 400, y: 300, align: 'mc'}
-						{type: 'pcpt', id: 'pcpt1', x: 120, y: 297, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 1}
-						{type: 'pcpt', id: 'pcpt2', x: 700, y: 163, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 1}
-						{type: 'pcpt', id: 'pcpt3', x: 205, y: 274, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 1}
-						{type: 'pcpt', id: 'pcpt4', x: 660, y: 254, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 1}
-						{type: 'pcpt', id: 'pcpt5', x: 185, y: 434, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 1}
-						{type: 'pcpt', id: 'pcpt6', x: 680, y: 384, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 1}
-						{type: 'pcpt', id: 'pcpt7', x: 137, y: 326, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 1}
-						{type: 'pcpt', id: 'pcpt8', x: 670, y: 212, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 1}
-						{type: 'pcpt', id: 'pcpt9', x: 670, y: 425, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 1}
-						{type: 'pcpt', id: 'pcpt10', x: 175, y: 414, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 1}
-						{type: 'pcpt', id: 'pcpt11', x: 145, y: 213, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 1}
-						{type: 'pcpt', id: 'pcpt12', x: 655, y: 336, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 1}
+						{type: 'img', id: 'scene2mauisaurus', x: 400, y: 300, scale: 0.5, align: 'mc'}
+						{type: 'pcpt', id: 'pcpt1', x: 136, y: 291, uwidth: 120, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 2}
+						{type: 'pcpt', id: 'pcpt2', x: 675, y: 165, uwidth: 120, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 2}
+						{type: 'pcpt', id: 'pcpt3', x: 214, y: 269, uwidth: 120, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 2}
+						{type: 'pcpt', id: 'pcpt4', x: 652, y: 251, uwidth: 120, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 2}
+						{type: 'pcpt', id: 'pcpt5', x: 193, y: 423, uwidth: 120, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 2}
+						{type: 'pcpt', id: 'pcpt6', x: 670, y: 375, uwidth: 120, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 2}
+						{type: 'pcpt', id: 'pcpt7', x: 137, y: 321, uwidth: 120, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 2}
+						{type: 'pcpt', id: 'pcpt8', x: 670, y: 208, uwidth: 120, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 2}
+						{type: 'pcpt', id: 'pcpt9', x: 670, y: 420, uwidth: 120, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 2}
+						{type: 'pcpt', id: 'pcpt10', x: 185, y: 397, uwidth: 120, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 2}
+						{type: 'pcpt', id: 'pcpt11', x: 160, y: 213, uwidth: 120, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 2}
+						{type: 'pcpt', id: 'pcpt12', x: 635, y: 326, uwidth: 120, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 2}
 						{type: 'ldrg', id: 'ldrg1', x: 140, y: 520, index: 'horn', text:'horn', font:'24px Quicksand', color:'#333', eval: 'drop_02_02', afterSuccess: 'hide', afterFail: 'return'
 						target: ['pcpt1','pcpt2','pcpt3','pcpt4','pcpt5','pcpt6','pcpt7','pcpt8','pcpt9','pcpt10','pcpt11','pcpt12']}
 						{type: 'ldrg', id: 'ldrg2', x: 220, y: 510, index: 'feather', text:'feather', font:'24px Quicksand', color:'#333', eval: 'drop_02_02', afterSuccess: 'hide', afterFail: 'return'

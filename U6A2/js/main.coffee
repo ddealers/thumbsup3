@@ -101,21 +101,21 @@ class U6A2 extends Oda
 						{type: 'img', id: 'propimg3', x: 400, y: 320,scale:0.5, align: 'mc'}
 						{type: 'img', id: 'propimg4', x: 400, y: 320,scale:0.5, align: 'mc'}
 						{type: 'img', id: 'propimg5', x: 400, y: 320,scale:0.5, align: 'mc'}
-						{type: 'pcpt', id: 'pcpt1', x: 400, y: 450, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 1}
-						{type: 'ldrg', id: 'ldrg1', x: 731, y: 325, index: '1', text:'1', font:'24px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
-						{type: 'ldrg', id: 'ldrg2', x: 672, y: 173, index: '1,580', text:'1,580', font:'24px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
-						{type: 'ldrg', id: 'ldrg3', x: 60, y: 274, index: '2', text:'2', font:'24px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
-						{type: 'ldrg', id: 'ldrg4', x: 648, y: 361, index: '28', text:'28', font:'24px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
-						{type: 'ldrg', id: 'ldrg5', x: 136, y: 220, index: '280', text:'280', font:'24px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
-						{type: 'ldrg', id: 'ldrg6', x: 148, y: 310, index: '3', text:'3', font:'24px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
-						{type: 'ldrg', id: 'ldrg7', x: 577, y: 237, index: '3.3', text:'3.3', font:'24px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
-						{type: 'ldrg', id: 'ldrg8', x: 695, y: 271, index: '35', text:'35', font:'24px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
-						{type: 'ldrg', id: 'ldrg9', x: 606, y: 307, index: '4', text:'4', font:'24px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
-						{type: 'ldrg', id: 'ldrg10', x: 45, y: 362, index: '40,000', text:'40,000', font:'24px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
-						{type: 'ldrg', id: 'ldrg11', x: 59, y: 169, index: '4,500', text:'4,500', font:'24px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
-						{type: 'ldrg', id: 'ldrg12', x: 524, y: 162, index: '815', text:'815', font:'24px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
-						{type: 'ldrg', id: 'ldrg13', x: 227, y: 172, index: '590', text:'590', font:'24px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
-						{type: 'ldrg', id: 'ldrg14', x: 309, y: 160, index: '900', text:'900', font:'24px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
+						{type: 'pcpt', id: 'pcpt1', x: 400, y: 450, font: '22px Quicksand', margin: 10, align: 'tc', scolor: '#F00', stroke: 1}
+						{type: 'ldrg', id: 'ldrg1', x: 731, y: 325, index: '1', text:'1', font:'22px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
+						{type: 'ldrg', id: 'ldrg2', x: 672, y: 173, index: '1,580', text:'1,580', font:'22px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
+						{type: 'ldrg', id: 'ldrg3', x: 60, y: 274, index: '2', text:'2', font:'22px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
+						{type: 'ldrg', id: 'ldrg4', x: 648, y: 361, index: '28', text:'28', font:'22px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
+						{type: 'ldrg', id: 'ldrg5', x: 136, y: 220, index: '280', text:'280', font:'22px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
+						{type: 'ldrg', id: 'ldrg6', x: 148, y: 310, index: '3', text:'3', font:'22px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
+						{type: 'ldrg', id: 'ldrg7', x: 577, y: 237, index: '3.3', text:'3.3', font:'22px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
+						{type: 'ldrg', id: 'ldrg8', x: 695, y: 271, index: '35', text:'35', font:'22px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
+						{type: 'ldrg', id: 'ldrg9', x: 606, y: 307, index: '4', text:'4', font:'22px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
+						{type: 'ldrg', id: 'ldrg10', x: 45, y: 362, index: '40,000', text:'40,000', font:'22px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
+						{type: 'ldrg', id: 'ldrg11', x: 59, y: 169, index: '4,500', text:'4,500', font:'22px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
+						{type: 'ldrg', id: 'ldrg12', x: 524, y: 162, index: '815', text:'815', font:'22px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
+						{type: 'ldrg', id: 'ldrg13', x: 227, y: 172, index: '590', text:'590', font:'22px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
+						{type: 'ldrg', id: 'ldrg14', x: 309, y: 160, index: '900', text:'900', font:'22px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
 						{
 							type: 'btn', id: 'repeat', x: 400, y: 570, isRepeat: true
 							states:[

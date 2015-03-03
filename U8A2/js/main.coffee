@@ -116,7 +116,7 @@ class U8A2 extends Oda
 			else
 				a.afterFail()
 				lib.scene.fail()
-			if lib["globo#{@selection}"].sprite.currentFrame is 1 and lib["caja#{@selection}"].sprite.currentFrame is 1
+			if lib["globo#{@selection}"].sprite.animation.currentFrame is 1 and lib["caja#{@selection}"].sprite.animation.currentFrame is 1
 				d2oda.methods.delay 1000, ->
 					lib.grp_center.update {type:'fadeOut', ignoreY:true, ignoreCurrentAlpha:true}
 					lib.grp_caja.update {type:'fadeOut', ignoreY:true, ignoreCurrentAlpha:true}

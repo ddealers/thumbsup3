@@ -174,18 +174,25 @@ window.d2oda.methods ?= class Methods
 	@createSprite = (name, imgs, anim=null, x, y, position = 'tl') ->
 		spriteImgs = for img in imgs
 			lib.preloader.preload.getResult img
+		cont = new createjs.Container()
 		w = spriteImgs[0].width
 		h = spriteImgs[0].height
 		sprite = new createjs.SpriteSheet (images: spriteImgs, animations: anim, frames: {width: w, height: h})
-		animation = new createjs.Sprite sprite
-		animation.x = x
-		animation.y = y
-		animation.width = w
-		animation.height = h
-		animation.name = name
-		animation.currentFrame = 0
-		@setPosition position, animation
-		animation
+		cont.animation = new createjs.Sprite sprite
+		cont.animation.mouseEnabled = false
+		cont.animation.currentFrame = 0
+		cont.hitTester = new createjs.Shape()
+		cont.hitTester.graphics.beginFill('rgba(255,255,255,0.01)').drawRect(0, 0, w, h)
+		cont.hitTester.name = "h#{name}"
+		cont.x = x
+		cont.y = y
+		cont.width = w
+		cont.height = h
+		cont.name = name
+		cont.mouseChildren = false
+		cont.addChild cont.animation, cont.hitTester
+		@setPosition position, cont
+		cont
 	@insertSprite = (name, imgs, anim=null, x, y, position = 'tl') ->
 		animation = @createSprite name, imgs, anim, x, y, position
 		@add animation
@@ -458,6 +465,7 @@ window.d2oda.evaluator ?= class Evaluator
 			lib.scene.fail()
 	@evaluateSpriteDrop01 = (dispatcher, target) ->
 		if lib[dispatcher].index is target.parent.success
+			console.log target.parent, target.parent.nextStep
 			target.parent.nextStep()
 			lib[dispatcher].afterSuccess()
 			lib.scene.success true, false
@@ -1104,11 +1112,11 @@ class SpriteContainer extends Component
 	nextFrame: ->
 		@sprite.currentFrame++
 	nextStep: ->
-		if @storyboard.length > 0 
-			@sprite.gotoAndStop @storyboard[@sprite.currentFrame]
-			TweenLite.from @, 0.3, {alpha: 0}
+		if @storyboard.length > 0
+			@sprite.animation.gotoAndStop @storyboard[@sprite.animation.currentFrame]
+			#TweenLite.from @, 0.3, {alpha: 0}
 	goto: (frame) ->
-		@sprite.gotoAndStop frame
+		@sprite.animation.gotoAndStop frame
 	update:(opts) ->
 		@droptargets = [@sprite]
 		@success = opts.success
@@ -1119,7 +1127,7 @@ class SpriteContainer extends Component
 		TweenLite.killTweensOf @
 		TweenMax.killTweensOf @
 		if @alpha isnt 0 then @alpha = 1
-		@sprite.currentFrame > 0
+		@sprite.animation.currentFrame > 0
 
 class DragContainer extends Component
 	DragContainer.prototype = new createjs.Container()
@@ -1203,13 +1211,15 @@ class DragContainer extends Component
 			pt = drop.globalToLocal oda.stage.mouseX, oda.stage.mouseY
 			dropTester = drop.hitTester ? drop
 			if dropTester.hitTest pt.x, pt.y
-				if dropTester instanceof createjs.Sprite
+				if dropTester.animation or dropTester.parent.animation
+					console.log drop.parent.alpha
 					if drop.parent.alpha > 0
 						target = drop
 						dropped = true
 				else
 					target = drop
 					dropped = true
+			console.log dropped, target
 		if dropped
 			d2oda.evaluator.evaluate @eval, @name, target
 			@dispatchEvent {type: 'dropped', drop: target}

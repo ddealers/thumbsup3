@@ -239,9 +239,9 @@ class Oda
 		cont.animation = new createjs.Sprite sprite
 		cont.animation.mouseEnabled = false
 		cont.animation.currentFrame = 0
-		hitTester = new createjs.Shape()
-		hitTester.graphics.beginFill('rgba(255,255,255,0.01)').drawRect(0, 0, w, h)
-		hitTester.name = "h#{name}"
+		cont.hitTester = new createjs.Shape()
+		cont.hitTester.graphics.beginFill('rgba(255,255,255,0.01)').drawRect(0, 0, w, h)
+		cont.hitTester.name = "h#{name}"
 		cont.x = x
 		cont.y = y
 		cont.width = w
