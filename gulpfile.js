@@ -4,48 +4,58 @@ var args = require('yargs').argv;
 var uglify = require('gulp-uglifyjs');
 var coffee = require('gulp-coffee');
 var replace = require('gulp-replace');
+var connect = require('gulp-connect');
 
 var activity = args.activity;
 
-function app(){
+gulp.task('app', function(){
+	var activity = args.activity;
 	gulp.src(['base/scripts/app.js'])
 	.pipe(uglify('app.min.js'))
 	.pipe(gulp.dest('base/scripts/'));
 	console.log('App ready');
-}
-function clas(){
+});
+gulp.task('clas', function(){
+	var activity = args.activity;
 	gulp.src(['base/class/*.coffee',])
 	.pipe(coffee({bare: true}))
 	.pipe(uglify('classes.min.js'))
 	.pipe(gulp.dest('base/scripts/'));
 	console.log('Classes ready');
-}
-function deal(){
+});
+gulp.task('deal', function(){
+	var activity = args.activity;
 	gulp.src(['base/scripts/dealersjs.coffee'])
 	.pipe(coffee({bare: true}))
 	.pipe(uglify('dealersjs.min.js'))
 	.pipe(gulp.dest('base/scripts/'))
 	console.log('Dealersjs ready');
-}
-function main(activity){
+});
+gulp.task('main', function(){
+	var activity = args.activity;
 	gulp.src([activity+'/js/main.coffee'])
 	.pipe(coffee({bare: true}))
 	.pipe(uglify('main.min.js'))
 	.pipe(gulp.dest(activity+'/js/'));
 	console.log('Activity ready');
-}
-
-gulp.task('dev', function(){
-	app();
-	clas();
-	deal();
-	main(activity);
 });
+gulp.task('webserver', function(){
+	connect.server({
+		livereload: true
+	});
+});
+
+gulp.task('watch', function(){
+	var activity = args.activity;
+	gulp.watch('base/scripts/dealersjs.coffee', ['deal']);
+	gulp.watch(activity+'/js/main.coffee', ['main']);
+})
+
+gulp.task('dev', ['clas','deal','app','main']);
+gulp.task('server', ['webserver', 'watch']);
+
 gulp.task('production', function(){
-	clas();
-	deal();
-	app();
-	main(activity);
+	var activity = args.activity;
 	gulp.src([
 		'base/lib/*.*',
 		'base/scripts/*.min.js'
