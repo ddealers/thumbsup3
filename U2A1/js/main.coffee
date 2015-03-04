@@ -213,15 +213,15 @@ class U2A1 extends Oda
 						type: 'steps'
 					}
 					containers:[
-						{type: 'img', id: 'propmarket', x: 400, y: 235, align: 'mc'}
-						{type: 'img', id: 'propmilk', x: 391, y: 171, align: 'mc'}
-						{type: 'img', id: 'prophoney', x: 554, y: 182, align: 'mc'}
-						{type: 'img', id: 'propcheese', x: 311, y: 225, align: 'mc'}
-						{type: 'img', id: 'propmeat', x: 398, y: 226, align: 'mc'}
-						{type: 'img', id: 'propyogurt', x: 458, y: 247, align: 'mc'}
-						{type: 'img', id: 'propeggs', x: 522, y: 249, align: 'mc'}
-						{type: 'img', id: 'propraspberries', x: 593, y: 267, align: 'mc'}
-						{type: 'img', id: 'proppumpkins', x: 493, y: 336, align: 'mc'}
+						{type: 'img', id: 'propmarket', x: 400, y: 235, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propmilk', x: 391, y: 171, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'prophoney', x: 554, y: 182, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propcheese', x: 311, y: 225, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propmeat', x: 398, y: 226, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propyogurt', x: 458, y: 247, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propeggs', x: 522, y: 249, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'propraspberries', x: 593, y: 267, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'proppumpkins', x: 493, y: 336, scale:0.5,   align: 'mc'}
 						{type: 'pcpt', id: 'pcpt2', x: 400, y: 540, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#F00'}
 						{type: 'img', id: 'n1', x: 124, y: 412}
 						{
