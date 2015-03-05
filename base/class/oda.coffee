@@ -248,7 +248,7 @@ class Oda
 		cont.height = h
 		cont.name = name
 		cont.mouseChildren = false
-		cont.addChild cont.animation, hitTester
+		cont.addChild cont.animation, cont.hitTester
 		switch position
 			when 'tc' then @setReg cont, w / 2, 0
 			when 'tr' then @setReg cont, w, 0
