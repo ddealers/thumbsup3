@@ -49,6 +49,7 @@ gulp.task('watch', function(){
 	gulp.watch('base/class/*.coffee', ['clas']);
 	if(activity){
 		gulp.watch(activity+'/js/main.coffee', ['main']);
+		gulp.watch(activity+'/imgs/*.png', ['main']);
 	}
 })
 
