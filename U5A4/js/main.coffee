@@ -63,15 +63,15 @@ class U5A4 extends Oda
 						collection: [
 							[
 								{name:'global',opts:{success:'yeswas'}}
-								{name: 'pcpt1', opts: {pattern: ['#tcpt', 'there', '#tcpt', 'village?'], targets: [{text:'was', success:'was'}, {text:'a    ', success:'a'}], nextGroup: 'sc1grp0'}}
+								{name: 'pcpt1', opts: {pattern: ['#tcpt', 'there', '#tcpt', 'village?'], targets: [{text:'was', success:'was'}, {text:' a ', success:'a'}], nextGroup: 'sc1grp0'}}
 							]
 							[
 								{name:'global',opts:{success:'nowas'}}
-								{name: 'pcpt1', opts: {pattern: ['#tcpt', 'there', '#tcpt', 'city?'], targets: [{text:'was', success:'was'}, {text:'a   ', success:'a'}], nextGroup: 'sc1grp0'}}
+								{name: 'pcpt1', opts: {pattern: ['#tcpt', 'there', '#tcpt', 'city?'], targets: [{text:'was', success:'was'}, {text:' a ', success:'a'}], nextGroup: 'sc1grp0'}}
 							]
 							[
 								{name:'global',opts:{success:'nowas'}}
-								{name: 'pcpt1', opts: {pattern: ['#tcpt', 'there', '#tcpt', 'lot of noise?'], targets: [{text:'was', success:'was'}, {text:'a   ', success:'a'}], nextGroup: 'sc1grp0'}}
+								{name: 'pcpt1', opts: {pattern: ['#tcpt', 'there', '#tcpt', 'lot of noise?'], targets: [{text:'was', success:'was'}, {text:' a ', success:'a'}], nextGroup: 'sc1grp0'}}
 							]
 							[
 								{name:'global',opts:{success:'yeswas'}}

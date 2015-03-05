@@ -1949,7 +1949,7 @@ class CrossWordsContainer extends Component
 						tcc.x = j * @uwidth
 						tcc.y = i * @uheight
 					else
-						tcc = new TextCompleterContainer {text:column, width:@uwidth, height:@uheight}, @font, @fcolor, @bcolor, @scolor, @stroke, j * @uwidth, i * @uheight
+						tcc = new TextCompleterContainer {text:column, width:@uwidth, height:@uheight, crossword:true}, @font, @fcolor, @bcolor, @scolor, @stroke, j * @uwidth, i * @uheight
 						tcc.name = "l#{j}#{i}"
 						tcc.setRectOutline @bcolor, @stroke, @scolor
 					@add tcc
@@ -2182,12 +2182,15 @@ class TextCompleterContainer extends Component
 		@scolor = scolor ? '#333'
 		@clickable = opts.clickable ? true
 		@underline = opts.underline ? false
+		@isCrossword = opts.crossword ? false
 		@word = ''
-		console.log @underline
 		if @underline
 			@back.graphics.f(@bcolor).dr(0, @underline.y, @width, @height + @underline.y).ss(@stroke).s(@scolor).mt(0, @height+@underline.y).lt(@width, @height+@underline.y)
 		else
-			@back.graphics.f(bcolor).dr(0, 5, @width, @height + 5).ss(stroke).s(scolor).mt(0, @height + 5).lt(@width, @height + 5)
+			if @isCrossword
+				@back.graphics.f(bcolor).dr(0, 5, @width, @height).ss(stroke).s(scolor).mt(0, @height).lt(@width, @height)
+			else
+				@back.graphics.f(bcolor).dr(0, 5, @width, @height + 5).ss(stroke).s(scolor).mt(0, @height + 5).lt(@width, @height + 5)
 		@add @back, false
 		if @clickable
 			@addEventListener 'click', =>
@@ -2199,7 +2202,10 @@ class TextCompleterContainer extends Component
 				if opts.underline
 					@back.graphics.c().f(@hexToRGB(@bcolor, 0.2)).dr(0, opts.underline.y, @width, @height + opts.underline.y).ss(@stroke).s(@scolor).mt(0, @height + opts.underline.y).lt(@width, @height + opts.underline.y)
 				else
-					@back.graphics.c().f(@hexToRGB(@bcolor, 0.2)).dr(0, 0, @width, @height).ss(@stroke).s(@scolor).mt(0, @height + 5).lt(@width, @height + 5)
+					if @isCrossword
+						@back.graphics.c().f(@hexToRGB(@bcolor, 0.2)).dr(0, 0, @width, @height).ss(@stroke).s(@scolor).mt(0, @height).lt(@width, @height)
+					else
+						@back.graphics.c().f(@hexToRGB(@bcolor, 0.2)).dr(0, 0, @width, @height).ss(@stroke).s(@scolor).mt(0, @height + 5).lt(@width, @height + 5)
 	hexToRGB: (hex,alpha) ->
 		hex = if hex is '#FFF' or hex is '#FFFFFF' then '#F00' else hex
 		h = "0123456789ABCDEF";
@@ -2213,7 +2219,10 @@ class TextCompleterContainer extends Component
 		if(@underline)
 			@back.graphics.c().f(@bcolor).dr(0, @underline.y, @width, @height + @underline.y).ss(@stroke).s(@scolor).mt(0, @height + @underline.y).lt(@width, @height + @underline.y)
 		else
-			@back.graphics.c().f(@bcolor).dr(0, 5, @width, @height).ss(@stroke).s(@scolor).mt(0, @height + 5).lt(@width, @height + 5)
+			if @isCrossword
+				@back.graphics.c().f(@bcolor).dr(0, 5, @width, @height).ss(@stroke).s(@scolor).mt(0, @height).lt(@width, @height)
+			else
+				@back.graphics.c().f(@bcolor).dr(0, 5, @width, @height).ss(@stroke).s(@scolor).mt(0, @height + 5).lt(@width, @height + 5)
 	write: (char) ->
 		if not char
 			return @word
@@ -2236,7 +2245,10 @@ class TextCompleterContainer extends Component
 		@word = txt
 		@text.text = txt
 	setRectOutline: (bcolor, stroke, scolor) ->
-		@back.graphics.f(bcolor).ss(stroke).s(scolor).dr(0, 0, @width, @height + 5)
+		if @isCrossword
+			@back.graphics.f(bcolor).ss(stroke).s(scolor).dr(0, 0, @width, @height)
+		else
+			@back.graphics.f(bcolor).ss(stroke).s(scolor).dr(0, 0, @width, @height + 5)
 	update: (opts) ->
 		if opts and opts.complete then @complete = opts.complete
 		@text.textAlign = 'center'
