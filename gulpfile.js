@@ -6,8 +6,6 @@ var coffee = require('gulp-coffee');
 var replace = require('gulp-replace');
 var connect = require('gulp-connect');
 
-var activity = args.activity;
-
 gulp.task('app', function(){
 	var activity = args.activity;
 	gulp.src(['base/scripts/app.js'])
@@ -48,11 +46,15 @@ gulp.task('webserver', function(){
 gulp.task('watch', function(){
 	var activity = args.activity;
 	gulp.watch('base/scripts/dealersjs.coffee', ['deal']);
-	gulp.watch(activity+'/js/main.coffee', ['main']);
+	gulp.watch('base/class/*.coffee', ['clas']);
+	if(activity){
+		gulp.watch(activity+'/js/main.coffee', ['main']);
+		gulp.watch(activity+'/imgs/*.png', ['main']);
+	}
 })
 
 gulp.task('dev', ['clas','deal','app','main']);
-gulp.task('server', ['webserver', 'watch']);
+gulp.task('serve', ['webserver', 'watch']);
 
 gulp.task('production', function(){
 	var activity = args.activity;
@@ -62,13 +64,13 @@ gulp.task('production', function(){
 		], {base: './'})
 	.pipe(gulp.dest('build/'+activity));
 	gulp.src([
-		activity+'/assets/**/*.*',
-		activity+'/imgs/**/*.*',
+		activity+'/assets/**\/*.*',
+		activity+'/imgs/**\/*.*',
 		activity+'/js/main.min.js',
-		activity+'/sounds/**/*.*',
-		activity+'/imgs/**/*.*',
-		activity+'/fonts/**/*.*',
-		activity+'/css/**/*.*'
+		activity+'/sounds/**\/*.*',
+		activity+'/imgs/**\/*.*',
+		activity+'/fonts/**\/*.*',
+		activity+'/css/**\/*.*'
 		], {base: './'})
 	.pipe(gulp.dest('build'));
 	gulp.src([activity+'/index.html'], {base: './'})
