@@ -53,7 +53,7 @@ class U2A3 extends Oda
 						type: 'steps'
 					}
 					containers:[
-						{type: 'img', id: 'propbg', name: 'propbg', x: 426, y: 308, align: 'mc'}
+						{type: 'img', id: 'propbg', name: 'propbg', x: 426, y: 308, scale:0.5, align: 'mc'}
 						{type: 'lbl', id: 'lbl1', x: 415, y: 530, font: '20px Quicksand', color: '#333', align: 'center'}
 						{
 							type: 'btn', id: 'btn1', x: 521, y: 404, index: 'blueberry', target: 'lbl1', eval: 'click_02'
@@ -188,11 +188,11 @@ class U2A3 extends Oda
 									}
 								}
 							]
-						]
+						]	
 						type: 'steps'
 					}
 					containers:[
-						{type: 'img', id: 'propbg', name: 'propbg', x: 426, y: 298, align: 'mc'}
+						{type: 'img', id: 'propbg', name: 'propbg', x: 426, y: 298, scale:0.5, align: 'mc'}
 						{type: 'img', id: 'propabuelita', name: 'abuelita', x:554, y:244, align: 'mc'}
 						{type: 'img', id: 'clue', name: 'clue', x: 400, y: 580, align: 'bc'}
 						{type: 'iwcpt', id: 'iwcpt1', x: 400, y: 470, uwidth: 70, uheight: 60, margin: 5, bcolor: '#FFF', scolor: '#F00', stroke: '3', align: 'center'}

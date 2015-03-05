@@ -39,7 +39,7 @@ class U8A1 extends Oda
 								{name: 'pcpt5', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt', '#tcpt', '#tcpt'], targets: [{text:'they'}, {text:'are'}, {text:'going'}, {text:'to'}, {text:'swim'}, {text:'in'}, {text:'the'}, {text:'ocean'}], label:'t5'}}
 								{name: 'pcpt6', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt'], targets: [{text:'they'}, {text:'are'}, {text:'going'}, {text:'to'}, {text:'eat'}, {text:'pizza'}], label:'t6'}}
 								{name: 'pcpt7', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt', '#tcpt'], targets: [{text:'he'}, {text:'is'}, {text:'going'}, {text:'to'}, {text:'build'}, {text:'a'}, {text:'sandcastle'}], label:'t7'}}
-								{name: 'pcpt8', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt', '#tcpt', '#tcpt'], targets: [{text:'they'}, {text:'are'}, {text:'going'}, {text:'to'}, {text:'go'}, {text:'scuba'}, {text:'diving'}], label:'t8'}}
+								{name: 'pcpt8', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt', '#tcpt',], targets: [{text:'they'}, {text:'are'}, {text:'going'}, {text:'to'}, {text:'go'}, {text:'scuba diving', success:'scubadiving'}], label:'t8'}}
 								{name: 'pcpt9', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt'], targets: [{text:'he'}, {text:'is'}, {text:'going'}, {text:'to'}, {text:'go'}, {text:'shopping'}], label:'t9'}}
 								{name: 'pcpt10', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt', '#tcpt'], targets: [{text:'she'}, {text:'is'}, {text:'going'}, {text:'to'}, {text:'hit'}, {text:'the'}, {text:'ball'}], label:'t10'}}
 							]

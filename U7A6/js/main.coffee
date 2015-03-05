@@ -199,8 +199,8 @@ class U7A6 extends Oda
 						{type: 'txt', id: 'txt6', text:'What plant do pandas mainly eat?', x: 200, y: 235, font:'22px Quicksand', align: 'center', lineWidth: 250}
 						{type: 'txt', id: 'txt7', text:'What do most bears do during the winter?', x: 200, y: 235, font:'22px Quicksand', align: 'center', lineWidth: 250}
 						{type: 'txt', id: 'txt8', text:'What are fireworks made from?', x: 200, y: 235, font:'22px Quicksand', align: 'center', lineWidth: 250}
-						{type: 'txt', id: 'txt9', text:'What\'s another word for \'intelligent\'?', x: 200, y: 235, align: 'center', lineWidth: 250}
-						{type: 'txt', id: 'txt10', text:'What do you use to do sums in math class?', x: 200, y: 235, align: 'center', lineWidth: 250}
+						{type: 'txt', id: 'txt9', text:'What\'s another word for \'intelligent\'?', x: 200, y: 235, font:'22px Quicksand', align: 'center', lineWidth: 250}
+						{type: 'txt', id: 'txt10', text:'What do you use to do sums in math class?', x: 200, y: 235, font:'22px Quicksand', align: 'center', lineWidth: 250}
 						{type: 'wsch', id: 'wsch1', x: 420, y: 148, font: '20px Quicksand', uwidth: 25, uheight: 25, radius: 12.5, shcolor:'#F00', shape:'circle'}
 						{
 							type: 'swct', id: 'swct1', x: 200, y: 330, margin: 5, uwidth: 20, font: '22px Quicksand', scolor: '#0098d7', bcolor: 'rgba(255,255,255,0.1)', align: 'tc', eval:'word_drop_01'

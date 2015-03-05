@@ -1,4 +1,15 @@
-###
+
+			{id: 'numberdancing', src: 'number_dancing.png'}
+			{id: 'numbermaking', src: 'number_making.png'}
+			{id: 'numberpainting', src: 'number_painting.png'}
+			{id: 'numberplaying', src: 'number_playing.png'}
+			{id: 'numbersinging', src: 'number_singing.png'}
+			{id: 'crosswords', src: 'prop_crossword-1.png'}
+			{src:'TU3_U3_A6_instructions.mp3', id:'s/instructions'}
+		]
+		@game = 
+			header: 'head'
+			instructions: {x: 40, y: 100,###
 
 NEW ODA
 
@@ -15,18 +26,7 @@ class U3A6 extends Oda
 			{id: 'painting', src: 'image_painting.png'}
 			{id: 'playing', src: 'image_playing.png'}
 			{id: 'singing', src: 'image_singing.png'}
-			{id: 'numbercooking', src: 'number_cooking.png'}
-			{id: 'numberdancing', src: 'number_dancing.png'}
-			{id: 'numbermaking', src: 'number_making.png'}
-			{id: 'numberpainting', src: 'number_painting.png'}
-			{id: 'numberplaying', src: 'number_playing.png'}
-			{id: 'numbersinging', src: 'number_singing.png'}
-			{id: 'crosswords', src: 'prop_crossword.png'}
-			{src:'TU3_U3_A6_instructions.mp3', id:'s/instructions'}
-		]
-		@game = 
-			header: 'head'
-			instructions: {x: 40, y: 100, states: [{text:'Look and drag the letters to complete the crossword puzzle.', sound:'s/instructions', played: false}]}
+			{id: 'numbercooking', src: 'number_cooking.png'} states: [{text:'Look and drag the letters to complete the crossword puzzle.', sound:'s/instructions', played: false}]}
 			score:{type: 'points', x:20, y:500, init: 0, total: 6, aimg: 'c1', acolor: '#0096DB', bimg: 'c2', bcolor: '#BFD951'}
 			scenes:[
 				{
