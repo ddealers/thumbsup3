@@ -56,21 +56,21 @@ class U2A4 extends Oda
 						type: 'steps'
 					}
 					containers:[
-						{type: 'img', id: 'imageBacon', x: 118, y: 415, align: 'mc'}
-						{type: 'img', id: 'imageButter', x: 95, y: 334, align: 'mc'}
-						{type: 'img', id: 'imageCheese', x: 176, y: 524, align: 'mc'}
-						{type: 'img', id: 'imageCream', x: 569, y: 165, align: 'mc'}
-						{type: 'img', id: 'imageHoney', x: 717, y: 282, align: 'mc'}
-						{type: 'img', id: 'imageLeather', x: 684, y: 520, align: 'mc'}
-						{type: 'img', id: 'imageMushrooms', x: 323, y: 177, align: 'mc'}
-						{type: 'img', id: 'imagePeanutbutter', x: 540, y: 498, align: 'mc'}
-						{type: 'img', id: 'imagePumpkins', x: 168, y: 165, align: 'mc'}
-						{type: 'img', id: 'imageSugar', x: 149, y: 266, align: 'mc'}
-						{type: 'img', id: 'imageTomatoes', x: 460, y: 165, align: 'mc'}
-						{type: 'img', id: 'imageTurbines', x: 679, y: 163, align: 'mc'}
-						{type: 'img', id: 'imageWax', x: 402, y: 520, align: 'mc'}
-						{type: 'img', id: 'imageYarn', x: 701, y: 422, align: 'mc'}
-						{type: 'img', id: 'imageYogurt', x: 279, y: 481, align: 'mc'}
+						{type: 'img', id: 'imageBacon', x: 118, y: 415, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'imageButter', x: 95, y: 334, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'imageCheese', x: 176, y: 524, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'imageCream', x: 569, y: 165, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'imageHoney', x: 717, y: 282, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'imageLeather', x: 684, y: 520, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'imageMushrooms', x: 323, y: 177, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'imagePeanutbutter', x: 540, y: 498, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'imagePumpkins', x: 168, y: 165, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'imageSugar', x: 149, y: 266, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'imageTomatoes', x: 460, y: 165, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'imageTurbines', x: 679, y: 163, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'imageWax', x: 402, y: 520, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'imageYarn', x: 701, y: 422, scale:0.5, align: 'mc'}
+						{type: 'img', id: 'imageYogurt', x: 279, y: 481, scale:0.5, align: 'mc'}
 						{type: 'swct', id: 'wcpt1', x: 435, y: 310, margin: 10, uwidth: 30, font: '40px Quicksand', scolor: '#F00', align: 'tc', eval:'drop_03'}
 					]
 					groups: []
