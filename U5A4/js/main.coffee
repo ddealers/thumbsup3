@@ -156,7 +156,7 @@ class U5A4 extends Oda
 								{name:'global',opts:{success:'nowas'}}
 								{name: 'pcpt2', opts: {pattern: ['#tcpt', 'there', '#tcpt', 'railroad?'], targets: [{text:'was'}, {text:'a'}], nextGroup: 'sc2grp0'}}
 							]
-							[
+							[ 
 								{name:'global',opts:{success:'yeswere'}}
 								{name: 'pcpt2', opts: {pattern: ['#tcpt', 'there', '#tcpt', 'seals?'], targets: [{text:'were'}, {text:'any'}], nextGroup: 'sc2grp0'}}
 							]
