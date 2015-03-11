@@ -117,7 +117,7 @@ class U6A2 extends Oda
 						{type: 'ldrg', id: 'ldrg13', x: 227, y: 172, index: '590', text:'590', font:'22px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
 						{type: 'ldrg', id: 'ldrg14', x: 309, y: 160, index: '900', text:'900', font:'22px Quicksand', color:'#333', target: 'pcpt1', eval: 'phrase_drop_01', afterSuccess: 'origin', afterFail: 'return'}
 						{
-							type: 'btn', id: 'repeat', x: 400, y: 570, isRepeat: true
+							type: 'btn', id: 'repeat', x: 700, y: 560, isRepeat: true
 							states:[
 								img: {name:'repeat', x: 0, y: 0, align: 'mc'}
 							]
