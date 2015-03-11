@@ -150,11 +150,11 @@ class U5A4 extends Oda
 						collection: [
 							[
 								{name:'global',opts:{success:'nowas'}}
-								{name: 'pcpt2', opts: {pattern: ['#tcpt', 'there', '#tcpt', 'garbage dump?'], targets: [{text:'was'}, {text:'a'}], nextGroup: 'sc2grp0'}}
+								{name: 'pcpt2', opts: {pattern: ['#tcpt', 'there', '#tcpt', 'garbage dump?'], targets: [{text:'was'}, {text:' a ', success:'a'}], nextGroup: 'sc2grp0'}}
 							]
 							[
 								{name:'global',opts:{success:'nowas'}}
-								{name: 'pcpt2', opts: {pattern: ['#tcpt', 'there', '#tcpt', 'railroad?'], targets: [{text:'was'}, {text:'a'}], nextGroup: 'sc2grp0'}}
+								{name: 'pcpt2', opts: {pattern: ['#tcpt', 'there', '#tcpt', 'railroad?'], targets: [{text:'was'}, {text:' a ', success:'a'}], nextGroup: 'sc2grp0'}}
 							]
 							[ 
 								{name:'global',opts:{success:'yeswere'}}
