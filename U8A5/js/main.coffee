@@ -32,6 +32,7 @@ class U8A5 extends Oda
 				b.update()
 				a.afterSuccess()
 				lib.scene.success()
+				lib[c.completeTarget].removeAllEventListeners()
 				d2oda.methods.delay 1000, ->
 					c.fadeOut()
 					lib.grp_solve.update {type:'fadeOut'}
@@ -41,7 +42,6 @@ class U8A5 extends Oda
 		@btnClick = (dispatcher) =>
 			@selection = lib[dispatcher].index
 			lib[dispatcher].scaleX = lib[dispatcher].scaleY = 1
-			lib[dispatcher].removeAllEventListeners()
 			lib.grp_pcpt.update {type:'fadeIn', ignoreY:true, ignoreCurrentAlpha:true, target:"pcpt#{@selection}"}
 			lib.grp_solve.update {type:'fadeIn'}
 		@game = 
@@ -53,16 +53,16 @@ class U8A5 extends Oda
 					answers: {
 						collection: [
 							[
-								{name: 'pcpt1', opts:{pattern:['#tcpt', 'climbed out of the water first?', '#rtn', 'Honupo\'okea, the Great Mother Turtle.'], targets: [{text:'Who'}]}}
-								{name: 'pcpt2', opts:{pattern:['#tcpt', 'did Honupo\'okea create a nest with her flippers?', '#rtn', 'She created a nest for her egg.'], targets: [{text:'Why'}]}}
-								{name: 'pcpt3', opts:{pattern:['#tcpt', 'waited in the water while Honupo\'okea built her nest?', '#rtn', 'Honu\'ea, the Great Father Turtle.'], targets: [{text:'Who'}]}}
-								{name: 'pcpt4', opts:{pattern:['#tcpt', 'did the egg look like?', '#rtn', 'It was completely round and smooth.'], targets: [{text:'What'}]}}
-								{name: 'pcpt5', opts:{pattern:['#tcpt', 'did Honupo\'okea cover the egg?', '#rtn', 'She brushed soft, black sand over it.'], targets: [{text:'How'}]}}
-								{name: 'pcpt6', opts:{pattern:['#tcpt', 'did the two turtles create next?', '#rtn', 'They created a pool of fresh water.'], targets: [{text:'What'}]}}
-								{name: 'pcpt7', opts:{pattern:['#tcpt', 'did the two turtles go after that?', '#rtn', 'They returned to the ocean.'], targets: [{text:'Where'}]}}
-								{name: 'pcpt8', opts:{pattern:['#tcpt', 'did Honupo\'okea come back to the beach?', '#rtn', 'When her egg was going to hatch.'], targets: [{text:'When'}]}}
-								{name: 'pcpt9', opts:{pattern:['#tcpt', 'wasn\'t Kauila a turtle at the end?', '#rtn', 'She became a human girl.'], targets: [{text:'Why'}]}}
-								{name: 'pcpt10', opts:{pattern:['#tcpt', 'does Kauila live now?', '#rtn', 'She continues to live by her pool of fresh water.'], targets: [{text:'Where'}]}}
+								{name: 'pcpt1', opts:{pattern:['#tcpt', 'climbed out of the water first?', '#rtn', 'Honupo\'okea, the Great Mother Turtle.'], targets: [{text:'Who'}], completeTarget:'img1'}}
+								{name: 'pcpt2', opts:{pattern:['#tcpt', 'did Honupo\'okea create a nest with her flippers?', '#rtn', 'She created a nest for her egg.'], targets: [{text:'Why'}], completeTarget:'img2'}}
+								{name: 'pcpt3', opts:{pattern:['#tcpt', 'waited in the water while Honupo\'okea built her nest?', '#rtn', 'Honu\'ea, the Great Father Turtle.'], targets: [{text:'Who'}], completeTarget:'img3'}}
+								{name: 'pcpt4', opts:{pattern:['#tcpt', 'did the egg look like?', '#rtn', 'It was completely round and smooth.'], targets: [{text:'What'}], completeTarget:'img4'}}
+								{name: 'pcpt5', opts:{pattern:['#tcpt', 'did Honupo\'okea cover the egg?', '#rtn', 'She brushed soft, black sand over it.'], targets: [{text:'How'}], completeTarget:'img5'}}
+								{name: 'pcpt6', opts:{pattern:['#tcpt', 'did the two turtles create next?', '#rtn', 'They created a pool of fresh water.'], targets: [{text:'What'}], completeTarget:'img6'}}
+								{name: 'pcpt7', opts:{pattern:['#tcpt', 'did the two turtles go after that?', '#rtn', 'They returned to the ocean.'], targets: [{text:'Where'}], completeTarget:'img7'}}
+								{name: 'pcpt8', opts:{pattern:['#tcpt', 'did Honupo\'okea come back to the beach?', '#rtn', 'When her egg was going to hatch.'], targets: [{text:'When'}], completeTarget:'img8'}}
+								{name: 'pcpt9', opts:{pattern:['#tcpt', 'wasn\'t Kauila a turtle at the end?', '#rtn', 'She became a human girl.'], targets: [{text:'Why'}], completeTarget:'img9'}}
+								{name: 'pcpt10', opts:{pattern:['#tcpt', 'does Kauila live now?', '#rtn', 'She continues to live by her pool of fresh water.'], targets: [{text:'Where'}], completeTarget:'img10'}}
 							]
 						]
 						type: 'steps'

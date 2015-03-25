@@ -276,7 +276,9 @@ window.d2oda.evaluator ?= class Evaluator
 		lib.scene.success false
 	@evaluateGlobal01 = (dispatcher) ->
 		if lib[dispatcher].index is @success
-			lib.scene.success()
+			if not lib[dispatcher].parent.complete
+				lib[dispatcher].parent.complete = true
+				lib.scene.success()
 		else
 			lib.scene.fail()
 	@evaluateGlobal02 = (dispatcher) ->
@@ -377,7 +379,7 @@ window.d2oda.evaluator ?= class Evaluator
 				lib.score.stop()
 				lib.game.nextScene()
 	@evaluateDrop01 = (dispatcher, target) ->
-		lib[dispatcher].afterSuccess {x: target.x, y: target.y}
+		lib[dispatcher].afterSuccess {x: target.x, y: target.y}, 1, 0.5, 0.5
 		if lib[dispatcher].index is target.success
 			target.update()
 		else 
@@ -1008,7 +1010,7 @@ class WriteContainer extends Component
 	openPrompt: =>
 		verb = prompt "Enter the past simple form of #{@mainText.text}"
 		@pastText.text = verb
-		if verb is @success
+		if verb.toLowerCase() is @success.toLowerCase()
 			@complete = true
 	update: (opts) ->
 		if @children[3] then @removeChildAt 3
@@ -1019,10 +1021,8 @@ class WriteContainer extends Component
 		@back.graphics.c().f(@bcolor).dr(0, 0, @pastText.getMeasuredWidth(), @pastText.getMeasuredHeight()).ss(@stroke).s(@scolor).mt(0, @pastText.getMeasuredHeight()).lt(@pastText.getMeasuredWidth(), @pastText.getMeasuredHeight())
 		@back.x = -@pastText.getMeasuredWidth() / 2
 		@pastText.text = ''
-		console.log @
 		TweenLite.from @, 0.3, {alpha: 0, y: @y - 10}
 	showEvaluation: () ->
-		console.log 
 		if @complete
 			@insertBitmap 'correct', 'correct', @getBounds().width, @getBounds().height / 2, 'ml'
 		else
@@ -1333,9 +1333,10 @@ class ChooseContainer extends Component
 		@label = opts.label
 		@caption = opts.caption
 		@bullets = opts.bullets
+		@complete = false
 	update: (opts) ->
 		@removeAllChildren()
-		console.log opts
+		@complete = false
 		switch opts.type
 			when 'img'
 				opt1 = @createBitmap "#{@name}_opt1", opts.opt1, 0, 100, 'tr'
@@ -1719,6 +1720,7 @@ class PhraseCompleterContainer extends Component
 				@add h, false
 				npos += h.getMeasuredWidth() + @margin
 				maxWidth = npos if npos > maxWidth
+		@completeTarget = opts.completeTarget
 		@width = maxWidth
 		@setPosition @align
 		@observer.notify ComponentObserver.UPDATED
