@@ -55,8 +55,8 @@ class U1A5 extends Oda
 		super
 		@intento = 0
 		@insertBitmap 'header', 'head', stageSize.w / 2, 0, 'tc'
-		@insertInstructions 'instructions', ['Listen, read and drag the dialogues to the text.'], 40, 100
-		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 20, 500, 5, 0
+		@insertInstructions 'instructions', ['Listen, read and drag the dialogues to the text.'], 80, 200
+		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 40, 1000, 5, 0
 		@library.score.txtCount.color = "#bfd951"
 		@library.score.txtTotal.color = "#ff9933"
 		@setCuento(1).introEvaluation()
