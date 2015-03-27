@@ -106,7 +106,7 @@ class U7A5 extends Oda
 		cuento.name = 'cuento'
 		@scene = scene
 
-		fondo = @createBitmap 'bg', 'bg', stageSize.w / 2, 0, 'tc'
+		fondo = @createBitmap 'bg', 'bg', stageSize.w / 0, 0, 'tc'
 		c = @createSprite "cuento", ['scene1','scene2','scene3','scene4','scene5','scene6'],null, stageSize.w / 2, 170, 'tc'
 		btn = @createBitmap 'btnrepeat', 'btnrepeat', stageSize.w / 2, 570, 'mc'
 		btnnext = @createBitmap 'btnnext', 'btnnext', stageSize.w / 2 + 100, 570, 'mc'
