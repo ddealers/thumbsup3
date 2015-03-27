@@ -59,7 +59,7 @@ class U2A3 extends Oda
 							type: 'btn', id: 'btn1', x: 521, y: 404, index: 'blueberry', target: 'lbl1', eval: 'click_02'
 							states: [
 								{
-									img: {name: 'priceblueberryJam', x: 0, y: 0, align: 'mc'}
+									img: {name: 'priceblueberryJam', x: 0, y: 0, scale:0.5, align: 'mc'}
 								}
 								{
 									img: {name: 'letraM', x: 0, y: 0, align: 'mc'}
@@ -71,7 +71,7 @@ class U2A3 extends Oda
 							type: 'btn', id: 'btn2', x: 350, y: 218, index: 'butter', target: 'lbl1', eval: 'click_02'
 							states: [
 								{
-									img: {name: 'pricebutter', x: 0, y: 0, align: 'mc'}
+									img: {name: 'pricebutter', x: 0, y: 0, scale:0.5, align: 'mc'}
 								}
 								{
 									img: {name: 'letraR', x: 0, y: 0, align: 'mc'}
@@ -83,7 +83,7 @@ class U2A3 extends Oda
 							type: 'btn', id: 'btn3', x: 584, y: 314, index: 'carrots', target: 'lbl1', eval: 'click_02'
 							states: [
 								{
-									img: {name: 'pricecarrots', x: 0, y: 0, align: 'mc'}
+									img: {name: 'pricecarrots', x: 0, y: 0, scale:0.5, align: 'mc'}
 								}
 								{
 									img: {name: 'letraS', x: 0, y: 0, align: 'mc'}
@@ -95,7 +95,7 @@ class U2A3 extends Oda
 							type: 'btn', id: 'btn4', x: 580, y: 176, index: 'chilis', target: 'lbl1', eval: 'click_02'
 							states: [
 								{
-									img: {name: 'pricechilis', x: 0, y: 0, align: 'mc'}
+									img: {name: 'pricechilis', x: 0, y: 0, scale:0.5, align: 'mc'}
 								}
 								{
 									img: {name: 'letraM', x: 0, y: 0, align: 'mc'}
@@ -107,7 +107,7 @@ class U2A3 extends Oda
 							type: 'btn', id: 'btn5', x: 416, y: 253, index: 'cream', target: 'lbl1', eval: 'click_02'
 							states: [
 								{
-									img: {name: 'pricecream', x: 0, y: 0, align: 'mc'}
+									img: {name: 'pricecream', x: 0, y: 0, scale:0.5, align: 'mc'}
 								}
 								{
 									img: {name: 'letraS', x: 0, y: 0, align: 'mc'}
@@ -119,7 +119,7 @@ class U2A3 extends Oda
 							type: 'btn', id: 'btn6', x: 322, y: 315, index: 'eggs', target: 'lbl1', eval: 'click_02'
 							states: [
 								{
-									img: {name: 'priceeggs', x: 0, y: 0, align: 'mc'}
+									img: {name: 'priceeggs', x: 0, y: 0, scale:0.5, align: 'mc'}
 								}
 								{
 									img: {name: 'letraH', x: 0, y: 0, align: 'mc'}
@@ -131,7 +131,7 @@ class U2A3 extends Oda
 							type: 'btn', id: 'btn7', x: 397, y: 320, index: 'mushrooms', target: 'lbl1', eval: 'click_02'
 							states: [
 								{
-									img: {name: 'pricemushrooms', x: 0, y: 0, align: 'mc'}
+									img: {name: 'pricemushrooms', x: 0, y: 0, scale:0.5, align: 'mc'}
 								}
 								{
 									img: {name: 'letraO', x: 0, y: 0, align: 'mc'}
@@ -143,7 +143,7 @@ class U2A3 extends Oda
 							type: 'btn', id: 'btn8', x: 347, y: 406, index: 'peach', target: 'lbl1', eval: 'click_02'
 							states: [
 								{
-									img: {name: 'pricepeachJam', x: 0, y: 0, align: 'mc'}
+									img: {name: 'pricepeachJam', x: 0, y: 0, scale:0.5, align: 'mc'}
 								}
 								{
 									img: {name: 'letraU', x: 0, y: 0, align: 'mc'}
@@ -155,7 +155,7 @@ class U2A3 extends Oda
 							type: 'btn', id: 'btn9', x: 477, y: 313, index: 'peppers', target: 'lbl1', eval: 'click_02'
 							states: [
 								{
-									img: {name: 'pricepeppers', x: 0, y: 0, align: 'mc'}
+									img: {name: 'pricepeppers', x: 0, y: 0, scale:0.5, align: 'mc'}
 								}
 								{
 									img: {name: 'letraO', x: 0, y: 0, align: 'mc'}
@@ -163,7 +163,7 @@ class U2A3 extends Oda
 								}
 							]
 						}
-						{type: 'img', id: 'propabuelita', name: 'abuelita', x:554, y:254, align: 'mc'}
+						{type: 'img', id: 'propabuelita', name: 'abuelita', x:560.5, y:268, align: 'mc'}
 					]
 					groups: []
 				}
