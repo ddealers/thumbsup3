@@ -45,7 +45,7 @@ class U1A5 extends Oda
 					{x:360, y:240}
 					{x:360, y:385}
 					{x:360, y:480}
-					{x:850, y:240}
+					{x:850, y:155}
 				]
 			}
 		]
@@ -56,7 +56,7 @@ class U1A5 extends Oda
 		@intento = 0
 		@insertBitmap 'header', 'head', stageSize.w / 2, 0, 'tc'
 		@insertInstructions 'instructions', ['Listen, read and drag the dialogues to the text.'], 300, 120
-		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 40, 1000, 5, 0
+		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 200, 700, 5, 0
 		@library.score.txtCount.color = "#bfd951"
 		@library.score.txtTotal.color = "#ff9933"
 		@setCuento(1).introEvaluation()
@@ -64,7 +64,7 @@ class U1A5 extends Oda
 		cuento = new createjs.Container()
 		cuento.name = 'cuento'
 		@scene = scene
-		b = @createBitmap 'bg', 'bg', 190, 140
+		b = @createBitmap 'bg', 'bg', 190, 130
 		cuento.addChild b
 		for i in [1..@game[scene - 1].positions.length] by 1
 			if i in [1]
