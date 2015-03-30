@@ -41,25 +41,25 @@ class U2A5 extends Oda
 		@game = [
 			{
 				texts:[
-					{idx:1, t:'doors', x:'701', y:'492', p:'p1'}
-					{idx:1, t:'table', x:'665', y:'547', p:'p2'}
-					{idx:2, t:'stomach', x:'731', y:'532'}
-					{idx:3, t:'fountain', x:'557', y:'497', p:'p1'}
-					{idx:3, t:'flutes', x:'496', y:'484', p:'p2'}
-					{idx:4, t:'cup', x:'595', y:'542'}
-					{idx:5, t:'flowers', x:'574', y:'459'}
-					{idx:6, t:'eyes', x:'659', y:'468', p:'p1'}
-					{idx:6, t:'question', x:'518', y:'533', p:'p2'}
-					{idx:7, t:'trouble', x:'634', y:'511'}	
+					{idx:1, t:'doors', x:'1100', y:'750', p:'p1'}
+					{idx:1, t:'table', x:'1100', y:'670', p:'p2'}
+					{idx:2, t:'stomach', x:'990', y:'740'}
+					{idx:3, t:'fountain', x:'1150', y:'720', p:'p1'}
+					{idx:3, t:'flutes', x:'950', y:'695', p:'p2'}
+					{idx:4, t:'cup', x:'1170', y:'680'}
+					{idx:5, t:'flowers', x:'1000', y:'660'}
+					{idx:6, t:'eyes', x:'1050', y:'695', p:'p1'}
+					{idx:6, t:'question', x:'1085', y:'780', p:'p2'}
+					{idx:7, t:'trouble', x:'950', y:'780'}	
 				]
 				positions:[
-					{x:64, y:177}
-					{x:64, y:258}
-					{x:64, y:350}
-					{x:64, y:403}
-					{x:412, y:177}
-					{x:412, y:287}
-					{x:412, y:392}
+					{x:335, y:240}
+					{x:335, y:365}
+					{x:335, y:505}
+					{x:335, y:585}
+					{x:850, y:190}
+					{x:850, y:400}
+					{x:850, y:550}
 				]
 			}
 		]
@@ -68,7 +68,7 @@ class U2A5 extends Oda
 	setStage: ->
 		super
 		@intento = 0
-		@insertBitmap 'bg', 'bg', 250, 80
+		@insertBitmap 'bg', 'bg', 250, 145
 		@insertBitmap 'header', 'head', stageSize.w / 2, 0, 'tc'
 		@insertInstructions 'instructions', ['Listen, read and drag the correct words to the text.'], 300, 130
 		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 250, 700, 10, 0
