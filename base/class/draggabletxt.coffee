@@ -10,7 +10,7 @@ class DraggableText
 		@x = x
 		@y = y
 		@pos = x:x, y:y
-		@text = new createjs.Text text, '16px Quicksand', '#333333'
+		@text = new createjs.Text text, '20px Quicksand', '#333333'
 		@hit = new createjs.Shape()
 		@hit.graphics.beginFill('#000').drawRect(-5, -5, @text.getMeasuredWidth() + 10, @text.getMeasuredHeight() + 10)
 		@hitTester = new createjs.Shape()
