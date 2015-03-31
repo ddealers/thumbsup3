@@ -41,24 +41,24 @@ class U3A5 extends Oda
 		@game = [
 			{
 				texts:[
-					{idx:1, t:'trees', x:'1171', y:'750',p:'p1'}
-					{idx:1, t:'lake', x:'1110', y:'647',p:'p2'}
-					{idx:2, t:'wind', x:'990', y:'662'}
-					{idx:3, t:'animals', x:'1097', y:'730'}
-					{idx:4, t:'back', x:'985', y:'694',p:'p1'}
-					{idx:4, t:'backpack', x:'1195', y:'662',p:'p2'}
-					{idx:5, t:'sunlight', x:'975', y:'735',p:'p1'}
-					{idx:5, t:'world', x:'1059', y:'678',p:'p2'}
-					{idx:6, t:'eyes', x:'1178', y:'700',p:'p1'}
-					{idx:6, t:'sky', x:'1034', y:'765',p:'p2'}
+					{idx:1, t:'trees', x:'1300', y:'1060',p:'p1'}
+					{idx:1, t:'lake', x:'1360', y:'940',p:'p2'}
+					{idx:2, t:'wind', x:'1100', y:'1100'}
+					{idx:3, t:'animals', x:'1210', y:'930'}
+					{idx:4, t:'back', x:'1285', y:'1120',p:'p1'}
+					{idx:4, t:'backpack', x:'1450', y:'1000',p:'p2'}
+					{idx:5, t:'sunlight', x:'1230', y:'1000',p:'p1'}
+					{idx:5, t:'world', x:'1459', y:'1100',p:'p2'}
+					{idx:6, t:'eyes', x:'1178', y:'1050',p:'p1'}
+					{idx:6, t:'sky', x:'1085', y:'1000',p:'p2'}
 				]
 				positions:[
-					{x:335, y:250}
-					{x:335, y:335}
-					{x:335, y:430}
-					{x:800, y:200}
-					{x:800, y:360}
-					{x:800, y:450}
+					{x:150, y:365}
+					{x:150, y:505}
+					{x:150, y:650}
+					{x:900, y:290}
+					{x:900, y:545}
+					{x:900, y:650}
 				]
 			}
 		]
@@ -67,11 +67,11 @@ class U3A5 extends Oda
 	setStage: ->
 		super
 		@intento = 0
-		@insertBitmap 'bg', 'bg', 200, 120
+		@insertBitmap 'bg', 'bg', 20, 190
 		@library.bg.scaleX = @library.bg.scaleY = 0.5
 		@insertBitmap 'header', 'head', stageSize.w / 2, 0, 'tc'
-		@insertInstructions 'instructions', ['Listen, read and drag the words to complete the text.'], 300, 130
-		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 250, 700, 10, 0
+		@insertInstructions 'instructions', ['Listen, read and drag the words to complete the text.'], 80, 180
+		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 0, 1000, 10, 0
 		@library.score.txtCount.color = "#BFD951"
 		@library.score.txtTotal.color = "#0096DB"
 		@setCuento(1).introEvaluation()
