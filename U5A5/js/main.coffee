@@ -38,24 +38,24 @@ class U3A5 extends Oda
 		@game = [
 			{
 				texts:[
-					{idx:1, t:'were', x:706, y:416}
-					{idx:2, t:'planned', x:680, y:490,p:'p1'}
-					{idx:2, t:'reached', x:606, y:360,p:'p2'}
-					{idx:3, t:'wanted', x:609, y:474}
-					{idx:4, t:'was', x:633, y:522}
-					{idx:5, t:'put', x:665, y:440}
-					{idx:6, t:'fell', x:624, y:401}
-					{idx:7, t:'yelled', x:676, y:379}
+					{idx:1, t:'were', x:1150, y:550}
+					{idx:2, t:'planned', x:1200, y:740,p:'p1'}
+					{idx:2, t:'reached', x:1150, y:640,p:'p2'}
+					{idx:3, t:'wanted', x:1140, y:690}
+					{idx:4, t:'was', x:1200, y:522}
+					{idx:5, t:'put', x:1150, y:600}
+					{idx:6, t:'fell', x:1250, y:690}
+					{idx:7, t:'yelled', x:1210, y:590}
 
 				]
 				positions:[
-					{x:114, y:177}
-					{x:114, y:238}
-					{x:114, y:365}
-					{x:114, y:470}
-					{x:452, y:177}
-					{x:452, y:245}
-					{x:452, y:290}
+					{x:335, y:255}
+					{x:335, y:338}
+					{x:335, y:525}
+					{x:335, y:675}
+					{x:800, y:250}
+					{x:800, y:350}
+					{x:800, y:410}
 				]
 			}
 		]
@@ -64,10 +64,10 @@ class U3A5 extends Oda
 	setStage: ->
 		super
 		@intento = 0
-		@insertBitmap 'bg', 'bg', 0, 90
+		@insertBitmap 'bg', 'bg', 200, 130
 		@insertBitmap 'header', 'head', stageSize.w / 2, 0, 'tc'
-		@insertInstructions 'instructions', ['Listen, read and drag the words to the text.'], 40, 100
-		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 20, 500, 8, 0
+		@insertInstructions 'instructions', ['Listen, read and drag the words to the text.'], 300, 130
+		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 200, 700, 8, 0
 		@library.score.txtCount.color = "#bfd951"
 		@library.score.txtTotal.color = "#ff9933"
 		@setCuento(1).introEvaluation()
