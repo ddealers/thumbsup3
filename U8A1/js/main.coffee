@@ -32,16 +32,16 @@ class U8A1 extends Oda
 						collection: [
 							[
 								{name: 'grp_btn', opts:{type:'pulseAll'}}
-								{name: 'pcpt1', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt', '#tcpt'], targets: [{text:'they'}, {text:'are'}, {text:'going'}, {text:'to'}, {text:'buy'}, {text:'a'}, {text:'balloon'}], label:'t1'}}
-								{name: 'pcpt2', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt', '#tcpt'], targets: [{text:'she'}, {text:'is'}, {text:'going'}, {text:'to'}, {text:'catch'}, {text:'the'}, {text:'bus'}], label:'t2'}}
-								{name: 'pcpt3', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt', '#tcpt'], targets: [{text:'she'}, {text:'is'}, {text:'going'}, {text:'to'}, {text:'buy'}, {text:'an'}, {text:'ice cream', success:'icecream'}], label:'t3'}}
-								{name: 'pcpt4', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt', '#tcpt', '#tcpt'], targets: [{text:'he'}, {text:'is'}, {text:'going'}, {text:'to'}, {text:'go'}, {text:'to'}, {text:'the'}, {text:'movies'}], label:'t4'}}
-								{name: 'pcpt5', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt', '#tcpt', '#tcpt'], targets: [{text:'they'}, {text:'are'}, {text:'going'}, {text:'to'}, {text:'swim'}, {text:'in'}, {text:'the'}, {text:'ocean'}], label:'t5'}}
-								{name: 'pcpt6', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt'], targets: [{text:'they'}, {text:'are'}, {text:'going'}, {text:'to'}, {text:'eat'}, {text:'pizza'}], label:'t6'}}
-								{name: 'pcpt7', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt', '#tcpt'], targets: [{text:'he'}, {text:'is'}, {text:'going'}, {text:'to'}, {text:'build'}, {text:'a'}, {text:'sandcastle'}], label:'t7'}}
-								{name: 'pcpt8', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt', '#tcpt',], targets: [{text:'they'}, {text:'are'}, {text:'going'}, {text:'to'}, {text:'go'}, {text:'scuba diving', success:'scubadiving'}], label:'t8'}}
-								{name: 'pcpt9', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt'], targets: [{text:'he'}, {text:'is'}, {text:'going'}, {text:'to'}, {text:'go'}, {text:'shopping'}], label:'t9'}}
-								{name: 'pcpt10', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt', '#tcpt'], targets: [{text:'she'}, {text:'is'}, {text:'going'}, {text:'to'}, {text:'hit'}, {text:'the'}, {text:'ball'}], label:'t10'}}
+								{name: 'pcpt1', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt', '#tcpt','.'], targets: [{text:'they'}, {text:'are'}, {text:'going'}, {text:'to'}, {text:'buy'}, {text:'a'}, {text:'balloon'}], label:'t1'}}
+								{name: 'pcpt2', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt', '#tcpt','.'], targets: [{text:'she'}, {text:'is'}, {text:'going'}, {text:'to'}, {text:'catch'}, {text:'the'}, {text:'bus'}], label:'t2'}}
+								{name: 'pcpt3', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt', '#tcpt','.'], targets: [{text:'she'}, {text:'is'}, {text:'going'}, {text:'to'}, {text:'buy'}, {text:'an'}, {text:'ice cream', success:'icecream'}], label:'t3'}}
+								{name: 'pcpt4', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt', '#tcpt', '#tcpt','.'], targets: [{text:'he'}, {text:'is'}, {text:'going'}, {text:'to'}, {text:'go'}, {text:'to'}, {text:'the'}, {text:'movies'}], label:'t4'}}
+								{name: 'pcpt5', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt', '#tcpt', '#tcpt','.'], targets: [{text:'they'}, {text:'are'}, {text:'going'}, {text:'to'}, {text:'swim'}, {text:'in'}, {text:'the'}, {text:'ocean'}], label:'t5'}}
+								{name: 'pcpt6', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt','.'], targets: [{text:'they'}, {text:'are'}, {text:'going'}, {text:'to'}, {text:'eat'}, {text:'pizza'}], label:'t6'}}
+								{name: 'pcpt7', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt', '#tcpt','.'], targets: [{text:'he'}, {text:'is'}, {text:'going'}, {text:'to'}, {text:'build'}, {text:'a'}, {text:'sandcastle'}], label:'t7'}}
+								{name: 'pcpt8', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt', '#tcpt','.'], targets: [{text:'they'}, {text:'are'}, {text:'going'}, {text:'to'}, {text:'go'}, {text:'scuba diving', success:'scubadiving'}], label:'t8'}}
+								{name: 'pcpt9', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt','.'], targets: [{text:'she'}, {text:'is'}, {text:'going'}, {text:'to'}, {text:'go'}, {text:'shopping'}], label:'t9'}}
+								{name: 'pcpt10', opts:{pattern:['#tcpt', '#tcpt', '#tcpt', '#tcpt', '#tcpt',  '#tcpt', '#tcpt','.'], targets: [{text:'she'}, {text:'is'}, {text:'going'}, {text:'to'}, {text:'hit'}, {text:'the'}, {text:'ball'}], label:'t10'}}
 							]
 						]
 						type: 'steps'
@@ -94,12 +94,12 @@ class U8A1 extends Oda
 						{type: 'txt', id: 't1', text:'What are they going to buy?', x: 400, y: 515, font:'18px Quicksand', align: 'center'}
 						{type: 'txt', id: 't2', text:'What is she going to do?', x: 400, y: 515, font:'18px Quicksand', align: 'center'}
 						{type: 'txt', id: 't3', text:'What is she going to do?', x: 400, y: 515, font:'18px Quicksand', align: 'center'}
-						{type: 'txt', id: 't4', text:'Where is going to go?', x: 400, y: 515, font:'18px Quicksand', align: 'center'}
+						{type: 'txt', id: 't4', text:'Where is he going to go?', x: 400, y: 515, font:'18px Quicksand', align: 'center'}
 						{type: 'txt', id: 't5', text:'What are they going to do?', x: 400, y: 515, font:'18px Quicksand', align: 'center'}
 						{type: 'txt', id: 't6', text:'What are they going to do?', x: 400, y: 515, font:'18px Quicksand', align: 'center'}
 						{type: 'txt', id: 't7', text:'What is he going to do?', x: 400, y: 515, font:'18px Quicksand', align: 'center'}
 						{type: 'txt', id: 't8', text:'What are they going to do?', x: 400, y: 515, font:'18px Quicksand', align: 'center'}
-						{type: 'txt', id: 't9', text:'What is he going to do?', x: 400, y: 515, font:'18px Quicksand', align: 'center'}
+						{type: 'txt', id: 't9', text:'What is she going to do?', x: 400, y: 515, font:'18px Quicksand', align: 'center'}
 						{type: 'txt', id: 't10', text:'What is she going to do?', x: 400, y: 515, font:'18px Quicksand', align: 'center'}
 						{type: 'pcpt', id: 'pcpt1', x: 400, y: 550, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#eb188e'}
 						{type: 'pcpt', id: 'pcpt2', x: 400, y: 550, font: '24px Quicksand', margin: 10, align: 'tc', scolor: '#eb188e'}

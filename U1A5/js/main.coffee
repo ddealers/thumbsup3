@@ -65,6 +65,7 @@ class U1A5 extends Oda
 		cuento.name = 'cuento'
 		@scene = scene
 		b = @createBitmap 'bg', 'bg', 190, 130
+		b.scaleX = b.scaleY = 0.98
 		cuento.addChild b
 		for i in [1..@game[scene - 1].positions.length] by 1
 			if i in [1]
@@ -74,12 +75,10 @@ class U1A5 extends Oda
 			else
 				m = @createSprite "sc#{i}", ["#{(scene - 1) * 4 + i}", "#{(scene - 1) * 4 + i}p1", "#{(scene - 1) * 4 + i}p2","#{(scene - 1) * 4 + i}b"],null, @game[scene - 1].positions[i - 1].x, @game[scene - 1].positions[i - 1].y
 			hit = new createjs.Shape()
-			hit.graphics.beginFill("rgba(255,255, 255, 0.1)").drawRect(0, 0, m.width, m.height) 
+			hit.graphics.beginFill("rgba(0, 0, 0, 0.1)").drawRect(0, 0, m.width, m.height) 
 			hit.name = "hsc#{i}"
 			hit.x = @game[scene - 1].positions[i - 1].x
 			hit.y = @game[scene - 1].positions[i - 1].y
-			cuento.addChild hit
-			#m.scaleX = m.scaleY = 0.8
 			hit.index = (scene - 1) * 4 + i
 			cuento.addChild hit, m
 			@addToLibrary hit, m
@@ -132,7 +131,7 @@ class U1A5 extends Oda
 					@warning()
 					@answer.returnToPlace()
 			else
-				@ .returnToPlace()
+				@answer.returnToPlace()
 	finishEvaluation: =>
 		for i in [1..@game[@scene - 1].positions.length] by 1
 			if @library["sc#{i}"].animation.currentFrame isnt @library["sc#{i}"].animation.spriteSheet._frames.length - 1

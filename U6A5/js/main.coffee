@@ -140,7 +140,7 @@ class U6A5 extends Oda
 		for i in [1..@game[scene - 1].positions.length] by 1
 			m = @createSprite "sc#{i}", ["#{@game[scene - 1].positions[i - 1].id}",  "#{@game[scene - 1].positions[i - 1].id}b"],null, @game[scene - 1].positions[i - 1].x, @game[scene - 1].positions[i - 1].y 
 			hit = new createjs.Shape()
-			hit.graphics.beginFill("rgba(255,255, 255, 0.1)").drawRect(0, 0, m.width, m.height) 
+			hit.graphics.beginFill("rgba(0, 0, 0, 0.1)").drawRect(0, 0, m.width, m.height) 
 			hit.name = "hsc#{i}"
 			hit.x = @game[scene - 1].positions[i - 1].x
 			hit.y = @game[scene - 1].positions[i - 1].y

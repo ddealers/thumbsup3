@@ -95,7 +95,7 @@ class U8A2 extends Oda
 		]
 		@btnClick = (dispatcher, target) =>
 			@selection = lib[dispatcher].index
-			lib[dispatcher].scaleX = lib[dispatcher].scaleY = 1
+			lib[dispatcher].scaleX = lib[dispatcher].scaleY = 0.5
 			lib[dispatcher].removeAllEventListeners()
 			lib.grp_buttons.update {type:'fadeOut'}
 			lib.grp_center.update {type:'fadeIn', ignoreY:true, ignoreCurrentAlpha:true, target:"center#{@selection}"}
@@ -114,7 +114,7 @@ class U8A2 extends Oda
 				a.afterSuccess()
 				lib.scene.success true, false
 			else
-				a.afterFail()
+				a.afterFail(1, 0.5, 0.5)
 				lib.scene.fail()
 			if lib["globo#{@selection}"].sprite.animation.currentFrame is 1 and lib["caja#{@selection}"].sprite.animation.currentFrame is 1
 				d2oda.methods.delay 1000, ->
@@ -158,47 +158,47 @@ class U8A2 extends Oda
 					}
 					containers:[
 						{
-							type: 'btn', id: 'btn1', x: 100, y: 290, scale:0.5, index: 'Wilson', target: null
+							type: 'btn', id: 'btn1', x: 100, y: 290, scale:0.5, overScale: 0.6, index: 'Wilson', target: null
 							eval: @btnClick
 							states: [{img: {name: 'menuWilson', x: 0, y: 0, align: 'bc'}}]
 						}
 						{
-							type: 'btn', id: 'btn2', x: 250, y: 290, scale:0.5, index: 'Jack', target: null
+							type: 'btn', id: 'btn2', x: 250, y: 290, scale:0.5, overScale: 0.6, index: 'Jack', target: null
 							eval: @btnClick
 							states: [{img: {name: 'menuJack', x: 0, y: 0, align: 'bc'}}]
 						}
 						{
-							type: 'btn', id: 'btn3', x: 400, y: 290, scale:0.5, index: 'Renee', target: null
+							type: 'btn', id: 'btn3', x: 400, y: 290, scale:0.5, overScale: 0.6, index: 'Renee', target: null
 							eval: @btnClick
 							states: [{img: {name: 'menuRenee', x: 0, y: 0, align: 'bc'}}]
 						}
 						{
-							type: 'btn', id: 'btn4', x: 550, y: 290, scale: 0.5, index: 'Ashton', target: null
+							type: 'btn', id: 'btn4', x: 550, y: 290, scale: 0.5, overScale: 0.6, index: 'Ashton', target: null
 							eval: @btnClick
 							states: [{img: {name: 'menuAshton', x: 0, y: 0, align: 'bc'}}]
 						}
 						{
-							type: 'btn', id: 'btn5', x: 700, y: 290, scale:0.5, index: 'Eva', target: null
+							type: 'btn', id: 'btn5', x: 700, y: 290, scale:0.5, overScale: 0.6, index: 'Eva', target: null
 							eval: @btnClick
 							states: [{img: {name: 'menuEva', x: 0, y: 0, align: 'bc'}}]
 						}
 						{
-							type: 'btn', id: 'btn6', x: 180, y: 490, scale:0.5, index: 'Kevin', target: null
+							type: 'btn', id: 'btn6', x: 180, y: 490, scale:0.5, overScale: 0.6, index: 'Kevin', target: null
 							eval: @btnClick
 							states: [{img: {name: 'menuKevin', x: 0, y: 0, align: 'bc'}}]
 						}
 						{
-							type: 'btn', id: 'btn7', x: 330, y: 490, scale:0.5, index: 'Marissa', target: null
+							type: 'btn', id: 'btn7', x: 330, y: 490, scale:0.5, overScale: 0.6, index: 'Marissa', target: null
 							eval: @btnClick
 							states: [{img: {name: 'menuMarissa', x: 0, y: 0, align: 'bc'}}]
 						}
 						{
-							type: 'btn', id: 'btn8', x: 480, y: 490, scale:0.5, index: 'Sam', target: null
+							type: 'btn', id: 'btn8', x: 480, y: 490, scale:0.5, overScale: 0.6, index: 'Sam', target: null
 							eval: @btnClick
 							states: [{img: {name: 'menuSam', x: 0, y: 0, align: 'bc'}}]
 						}
 						{
-							type: 'btn', id: 'btn9', x: 630, y: 490, scale:0.5, index: 'Carla', target: null
+							type: 'btn', id: 'btn9', x: 630, y: 490, scale:0.5, overScale: 0.6, index: 'Carla', target: null
 							eval: @btnClick
 							states: [{img: {name: 'menuCarla', x: 0, y: 0, align: 'bc'}}]
 						}
