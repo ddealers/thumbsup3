@@ -44,21 +44,21 @@ class U4A5 extends Oda
 		super
 		@answers = @shuffle @game.answers
 		@intento = false
-		@insertBitmap 'propback', 'propback', 0, 30
+		@insertBitmap 'propback', 'propback', 200, 30
 		@library.propback.scaleX = @library.propback.scaleY = 0.5
 		@insertBitmap 'header', 'head', stageSize.w / 2, 0, 'tc'
-		@insertInstructions 'instructions', ['Read the speech bubbles and click on the corresponding character.'], 40, 100
-		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 20, 500, 10, 0
+		@insertInstructions 'instructions', ['Read the speech bubbles and click on the corresponding character.'], 300, 130
+		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 250, 700, 10, 0
 		@library.score.txtCount.color = "#0A9BDD"
 		@library.score.txtTotal.color = "#FE008F"
 		@setFaces().introEvaluation()
 	setFaces: ->
 		faces = new createjs.Container()
-		faces.x = 446
-		faces.y = 443
-		b = @createBitmap 'bubblebmp','bubbletext', 0,0
+		faces.x = 900
+		faces.y = 640
+		b = @createBitmap 'bubblebmp','bubbletext', -40,-20
 		b.scaleX = b.scaleY = 0.5
-		t = @createText 'qtext', @answers[@index].q, '17px Browallia New', '#000', 140, 9
+		t = @createText 'qtext', @answers[@index].q, '25px Browallia New', '#000', 163, -10
 		t.textAlign = 'center'
 		faces.addChild b, t
 		@addToLibrary b, t
