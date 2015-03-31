@@ -42,10 +42,10 @@ class U1A5 extends Oda
 					{idx:4, t:"Thank you,"}
 				]
 				positions:[
-					{x:360, y:240}
-					{x:360, y:385}
-					{x:360, y:480}
-					{x:850, y:155}
+					{x:250, y:370}
+					{x:250, y:540}
+					{x:250, y:640}
+					{x:825, y:280}
 				]
 			}
 		]
@@ -55,8 +55,8 @@ class U1A5 extends Oda
 		super
 		@intento = 0
 		@insertBitmap 'header', 'head', stageSize.w / 2, 0, 'tc'
-		@insertInstructions 'instructions', ['Listen, read and drag the dialogues to the text.'], 300, 120
-		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 200, 700, 5, 0
+		@insertInstructions 'instructions', ['Listen, read and drag the dialogues to the text.'], 80, 180
+		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 0, 1000, 5, 0
 		@library.score.txtCount.color = "#bfd951"
 		@library.score.txtTotal.color = "#ff9933"
 		@setCuento(1).introEvaluation()
@@ -64,7 +64,7 @@ class U1A5 extends Oda
 		cuento = new createjs.Container()
 		cuento.name = 'cuento'
 		@scene = scene
-		b = @createBitmap 'bg', 'bg', 190, 130
+		b = @createBitmap 'bg', 'bg', 0, 130
 		b.scaleX = b.scaleY = 0.98
 		cuento.addChild b
 		for i in [1..@game[scene - 1].positions.length] by 1
@@ -83,7 +83,7 @@ class U1A5 extends Oda
 			cuento.addChild hit, m
 			@addToLibrary hit, m
 		for i in [1..@game[scene - 1].texts.length] by 1
-			t = new DraggableText "t#{i}", @game[scene - 1].texts[i-1].t, @game[scene - 1].texts[i-1].idx, 1160, i * 35 + 540
+			t = new DraggableText "t#{i}", @game[scene - 1].texts[i-1].t, @game[scene - 1].texts[i-1].idx, 1350, i * 60 + 750
 			t.text.textAlign = 'center'
 			t.setHitArea()
 			if @game[scene - 1].texts[i-1].p

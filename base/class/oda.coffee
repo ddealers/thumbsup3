@@ -1,6 +1,6 @@
 window.stageSize || = {
 	w: 1600
-	h: 800
+	h: 1200
 	r: 1
 }
 
@@ -168,10 +168,10 @@ class Oda
 
 		for frase in text
 			if frase is '#ital'
-				label = new createjs.Text ital[it], 'bold italic 36px Browallia New', '#000'
+				label = new createjs.Text ital[it], 'bold italic 50px Browallia New', '#000'
 				it++
 			else 
-				label = new createjs.Text frase, 'bold 36px Browallia New', '#000'
+				label = new createjs.Text frase, 'bold 50px Browallia New', '#000'
 			label.x = npos
 			inst.addChild label
 			npos += label.getMeasuredWidth() + 3
