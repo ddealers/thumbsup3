@@ -49,46 +49,45 @@ class U8A1 extends Oda
 					containers:[
 						
 						{type: 'img', id: 'bg', x: 132, y: 187,scale:0.5}
-						{type: 'img', id: 'imgshopping', x: 557, y: 422, scale: 0.5, align: 'mr'}
-						{type: 'img', id: 'imgvolleyball', x: 445, y: 351, scale: 0.5, align: 'mr'}
+						
 						{
-							type: 'btn', id: 'btn1', x: 477, y: 319, index: 1, target: ['grp_txt','grp_pcpt'], overTween: false, eval: 'show_choose_01'
+							type: 'btn', id: 'btn1', x: 479, y: 319, index: 1, target: ['grp_txt','grp_pcpt'], overTween: false, eval: 'show_choose_01'
 							states: [{img: {name: 'imgballon', x: 0, y: 0, scale: 0.5, align: 'mr'}}]
 						}
 						{
-							type: 'btn', id: 'btn2', x: 392, y: 462, index: 2, target: ['grp_txt','grp_pcpt'], overTween: false, eval: 'show_choose_01'
+							type: 'btn', id: 'btn2', x: 394, y: 466, index: 2, target: ['grp_txt','grp_pcpt'], overTween: false, eval: 'show_choose_01'
 							states: [{img: {name: 'imgbus', x: 0, y: 0, scale: 0.5, align: 'mr'}}]
 						}
 						{
-							type: 'btn', id: 'btn3', x: 190, y: 259, index: 3, target: ['grp_txt','grp_pcpt'], overTween: false, eval: 'show_choose_01'
+							type: 'btn', id: 'btn3', x: 190, y: 262, index: 3, target: ['grp_txt','grp_pcpt'], overTween: false, eval: 'show_choose_01'
 							states: [{img: {name: 'imgicecream', x: 0, y: 0, scale: 0.5, align: 'mr'}}]
 						}
 						{
-							type: 'btn', id: 'btn4', x: 699, y: 421, index: 4, target: ['grp_txt','grp_pcpt'], overTween: false, eval: 'show_choose_01'
+							type: 'btn', id: 'btn4', x: 705, y: 424, index: 4, target: ['grp_txt','grp_pcpt'], overTween: false, eval: 'show_choose_01'
 							states: [{img: {name: 'imgmovies', x: 0, y: 0, scale: 0.5, align: 'mr'}}]
 						}
 						{
-							type: 'btn', id: 'btn5', x: 316, y: 264, index: 5, target: ['grp_txt','grp_pcpt'], overTween: false, eval: 'show_choose_01'
+							type: 'btn', id: 'btn5', x: 317, y: 264, index: 5, target: ['grp_txt','grp_pcpt'], overTween: false, eval: 'show_choose_01'
 							states: [{img: {name: 'imgocean', x: 0, y: 0, scale: 0.5, align: 'mr'}}]
 						}
 						{
-							type: 'btn', id: 'btn6', x: 233, y: 415, index: 6, target: ['grp_txt','grp_pcpt'], overTween: false, eval: 'show_choose_01'
+							type: 'btn', id: 'btn6', x: 232, y: 416, index: 6, target: ['grp_txt','grp_pcpt'], overTween: false, eval: 'show_choose_01'
 							states: [{img: {name: 'imgpizza', x: 0, y: 0, scale: 0.5, align: 'mr'}}]
 						}
 						{
-							type: 'btn', id: 'btn7', x: 554, y: 305, index: 7, target: ['grp_txt','grp_pcpt'], overTween: false, eval: 'show_choose_01'
+							type: 'btn', id: 'btn7', x: 558, y: 305, index: 7, target: ['grp_txt','grp_pcpt'], overTween: false, eval: 'show_choose_01'
 							states: [{img: {name: 'imgsandcastle', x: 0, y: 0, scale: 0.5, align: 'mr'}}]
 						}
 						{
-							type: 'btn', id: 'btn8', x: 696, y: 236, index: 8, target: ['grp_txt','grp_pcpt'], overTween: false, eval: 'show_choose_01'
+							type: 'btn', id: 'btn8', x: 703, y: 236, index: 8, target: ['grp_txt','grp_pcpt'], overTween: false, eval: 'show_choose_01'
 							states: [{img: {name: 'imgscuba', x: 0, y: 0, scale: 0.5, align: 'mr'}}]
 						}
 						{
-							type: 'btn', id: 'btn9', x: 558, y: 423, index: 9, target: ['grp_txt','grp_pcpt'], overTween: false, eval: 'show_choose_01'
+							type: 'btn', id: 'btn9', x: 563, y: 426, index: 9, target: ['grp_txt','grp_pcpt'], overTween: false, eval: 'show_choose_01'
 							states: [{img: {name: 'imgshopping', x: 0, y: 0, scale: 0.5, align: 'mr'}}]
 						}
 						{
-							type: 'btn', id: 'btn10', x: 446, y: 352, index: 10, target: ['grp_txt','grp_pcpt'], overTween: false, eval: 'show_choose_01'
+							type: 'btn', id: 'btn10', x: 453, y: 354, index: 10, target: ['grp_txt','grp_pcpt'], overTween: false, eval: 'show_choose_01'
 							states: [{img: {name: 'imgvolleyball', x: 0, y: 0, scale: 0.5, align: 'mr'}}]
 						}
 						{type: 'txt', id: 't1', text:'What are they going to buy?', x: 400, y: 515, font:'18px Quicksand', align: 'center'}

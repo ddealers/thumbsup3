@@ -44,26 +44,26 @@ class U4A5 extends Oda
 		super
 		@answers = @shuffle @game.answers
 		@intento = false
-		@insertBitmap 'propback', 'propback', 200, 30
+		@insertBitmap 'propback', 'propback', 20, 175
 		@library.propback.scaleX = @library.propback.scaleY = 0.5
 		@insertBitmap 'header', 'head', stageSize.w / 2, 0, 'tc'
-		@insertInstructions 'instructions', ['Read the speech bubbles and click on the corresponding character.'], 300, 130
-		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 250, 700, 10, 0
+		@insertInstructions 'instructions', ['Read the speech bubbles and click on the corresponding character.'], 80, 180
+		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 0, 1000, 10, 0
 		@library.score.txtCount.color = "#0A9BDD"
 		@library.score.txtTotal.color = "#FE008F"
 		@setFaces().introEvaluation()
 	setFaces: ->
 		faces = new createjs.Container()
 		faces.x = 900
-		faces.y = 640
+		faces.y = 940
 		b = @createBitmap 'bubblebmp','bubbletext', -40,-20
 		b.scaleX = b.scaleY = 0.5
-		t = @createText 'qtext', @answers[@index].q, '25px Browallia New', '#000', 163, -10
+		t = @createText 'qtext', @answers[@index].q, '37px Browallia New', '#000', 280, -10
 		t.textAlign = 'center'
 		faces.addChild b, t
 		@addToLibrary b, t
 		for i in [1..4] by 1
-			c = @createBitmap "btn#{i}", "btn#{i}", (i-1) * 80, 50
+			c = @createBitmap "btn#{i}", "btn#{i}", (i-1) * 110, 90
 			c.index = @game.faces[i-1]
 			c.scaleX = c.scaleY = 0.5
 			@addToLibrary c
