@@ -60,61 +60,61 @@ class U6A5 extends Oda
 		@game = [
 			{
 				texts:[
-					{idx:2, t:"He couldn't go down the cliff--it was too dangerous", x:576, y:585}
-					{idx:3, t:'Simon started to think that Joe was dead', x:576, y:605}
-					{idx:1, t:'Joe was hanging on the rope like a big heavy spider', x:576, y:625}
-					{idx:4, t:'In a second, the weight --his friend, Joe-- was gone', x:576, y:645}
+					{idx:2, t:"He couldn't go down the cliff--it was too dangerous", x:544, y:900}
+					{idx:3, t:'Simon started to think that Joe was dead', x:544, y:930}
+					{idx:1, t:'Joe was hanging on the rope like a big heavy spider', x:544, y:960}
+					{idx:4, t:'In a second, the weight --his friend, Joe-- was gone', x:544, y:990}
 				]
 				positions:[
-					{id:'1', x:300, y:270}
-					{id:'2', x:845, y:270}
-					{id:'3', x:845, y:380}
-					{id:'4', x:845, y:490}
+					{id:'1', x:160, y:400}
+					{id:'2', x:845, y:400}
+					{id:'3', x:845, y:572}
+					{id:'4', x:845, y:736}
 				]
-				nube:{id:'nube1', x:340, y:550}
+				nube:{id:'nube1', x:180, y:840}
 			}
 			{
 				texts:[
-					{idx:6, t:"He saw a lot of ice", x:1015, y:360}
-					{idx:7, t:"He didn't want to die", x:1015, y:386}
-					{idx:5, t:'Everything went dark', x:1015, y:412}
+					{idx:6, t:"He saw a lot of ice", x:1230, y:570}
+					{idx:7, t:"He didn't want to die", x:1230, y:610}
+					{idx:5, t:'Everything went dark', x:1230, y:650}
 				]
 				positions:[
-					{id:'5', x:350, y:270}
-					{id:'6', x:350, y:355}
-					{id:'7', x:350, y:440}
+					{id:'5', x:150, y:440}
+					{id:'6', x:150, y:569}
+					{id:'7', x:150, y:698}
  				]
-				nube:{id:'nube2', x:835, y:310}
+				nube:{id:'nube2', x:980, y:510}
 			}
 			{
 				texts:[
-					{idx:12, t:'In his dreams, he heard Joe yelling, "Simon! Simon!"', x:605, y:590}
-					{idx:10, t:'They were so happy and excited', x:605, y:610}
-					{idx:9, t:'Now he was safe', x:605, y:630}
-					{idx:11, t:'He planned to leave the next day', x:605, y:650}
+					{idx:12, t:'In his dreams, he heard Joe yelling, "Simon! Simon!"', x:530, y:900}
+					{idx:10, t:'They were so happy and excited', x:530, y:930}
+					{idx:9, t:'Now he was safe', x:530, y:960}
+					{idx:11, t:'He planned to leave the next day', x:530, y:990}
 				]
 				positions:[
-					{id:'8', x:380, y:290}
-					{id:'9', x:380, y:425}
-					{id:'10', x:830, y:290}
-					{id:'11', x:830, y:460}
+					{id:'8', x:150, y:410}
+					{id:'9', x:150, y:613}
+					{id:'10', x:850, y:410}
+					{id:'11', x:850, y:673}
 				]
-				nube:{id:'nube1', x:370, y:550}
+				nube:{id:'nube1', x:180, y:840}
 			}
 			{
 				texts:[
-					{idx:15, t:"Suddenly, he heard his name again", x:970, y:350}
-					{idx:16, t:"Joe was alive!", x:970, y:370}
-					{idx:13, t:"There wasn't any wind", x:970, y:390}
-					{idx:14, t:'He opened the tent and looked around', x:970, y:410}
+					{idx:15, t:"Suddenly, he heard his name again", x:1228, y:570}
+					{idx:16, t:"Joe was alive!", x:1228, y:600}
+					{idx:13, t:"There wasn't any wind", x:1228, y:630}
+					{idx:14, t:'He opened the tent and looked around', x:1228, y:660}
 				]
 				positions:[
-					{id:'12', x:414, y:280}
-					{id:'13', x:414, y:355}
-					{id:'14', x:414, y:415}
-					{id:'15', x:414, y:472}
+					{id:'12', x:150, y:450}
+					{id:'13', x:150, y:577}
+					{id:'14', x:150, y:676}
+					{id:'15', x:150, y:772}
  				]
-				nube:{id:'nube2', x:790, y:305}
+				nube:{id:'nube2', x:980, y:510}
 			}
 
 		]
@@ -123,11 +123,11 @@ class U6A5 extends Oda
 	setStage: ->
 		super
 		@intento = 0
-		@insertBitmap 'bg', 'bg', 250, 20
+		@insertBitmap 'bg', 'bg', 0, 0
 		@library.bg.scaleX = @library.bg.scaleY = 0.5
 		@insertBitmap 'header', 'head', stageSize.w / 2, 0, 'tc'
-		@insertInstructions 'instructions', ['Listen, read and drag the correct words to the text.'], 300, 117
-		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 200, 650, 5, 0
+		@insertInstructions 'instructions', ['Listen, read and drag the correct words to the text.'], 80, 180
+		@addToMain new Score 'score', (@preload.getResult 'c1'), (@preload.getResult 'c2'), 0, 1000, 5, 0
 		@library.score.txtCount.color = "#C3DB5B"
 		@library.score.txtTotal.color = "#EB2D3C"
 		@setCuento( 1 ).introEvaluation()
@@ -152,7 +152,7 @@ class U6A5 extends Oda
 		for i in [1..@game[scene - 1].texts.length] by 1
 			t = new DraggableText "t#{i}", @game[scene - 1].texts[i-1].t, @game[scene - 1].texts[i-1].idx, @game[scene - 1].texts[i-1].x, @game[scene - 1].texts[i-1].y - 5
 			t.text.textAlign = 'center'
-			t.text.font = '15px Quicksand'
+			t.text.font = '22px Quicksand'
 			t.setHitArea()
 			if @game[scene - 1].texts[i-1].p
 				t.p = @game[scene - 1].texts[i-1].p
